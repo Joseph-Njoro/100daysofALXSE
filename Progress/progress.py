@@ -6,7 +6,6 @@ current_date = datetime.date.today()
 day_number = (current_date - start_date).days + 1
 days_remaining = 100 - day_number
 
-# Format current date
 day_name = current_date.strftime("%A ")
 date_str = current_date.strftime("%d %B ")
 
@@ -21,8 +20,11 @@ if os.path.exists(log_file_path):
         last_line = file.readlines()[-1]
     last_date = datetime.datetime.strptime(last_line.split(":")[0], "%A %d %B ")
     if last_date.date() == current_date:
+        # If the log for the current day already exists, exit the script
         exit()
 
 # Write progress message to the log file
 with open(log_file_path, "a") as file:
     file.write(progress_message)
+
+print(progress_message)
