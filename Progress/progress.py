@@ -3,6 +3,9 @@ import os
 
 def get_last_log_date(log_file_path):
     """Get the date of the last log entry from the log file."""
+    if not os.path.exists(log_file_path):
+        return None  # Return None if the file doesn't exist
+
     if os.path.getsize(log_file_path) == 0:
         return None  # Return None if the file is empty
 
@@ -31,7 +34,7 @@ def main():
     # Define log file path
     log_file_path = "multiple_entries_log.txt"
 
-    # Redudancy check
+    # Redundancy check
     last_date = get_last_log_date(log_file_path)
     if last_date == current_date:
         # If log entry for current date already exists, exit
