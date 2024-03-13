@@ -32,7 +32,7 @@ def main():
     progress_message = f"{current_datetime.strftime('%A %d %B %Y, %I:%M %p')}: Day {day_number} of 100: {days_remaining} more to go\n"
 
     # Define log file path
-    log_file_path = "multiple_entries_log.txt"
+    log_file_path = "progress_log.txt"
 
     # Redundancy check
     last_date = get_last_log_date(log_file_path)
