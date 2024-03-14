@@ -4,7 +4,7 @@ int add(int, int)
 
 int main(){
     int a=90, int b=78, int c=102, int d;
-    int add(a,b,c);
+    d=add(a,b,c);
     printf("Summation of a b & c is d. d is: %d",d);
 }
 {
