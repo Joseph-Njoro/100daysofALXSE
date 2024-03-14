@@ -2,7 +2,8 @@
 
 int add (int, int);
 
-int main(){
+int main ()
+{
     int a=8, b=8, z;
 
     z=add(a,b);
