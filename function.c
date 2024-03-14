@@ -8,7 +8,7 @@ int main(){
     printf("Summation of a b & c is d. d is: %d",d);
 }
 {
-    int add(a,b,c);
+    int add(int a,int b,int c);
     int z=(a+b+c);
     return z;
 }
