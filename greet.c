@@ -7,6 +7,8 @@ int main(){
     return 0;
 }
 
+int a;
+scanf("%d", &a);
 void greet(){
     printf("Hi Joseph\n");
 }
