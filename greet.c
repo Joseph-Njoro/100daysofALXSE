@@ -4,11 +4,11 @@ void greet();
 
 int main(){
     greet();
+    int a;
+    scanf("%d", &a);
     return 0;
 }
 
-int a;
-scanf("%d", &a);
 void greet(){
-    printf("Hi Joseph\n");
+    printf("Hi %d\n", &a);
 }
