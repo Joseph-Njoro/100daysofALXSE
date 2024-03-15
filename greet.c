@@ -12,5 +12,5 @@ int main()
 }
 
 void greet(char a[]){
-    printf("Hi %s\n", &a);
+    printf("Hi %s\n", a);
 }
