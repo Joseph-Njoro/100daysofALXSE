@@ -1,15 +1,15 @@
 #include <stdio.h>
 
-void greet();
+void greet(char a[]);
 
 int main(){
-    int a;
-    printf("Enter a number");
-    scanf("%d", &a);
-    greet();
+    char[] a;
+    printf("Enter a name");
+    scanf("%s", &a);
+    greet(a);
     return 0;
 }
 
-void greet(){
-    printf("Hi %d\n", &a);
+void greet(char a){
+    printf("Hi %s\n", &a);
 }
