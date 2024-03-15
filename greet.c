@@ -2,10 +2,10 @@
 
 void greet();
 
-int main()]
+int main(){
     greet();
     return 0;
-]
+}
 
 void greet(){
     printf("Hi Joseph\n");
