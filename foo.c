@@ -1,9 +1,5 @@
 #include <stdio.h>
-// C program to demonstrate the error occured
-// when function prototype is not specified
-
-// Prototype of foo() function is not specified
-
+void foo();
 int main()
 {
 	// foo() function called
@@ -14,5 +10,5 @@ int main()
 
 // definition of foo() function
 void foo() {
-printf("foo called");
+printf("foo called\n");
 }
