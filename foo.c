@@ -1,3 +1,4 @@
+#include <stdio.h>
 // C program to demonstrate the error occured
 // when function prototype is not specified
 
