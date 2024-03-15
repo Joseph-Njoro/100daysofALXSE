@@ -3,10 +3,11 @@
 void greet();
 
 int main(){
-    greet();
     int a;
+    printf("Enter a number");
     scanf("%d", &a);
     return 0;
+    greet();
 }
 
 void greet(){
