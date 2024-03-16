@@ -6,7 +6,7 @@ int main() {
     // Input string from user
     printf("Enter a string: ");
     sanf("%s", str); // Note: %s does not need & for arrays
-    printf("You entered: %s\n" str);
+    printf("You entered: %s\n", str);
 
     return 0;
 }
