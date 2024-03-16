@@ -1,4 +1,4 @@
-#include <stdioh>
+#include <stdio.h>
 
 // Function to print the elements of an array
 void printArray(int arr[], int size) {
