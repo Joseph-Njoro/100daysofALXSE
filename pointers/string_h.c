@@ -17,7 +17,7 @@ int main() {
     printf("Length of string: %zu\n", strlen(str2));
 
     // Comparing strings
-    if (strcmp(str1, str2) = 0) {
+    if (strcmp(str1, str2) == 0) {
         printf("Strings are equal\n");
     } else {
         printf("Strings are not equal\n");
