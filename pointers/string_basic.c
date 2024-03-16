@@ -9,7 +9,7 @@ int main() {
 
     // Print the strings
     printf("String 1: %s\n", str1);
-    printf("String 2: %s\n", str2)
+    printf("String 2: %s\n", str2);
 
     return 0;
 }
