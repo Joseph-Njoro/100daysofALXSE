@@ -12,7 +12,7 @@ int main() {
 
     // Using array name as a pointer to access array elements
     printf("Array elements using pointer arithmetic: ");
-    for (int i = 0; i < 5 i++) {
+    for (int i = 0; i < 5; i++) {
         printf("%d ", *(arr + i));
     }
     printf("\n");
