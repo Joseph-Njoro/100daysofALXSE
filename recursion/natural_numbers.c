@@ -10,6 +10,6 @@ int sum(int n) {
 
 int main() {
     int n = 5;
-    printf("Sum of first % natural numbers: %d\n", n, sumn));
+    printf("Sum of first %d natural numbers: %d\n", n, sumn));
     return 0;
 }
