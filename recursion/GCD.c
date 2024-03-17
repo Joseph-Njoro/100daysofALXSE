@@ -12,3 +12,4 @@ int main() {
     int a = 12, b = 18;
     printf("GCD of %d and %d: %d\n", a, b, gcd(a, b));
     return 0;
+}
