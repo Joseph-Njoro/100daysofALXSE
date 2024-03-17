@@ -9,6 +9,6 @@ int sumOfDigits(int n) {
 
 int main() {
     int num = 12345;
-    printf("Sum of digits of %d is %d\n", num sumOfDigits(num);
+    printf("Sum of digits of %d is %d\n", num sumOfDigits(num));
     return 0;
 }
