@@ -12,7 +12,7 @@ int main() {
     int n = 5;
     printf("Fibonacci series up to %d terms: ", n);
     for (int i = 0; i < n; i++) {
-        printf("%d ", fibonacci(i;
+        printf("%d ", fibonacci(i);
     }
     return 0;
 }
