@@ -2,6 +2,13 @@
 #include <stdlib.h>
 #include <time.h>
 
+#ifdef _WIN32
+    #include <windows.h>
+    #define sleep(x) Sleep(x * 1000)
+#else
+    #include <unistd.h>
+#endif
+
 void clear_screen() {
     system("clear || cls");
 }
@@ -19,13 +26,10 @@ int main() {
     while (1) {
         time_t now = time(NULL);
         struct tm *local_time = localtime(&now);
-
         hours = local_time->tm_hour;
         minutes = local_time->tm_min;
         seconds = local_time->tm_sec;
-
         display_clock(hours, minutes, seconds);
-
         sleep(1);
     }
 
