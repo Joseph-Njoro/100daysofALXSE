@@ -9,7 +9,7 @@ void clear_screen() {
 void display_clock(int hours, int minutes, int seconds) {
     clear_screen();
     printf("┌────────────┐\n");
-    printf("│  %:%02d:%02d  │\n", hours, minutes, seconds);
+    printf("│  %02d:%02d%02d  │\n", hours, minutes, seconds);
     printf("└────────────┘\n");
 }
 
