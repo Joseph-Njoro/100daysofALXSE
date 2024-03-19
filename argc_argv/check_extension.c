@@ -7,7 +7,7 @@ int main(int argc, char *argv[]) {
         return 1;
     }
     char *extension = strrchr(argv[1], '.');
-    if (extension && strcmp(extension, "c") == 0) {
+    if (extension && strcmp(extension, ".c") == 0) {
         printf("File has a C source code extension.\n");
     } else {
         printf("File does not have a C source code extension.\n");
