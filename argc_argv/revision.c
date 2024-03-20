@@ -2,7 +2,7 @@
 #include <stdint.h
 #include <stdlib.h>
 
-#define OPTSTR "vi:o:f:h
+#define OPTSTR "vi:o:f:h"
 #define USAGE_FMT  "%s [-v] [-f hexflag] [-i inputfile] [o outputfile] [-h]"
 
 /* function prototypes */
