@@ -41,7 +41,7 @@ int main() {
     printf("NULL\n");
 
     current = head;
-    while (current = NULL) {
+    while (current != NULL) {
         Node *next = current->next;
         free(current);
         current = next;
