@@ -36,7 +36,7 @@ int main() {
     current = head;
     while (current != NULL) {
         printf("%d -> ", current->data);
-        current = current-next;
+        current = current->next;
     }
     printf("NULL\n");
 
