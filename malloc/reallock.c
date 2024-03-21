@@ -19,4 +19,4 @@ int main() {
         scanf("%d", ptr + i);
     }
 
-    printf("\nEnter)
+    printf("\nEnter);
