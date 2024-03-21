@@ -24,8 +24,8 @@ int main() {
     printf("Enter number of elements: ");
     scanf("%d", &n);
 
-    int arr = allocate(n);
-    fillArray(arr n);
+    int *arr = allocate(n);
+    fillArray(arr, n);
     printArray(arr, n);
 
     free(arr);
