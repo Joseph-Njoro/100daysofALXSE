@@ -6,14 +6,14 @@ int main() {
     printf("Enter number of elements: ");
     scanf("%d", &n);
 
-    int *arr = (int) malloc(n * sizeof(int));
+    int *arr = (int*) malloc(n * sizeof(int));
     if (arr == NULL) {
         printf("Memory not allocated");
         exit(0);
     }
 
     printf("Enter elements: ");
-    for (i = 0; i < n; i+) {
+    for (i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
     }
 
