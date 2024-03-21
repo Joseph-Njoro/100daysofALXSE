@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int *ptr;
+    int i;
+
+    // allocate memory for 5 integers
+    ptr = (int*) malloc(5 * sizeof(int));
+    if (ptr == NULL) {
+        printf("Memory not allocated");
+        exit(0);
+    }
+    // assign values to the array
+    for (i = 0; i < 5; i++) {
+        ptr[i] = i + 10;
+    }
+    // print the array
+    for (i = 0; i < 5; i++) {
+        printf("Element %d: %d\n", i, ptr[i]);
+    }
+    // free the memory
+    free(ptr);
+    return 0;
+}
