@@ -10,4 +10,4 @@ typedef struct {
 int main() {
     person *ptr;
 
-    // allocate memory for 1 person
+    // allocate memory for 1 perso
