@@ -19,6 +19,6 @@ int main() {
         scanf("%d", ptr + i);
     }
 
-    printf("\nEnter);
+    printf("\nEnter");
     return 0;
     }
