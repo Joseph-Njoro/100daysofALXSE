@@ -13,12 +13,12 @@ int main() {
     }
 
     printf("Enter elements: ");
-    for (i = 0; i < n; i++) {
+    for (i = 0; i < n; i+) {
         scanf("%d", &arr[i]);
     }
 
     printf("The elements of the array are: ");
-    for (i = 0; i < n; i+) {
+    for (i = 0; i < n; i++) {
         printf("%d ", arr[i]);
     }
 
