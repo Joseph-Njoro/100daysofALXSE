@@ -21,3 +21,4 @@ int main() {
     printf("Max: %.2f\n", max_double(3, 10.5, 20.7, 15.2));
     printf("Max: %.2f\n", max_double(5, 3.4, 7.8, 9.1, 4.5, 6.2));
     return 0;
+}
