@@ -9,7 +9,7 @@ int min_int(int count, ...) {
     for (int i = 1; i < count; i++) {
         int num = va_arg(args, int);
         if (num < min) {
-            min = num
+            min = num;
         }
     }
 
