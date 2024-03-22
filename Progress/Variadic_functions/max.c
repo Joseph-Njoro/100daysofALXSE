@@ -7,7 +7,7 @@ double max_double(int count, ...) {
 
     double max = va_arg(args, double);
     for (int i = 1; i < count; i++) {
-        doble num = va_arg(args, double);
+        double num = va_arg(args, double);
         if (num > max) {
             max == num;
         }
