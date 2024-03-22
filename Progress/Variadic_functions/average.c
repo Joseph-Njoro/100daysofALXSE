@@ -2,8 +2,8 @@
 #include <stdarg.h>
 
 float average(int count, ...) {
-    va-list args;
-    va-start(args, count);
+    va_list args;
+    va_start(args, count);
 
     float total = 0.0;
     for (int i = 0; i < count; i=+) {
