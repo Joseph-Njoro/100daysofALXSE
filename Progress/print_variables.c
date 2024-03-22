@@ -6,7 +6,7 @@ void print_numbers(int count, ...) {
     va_start(args, count);
 
     for (int i = 0; i < count; i++) {
-        printf("%d ", va_arg(args, int);
+        printf("%d ", va_arg(args, int));
     }
 
     va_end(args);
