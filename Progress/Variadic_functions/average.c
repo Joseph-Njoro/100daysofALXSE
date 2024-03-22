@@ -6,7 +6,7 @@ float average(int count, ...) {
     va_start(args, count);
 
     float total = 0.0;
-    for (int i = 0; i < count; i=+) {
+    for (int i = 0; i < count; i++) {
         total += va_arg(args, double);
     }
 
