@@ -10,7 +10,7 @@ void print_numbers(int count, ...) {
     }
 
     va_end(args);
-    printf("/n");
+    printf("\n");
 }
 
 int main() {
