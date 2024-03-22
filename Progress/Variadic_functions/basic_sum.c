@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdarg.h>
 
 int sum(int count, ...) {
     va_list args;
