@@ -15,7 +15,7 @@ float average(int count, ...) {
 }
 
 int main() {
-    printf("Average: %.2f\n, average(4, 10.5, 20.3, 15.7, 8.2));
+    printf("Average: %.2f\n", average(4, 10.5, 20.3, 15.7, 8.2));
     printf("Average: %.2f\n", average(3, 2.5, 5.0, 7.5));
     return 0;
 }
