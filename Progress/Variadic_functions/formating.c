@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdarg.h>
 
-void print_formatted_strings(const char 8format, ...) {
+void print_formatted_strings(const char format, ...) {
     va_list args;
     va_start(args, format);
 
