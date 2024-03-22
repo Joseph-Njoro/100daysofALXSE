@@ -15,7 +15,7 @@ double product_double(int count, ...) {
 }
 
 int main() {
-    printf("Product: %.2f\n" product_double(3, 2.5, 1.5, 3.0));
+    printf("Product: %.2f\n", product_double(3, 2.5, 1.5, 3.0));
     printf("Product: %.2f\n", product_double(4, 0.5, 2.0, 1.5, 3.0));
     return 0;
 }
