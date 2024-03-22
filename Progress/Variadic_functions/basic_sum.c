@@ -7,7 +7,7 @@ int sum(int count, ...) {
 
     int total = 0;
     for (int i = 0; i < count; i++) {
-        total += va-arg(args, int);
+        total += va_arg(args, int);
     }
 
     va-end(args);
