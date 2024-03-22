@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdarg.h>
 
-double max_double(int count, ..) {
+double max_double(int count, ...) {
     va_list args;
     va_start(args, count);
 
