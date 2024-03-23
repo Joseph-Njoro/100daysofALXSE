@@ -28,6 +28,7 @@ int main() {
             break;
         } else if (is_board_full(board)) {
             display_board(board);
+            printf("It's a draw!\n");
             break;
         }
 
