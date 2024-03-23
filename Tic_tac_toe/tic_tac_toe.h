@@ -8,5 +8,6 @@ int is_board_full(char board[3][3]);
 char get_current_player();
 void switch_player();
 void display_board(char board[3][3]);
+void update_board(char board[3][3], int row, int col);
 
 #endif /* TIC_TAC_TOE_H */
