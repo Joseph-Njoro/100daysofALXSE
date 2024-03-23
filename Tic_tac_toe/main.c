@@ -1,8 +1,3 @@
-#include <stdio.h>
-#include "utility.h"
-#include "input.h"
-#include "game_logic.h"
-#include "display.h"
 #include "tic_tac_toe.h"
 
 int main() {
