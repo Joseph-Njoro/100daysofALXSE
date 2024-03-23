@@ -1,5 +1,18 @@
 #include "tic_tac_toe.h"
 
+void update_board(char board[3][3], int row, int col) {
+    char current_player = get_current_player();
+    
+    // Check if the chosen position is empty
+    if (board[row][col] == ' ') {
+        // Update the board with the current player's symbol
+        board[row][col] = current_player;
+    } else {
+        // Print an error message if the position is already occupied
+        printf("Error: This position is already occupied. Please choose another position.\n");
+    }
+}
+
 int check_winner(char board[3][3]) {
     // Check rows
     for (int i = 0; i < 3; ++i) {
