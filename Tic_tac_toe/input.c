@@ -1,4 +1,3 @@
-#include "input.h"
 #include "tic_tac_toe.h"
 #include <stdio.h>
 
