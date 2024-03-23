@@ -19,7 +19,7 @@ void draw_board(char board[3][3]) {
     refresh(); // Refresh the screen
 }
 
-int main() {
+int ncurses_main() {
     // Initialize ncurses
     initscr();
     cbreak();
