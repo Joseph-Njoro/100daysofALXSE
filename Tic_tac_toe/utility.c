@@ -1,4 +1,4 @@
-#include "utility.h"
+#include "tic_tac_toe.h"
 
 void initialize_board(char board[3][3]) {
     // Initialize the game board with empty spaces
