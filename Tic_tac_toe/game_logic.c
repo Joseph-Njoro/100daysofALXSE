@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "tic_tac_toe.h"
 
 void update_board(char board[3][3], int row, int col) {
