@@ -19,7 +19,7 @@ int main() {
         get_move(board, &row, &col);
 
         // Update the board with the player's move
-        update_board(board, row, col)
+        update_board(board, row, col);
 
         // Check if the game is over
         if (check_winner(board)) {
