@@ -1,4 +1,5 @@
 #include "input.h"
+#include "tic_tac_toe.h"
 #include <stdio.h>
 
 void get_move(char board[3][3], int *row, int *col) {
