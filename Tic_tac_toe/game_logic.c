@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "tic_tac_toe.h"
 
 int check_winner(char board[3][3]) {
