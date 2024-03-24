@@ -35,6 +35,6 @@ int main() {
 
     // Display the list
     printf("List after insertion at the beginning: ");
-    displayList(head)
+    displayList(head);
 
     return 0;
