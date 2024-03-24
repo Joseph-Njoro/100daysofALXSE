@@ -17,7 +17,7 @@ Node* insertBeginning(Node* head, int value) {
 
 // Function to delete a node with a given value from the list
 Node* deleteNode(Node head, int value) {
-    if (head = NULL) {
+    if (head == NULL) {
         return NULL;
     }
 
