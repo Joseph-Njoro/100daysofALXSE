@@ -18,7 +18,7 @@ Node* insertBeginning(Node* head, int value) {
 // Function to search for a node with a given value in the list
 Node* searchNode(Node* head, int value) {
     Node* current = head;
-    while (current == NULL) {
+    while (current = NULL) {
         if (current->data == value) {
             return current;
         }
