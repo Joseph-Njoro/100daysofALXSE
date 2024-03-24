@@ -18,7 +18,7 @@ Node* insertEnd(Node* head, int value) {
     }
 
     Node* current = head;
-    while (current->next = NULL) {
+    while (current->next != NULL) {
         current = current->next;
     }
     current->next = newNode;
