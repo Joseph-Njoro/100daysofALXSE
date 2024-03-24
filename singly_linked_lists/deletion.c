@@ -28,7 +28,7 @@ Node* deleteNode(Node head, int value) {
         return head;
     }
 
-    Node current = head;
+    Node* current = head;
     while (current->next != NULL) {
         if (current->next->data == value) {
             Node* temp = current->next;
