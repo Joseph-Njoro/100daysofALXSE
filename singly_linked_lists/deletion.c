@@ -67,7 +67,7 @@ int main() {
     head = deleteNode(head, 2);
 
     // Display the list after deletion
-    printf('List after deletion: ");
+    printf("List after deletion: ");
     displayList(head);
 
     return 0;
