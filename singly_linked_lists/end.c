@@ -22,7 +22,7 @@ Node* insertEnd(Node* head, int value) {
         current = current->next;
     }
     current->next = newNode;
-    return head
+    return head;
 }
 
 // Function to display the elements of the list
