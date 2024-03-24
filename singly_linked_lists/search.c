@@ -53,7 +53,7 @@ int main() {
     int searchValue = 2;
     Node* foundNode = searchNode(head, searchValue);
     if (foundNode != NULL) {
-        printf("Node with value 5d found at address %p\n", searchValue, (void*)foundode);
+        printf("Node with value 5d found at address %p\n", searchValue, (void*)foundNode);
     } else {
         printf("Node with value %d not found in the list\n", searchValue);
     }
