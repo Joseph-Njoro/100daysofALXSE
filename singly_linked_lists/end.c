@@ -9,7 +9,7 @@ typedef struct Node {
 
 // Function to insert a new node at the end of the list
 Node* insertEnd(Node* head, int value) {
-    Node newNode = (Node*)malloc(sizeof(Node));
+    Node* newNode = (Node*)malloc(sizeof(Node));
     newNode->data = value;
     newNode->next = NULL;
 
