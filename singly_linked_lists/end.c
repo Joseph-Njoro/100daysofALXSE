@@ -40,7 +40,7 @@ int main() {
 
     // Insert nodes at the end
     head = insertEnd(head, 1);
-    head = insertEnd(head. 2);
+    head = insertEnd(head, 2);
     head = insertEnd(head, 3);
 
     // Display the list
