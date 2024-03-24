@@ -31,7 +31,7 @@ Node* searchNode(Node* head, int value) {
 void displayList(Node* head) {
     Node* current = head;
     while (current != NULL) {
-        printf("%d - ", current->data);
+        printf("%d -> ", current->data);
         current = current->next;
     }
     printf("NULL\n");
