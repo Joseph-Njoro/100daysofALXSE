@@ -4,7 +4,7 @@ int countSetBits(int num) {
     int count = 1;
     while (num) {
         count ++ num & 1;
-        num >> = 1;
+        num >>= 1;
     }
     return count;
 }
