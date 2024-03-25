@@ -65,7 +65,7 @@ int main() {
     int result = perform_bitwise_operation(target_number, bitwise_operator); // Perform bitwise operation
     int user_input;
 
-    int terminal_width = 60; // Width of the terminal
+    int terminal_width = 180; // Width of the terminal
     int padding = (terminal_width - 36) / 2; // Padding to center align the challenge
 
     printf("\n");
@@ -75,9 +75,9 @@ int main() {
     for (int i = 0; i < padding; i++) {
         printf(" ");
     }
-    printf(ANSI_BOLD " Welcome to the Bit Manipulation Challenge! " ANSI_RESET);
+    printf(ANSI_BOLD " BIT MANIPULATION CHALLENGE! " ANSI_RESET);
     for (int i = 0; i < padding; i++) {
-        printf(" ");
+        printf("  ");
     }
     printf("║\n");
     
@@ -97,13 +97,13 @@ int main() {
     for (int i = 0; i < padding; i++) {
         printf(" ");
     }
-    printf("║ Target number: " ANSI_COLOR_RED "%d" ANSI_RESET "                    ║\n", target_number);
+    printf("║ Target number: " ANSI_COLOR_RED "%d" ANSI_RESET "                                                                                        ║\n", target_number);
     
     printf("║"); // Start border
     for (int i = 0; i < padding; i++) {
         printf(" ");
     }
-    printf("║ Apply the bitwise operator '%c' to the target number. ║\n", bitwise_operator);
+    printf("║ Apply the bitwise operator '%c' to the target number:'%d'                                                 ║\n", bitwise_operator, target_number);
 
     printf("║"); // Start border
     for (int i = 0; i < padding; i++) {
@@ -117,16 +117,16 @@ int main() {
     while (1) {
         printf("║ Enter your answer: ");
         if (scanf("%d", &user_input) != 1) {
-            printf("Invalid input! Please enter an integer.     ║\n");
+            printf("NDWANZI PRO MAX: enter an integer.     ║\n");
             clear_input_buffer(); // Clear input buffer
             continue;
         }
 
         if (validate_input(user_input, result)) {
-            printf("║" ANSI_COLOR_GREEN " Congratulations! You've correctly manipulated the number. " ANSI_RESET "║\n");
+            printf("║" ANSI_COLOR_GREEN " Congratulations! wewe si NDWANZI. " ANSI_RESET "║\n");
             break;
         } else {
-            printf("║ Incorrect! Please try again.                    ║\n");
+            printf("║ Incorrect! !!FAILURE >>BRAIN MISS1NG.!!                    ║\n");
         }
     }
 
