@@ -6,5 +6,5 @@ int main() {
     int result = a << 2; // Left shift by 2
     printf("Result of %d << 2 = %d\n", a, result);
 
-    return = 0;
+    return 0;
 }
