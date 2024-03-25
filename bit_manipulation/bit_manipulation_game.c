@@ -37,15 +37,15 @@ int main() {
     while (1) {
         // Player 1's turn
         printf("Player 1's turn:\n");
+        printf("Enter your bit pattern (0-15): ");
         do {
-            printf("Enter your bit pattern (0-15): ");
             scanf("%d", &player1_bits);
         } while (!validate_input(player1_bits));
 
         // Player 2's turn
         printf("Player 2's turn:\n");
+        printf("Enter your bit pattern (0-15): ");
         do {
-            printf("Enter your bit pattern (0-15): ");
             scanf("%d", &player2_bits);
         } while (!validate_input(player2_bits));
 
