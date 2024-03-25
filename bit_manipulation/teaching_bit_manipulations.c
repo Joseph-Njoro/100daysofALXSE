@@ -49,6 +49,15 @@ void clear_input_buffer() {
     while ((c = getchar()) != '\n' && c != EOF);
 }
 
+// Function to print border
+void print_border(int width) {
+    printf("╔");
+    for (int i = 0; i < width; i++) {
+        printf("═");
+    }
+    printf("╗\n");
+}
+
 int main() {
     srand(time(NULL)); // Seed for random number generation
     int target_number = generate_random_number(0, 255); // Generate random number between 0 and 255
@@ -56,26 +65,34 @@ int main() {
     int result = perform_bitwise_operation(target_number, bitwise_operator); // Perform bitwise operation
     int user_input;
     
-    printf(ANSI_BOLD "Welcome to the Bit Manipulation Challenge!\n" ANSI_RESET);
-    printf("Your target number is: " ANSI_COLOR_RED "%d\n" ANSI_RESET, target_number);
-    printf("Apply the bitwise operator '%c' to the target number.\n", bitwise_operator);
+    printf("\n");
+    print_border(40); // Print top border
+
+    printf("║" ANSI_BOLD " Welcome to the Bit Manipulation Challenge! " ANSI_RESET "║\n");
+    printf("║ Target number: " ANSI_COLOR_RED "%d" ANSI_RESET "                    ║\n", target_number);
+    printf("║ Apply the bitwise operator '%c' to the target number. ║\n", bitwise_operator);
+
+    print_border(40); // Print middle border
 
     // Game loop
     while (1) {
-        printf("Enter your answer: ");
+        printf("║ Enter your answer: ");
         if (scanf("%d", &user_input) != 1) {
-            printf("Invalid input! Please enter an integer.\n");
+            printf("Invalid input! Please enter an integer.     ║\n");
             clear_input_buffer(); // Clear input buffer
             continue;
         }
 
         if (validate_input(user_input, result)) {
-            printf(ANSI_COLOR_GREEN "Congratulations! You've correctly manipulated the number.\n" ANSI_RESET);
+            printf("║" ANSI_COLOR_GREEN " Congratulations! You've correctly manipulated the number. " ANSI_RESET "║\n");
             break;
         } else {
-            printf("Incorrect! Please try again.\n");
+            printf("║ Incorrect! Please try again.                    ║\n");
         }
     }
+
+    print_border(40); // Print bottom border
+    printf("\n");
 
     return 0;
 }
