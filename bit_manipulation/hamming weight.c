@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int countSetBits(int num) {
-    int count = ;
+    int count = 0;
     while (num) {
         count += num & 1;
         num >>= 1;
