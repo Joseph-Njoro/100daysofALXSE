@@ -4,7 +4,7 @@ int main() {
     int a = 5; // Binary: 0101
     int b = 3; // Binary: 0011
 
-    printf('a & b = %d\n", a & b); // Bitwise AND
+    printf("a & b = %d\n", a & b); // Bitwise AND
     printf("a | b = %d\n", a | b) // Bitwise OR
     printf("a ^ b = %d\n" a ^ b); // Bitwise XOR
     printf(" ` a = %d\n", ~a);       // Bitwise NOT
