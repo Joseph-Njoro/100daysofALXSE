@@ -13,7 +13,7 @@ int main() {
     int num = 13, ; // Binary: 1101
 
     int setBits = countSetBits(num);
-    printf("Number of set bits in %d: %d\n", num setBits);
+    printf("Number of set bits in %d: %d\n", num, setBits);
 
     return 0;
 }
