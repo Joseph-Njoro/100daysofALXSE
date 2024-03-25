@@ -2,6 +2,12 @@
 #include <stdlib.h>
 #include <time.h>
 
+// ANSI escape codes for text styles and colors
+#define ANSI_BOLD "\033[1m"
+#define ANSI_RESET "\033[0m"
+#define ANSI_COLOR_RED "\033[1;31m"
+#define ANSI_COLOR_GREEN "\033[1;32m"
+
 // Function to generate a random number between min and max (inclusive)
 int generate_random_number(int min, int max) {
     return rand() % (max - min + 1) + min;
@@ -50,8 +56,8 @@ int main() {
     int result = perform_bitwise_operation(target_number, bitwise_operator); // Perform bitwise operation
     int user_input;
     
-    printf("Welcome to the Bit Manipulation Challenge!\n");
-    printf("Your target number is: %d\n", target_number);
+    printf(ANSI_BOLD "Welcome to the Bit Manipulation Challenge!\n" ANSI_RESET);
+    printf("Your target number is: " ANSI_COLOR_RED "%d\n" ANSI_RESET, target_number);
     printf("Apply the bitwise operator '%c' to the target number.\n", bitwise_operator);
 
     // Game loop
@@ -64,7 +70,7 @@ int main() {
         }
 
         if (validate_input(user_input, result)) {
-            printf("Congratulations! You've correctly manipulated the number.\n");
+            printf(ANSI_COLOR_GREEN "Congratulations! You've correctly manipulated the number.\n" ANSI_RESET);
             break;
         } else {
             printf("Incorrect! Please try again.\n");
