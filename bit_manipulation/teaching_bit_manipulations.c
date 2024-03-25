@@ -64,15 +64,54 @@ int main() {
     char bitwise_operator = generate_random_operator(); // Generate random bitwise operator
     int result = perform_bitwise_operation(target_number, bitwise_operator); // Perform bitwise operation
     int user_input;
-    
-    printf("\n");
-    print_border(40); // Print top border
 
-    printf("║" ANSI_BOLD " Welcome to the Bit Manipulation Challenge! " ANSI_RESET "║\n");
+    int terminal_width = 60; // Width of the terminal
+    int padding = (terminal_width - 36) / 2; // Padding to center align the challenge
+
+    printf("\n");
+    print_border(terminal_width); // Print top border
+
+    printf("║"); // Start border
+    for (int i = 0; i < padding; i++) {
+        printf(" ");
+    }
+    printf(ANSI_BOLD " Welcome to the Bit Manipulation Challenge! " ANSI_RESET);
+    for (int i = 0; i < padding; i++) {
+        printf(" ");
+    }
+    printf("║\n");
+    
+    printf("║"); // Start border
+    for (int i = 0; i < padding; i++) {
+        printf(" ");
+    }
+    printf("║\n"); // Empty line for spacing
+
+    printf("║"); // Start border
+    for (int i = 0; i < padding; i++) {
+        printf(" ");
+    }
+    printf("║\n"); // Empty line for spacing
+
+    printf("║"); // Start border
+    for (int i = 0; i < padding; i++) {
+        printf(" ");
+    }
     printf("║ Target number: " ANSI_COLOR_RED "%d" ANSI_RESET "                    ║\n", target_number);
+    
+    printf("║"); // Start border
+    for (int i = 0; i < padding; i++) {
+        printf(" ");
+    }
     printf("║ Apply the bitwise operator '%c' to the target number. ║\n", bitwise_operator);
 
-    print_border(40); // Print middle border
+    printf("║"); // Start border
+    for (int i = 0; i < padding; i++) {
+        printf(" ");
+    }
+    printf("║\n"); // Empty line for spacing
+
+    print_border(terminal_width); // Print bottom border
 
     // Game loop
     while (1) {
@@ -91,7 +130,7 @@ int main() {
         }
     }
 
-    print_border(40); // Print bottom border
+    print_border(terminal_width); // Print bottom border
     printf("\n");
 
     return 0;
