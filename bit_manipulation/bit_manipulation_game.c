@@ -38,16 +38,20 @@ int main() {
         // Player 1's turn
         printf("Player 1's turn:\n");
         printf("Enter your bit pattern (0-15): ");
-        do {
-            scanf("%d", &player1_bits);
-        } while (!validate_input(player1_bits));
+        while (scanf("%d", &player1_bits) != 1 || player1_bits < 0 || player1_bits > 15) {
+            // Clear the input buffer
+            while (getchar() != '\n');
+            printf("Invalid input! Please enter an integer between 0 and 15: ");
+        }
 
         // Player 2's turn
         printf("Player 2's turn:\n");
         printf("Enter your bit pattern (0-15): ");
-        do {
-            scanf("%d", &player2_bits);
-        } while (!validate_input(player2_bits));
+        while (scanf("%d", &player2_bits) != 1 || player2_bits < 0 || player2_bits > 15) {
+            // Clear the input buffer
+            while (getchar() != '\n');
+            printf("Invalid input! Please enter an integer between 0 and 15: ");
+        }
 
         // Check if any player has achieved the target pattern
         if (perform_AND(player1_bits, player2_bits) == target ||
