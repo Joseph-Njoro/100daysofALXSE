@@ -5,7 +5,7 @@ int main() {
     int b = 3; // Binary: 0011
 
     int result = a | b; // Bitwise OR
-    printf(Result of %d | %d = %d\n", a, b, result);
+    printf("Result of %d | %d = %d\n", a, b, result);
 
     return 0;
 }
