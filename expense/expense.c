@@ -1,4 +1,4 @@
-#include <stdio,h>
+#include <stdio>
 
 // Define structures to represent expenses
 typedef struct {
