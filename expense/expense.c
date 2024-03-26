@@ -28,7 +28,7 @@ int main() {
     // Main menu loop
     int choice;
     do {
-        printf("\n Expense Tracker\n");
+        printf("\nExpense Tracker\n");
         printf("1. Add Expense\n");
         printf("2. View Expenses\n");
         printf("3. Exit\n");
