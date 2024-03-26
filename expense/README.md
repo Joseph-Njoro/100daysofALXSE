@@ -30,4 +30,4 @@ Usage
     Manage Users: If applicable, manage user accounts and access controls to ensure secure access to the application.
 
 
-This project is licensed under the MIT License - see the LICENSE file for details
+This project is licensed under the MIT License - see the LICENSE file for details.
