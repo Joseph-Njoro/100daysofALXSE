@@ -11,7 +11,7 @@ typedef struct {
 } Expense;
 
 // Function to add an expense
-void addExpense(Expense expenses, int *numExpenses) {
+void addExpense(Expense *expenses, int *numExpenses) {
     // Prompt user for expense details and store them in the expenses array
 }
 
