@@ -29,9 +29,5 @@ Usage
     Search and Filter: Use the search and filtering functionality to find specific expenses based on criteria such as date, category, or amount.
     Manage Users: If applicable, manage user accounts and access controls to ensure secure access to the application.
 
-Support
-
-For any questions, issues, or feedback, please contact our support team at support@expensetracker.com.
-License
 
 This project is licensed under the MIT License - see the LICENSE file for details
