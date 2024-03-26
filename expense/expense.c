@@ -33,7 +33,7 @@ int main() {
         printf("2. View Expenses\n");
         printf("3. Exit\n");
         printf("Enter your choice: ");
-        scanf("%d", choice);
+        scanf("%d", &choice);
 
         switch (choice) {
             case 1:
