@@ -30,7 +30,7 @@ int main() {
     do {
         printf("\nExpense Tracker\n");
         printf("1. Add Expense\n");
-        printf("2. View Expenses\n");
+        printf("2. View Expenses\n");x
         printf("3. Exit\n");
         printf("Enter your choice: ");
         scanf("%d", &choice);
