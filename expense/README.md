@@ -10,7 +10,7 @@ Features
     User Authentication: Securely manage your expenses with user authentication and access controls.
     Multi-Platform: Access your expense data from anywhere using our web and mobile applications.
 
-Getting Started
+##Getting Started
 
 To get started with Expense Tracker, follow these steps:
 
