@@ -1,4 +1,4 @@
-Expense Tracker
+Expense Tracker             by Joseph
 
 Welcome to Expense Tracker, a simple yet powerful application to help you manage your expenses effectively.
 Features
