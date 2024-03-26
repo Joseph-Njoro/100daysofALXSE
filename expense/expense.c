@@ -16,7 +16,7 @@ void addExpense(Expense expenses, int numExpenses) {
 }
 
 // Function to view all expenses
-void viewExpenses(Expense *expenses int numExpenses) {
+void viewExpenses(Expense *expenses, int numExpenses) {
     // Display all expenses stored in the expenses array
 }
 
