@@ -7,7 +7,7 @@ typedef struct {
     int year;
     char category[50];
     float amount;
-    char description[100]
+    char description[100];
 } Expense;
 
 // Function to add an expense
