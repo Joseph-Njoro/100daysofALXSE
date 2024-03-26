@@ -37,7 +37,7 @@ int main() {
 
         switch (choice) {
             case 1:
-                addExpense(expenses, numExpenses);
+                addExpense(expenses, &numExpenses);
                 break;
             case 2:
                 viewExpenses(expenses, numExpenses);
