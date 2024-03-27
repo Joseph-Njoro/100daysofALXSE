@@ -63,7 +63,7 @@ def draw_objects():
     pygame.draw.ellipse(window, WHITE, ball)
 
     # Draw center line
-    pygame.draw.aaline(window, WHIT, (WINDOW_WIDTH // 2, 0), (WINDOW_WIDTH // 2, WINDOW_HEIGHT))
+    pygame.draw.aaline(window, WHITE, (WINDOW_WIDTH // 2, 0), (WINDOW_WIDTH // 2, WINDOW_HEIGHT))
 
     # Update the display
     pygame.display.flip()
