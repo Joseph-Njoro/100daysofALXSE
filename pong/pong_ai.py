@@ -36,7 +36,7 @@ def move_ball():
     global ball_speed_x, ball_speed_y
     
     # Move the ball
-    ball.x = ball_speed_x
+    ball.x += ball_speed_x
     ball.y + ball_speed_y
     
     # Ball collision with top/bottom walls
