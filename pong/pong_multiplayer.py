@@ -1,5 +1,6 @@
 import pygame
 import random
+import sys
 
 # Initialize Pygame
 pygame.init()
@@ -15,6 +16,10 @@ WHITE = (255, 255, 255)
 BLACK = (0, 0, 0)
 RED = (255, 0, 0)
 
+# Load background image
+background_image = pygame.image.load("background.jpg")
+background_image = pygame.transform.scale(background_image, (WINDOW_WIDTH, WINDOW_HEIGHT))
+
 # Define game variables
 PADDLE_WIDTH = 10
 PADDLE_HEIGHT = 100
@@ -22,10 +27,6 @@ BALL_SIZE = 20
 PADDLE_SPEED = 12
 BALL_SPEED_X = 7
 BALL_SPEED_Y = 7
-
-# Load background image
-background_image = pygame.image.load("background.jpg")
-background_image = pygame.transform.scale(background_image, (WINDOW_WIDTH, WINDOW_HEIGHT))
 
 # Create paddles
 player1_paddle = pygame.Rect(50, WINDOW_HEIGHT // 2 - PADDLE_HEIGHT // 2, PADDLE_WIDTH, PADDLE_HEIGHT)
@@ -81,18 +82,16 @@ def draw_objects(countdown):
 
 # Main game loop
 clock = pygame.time.Clock()
-attempts = 5
-player1_wins = 0
-player2_wins = 0
+running = True
 
-# Countdown before every game starts
-while True:
+while running:
     countdown = 3
+    # Countdown before every game starts
     while countdown > 0:
         for event in pygame.event.get():  # Handle events to prevent video system error
             if event.type == pygame.QUIT:
                 pygame.quit()
-                exit()
+                sys.exit()
         draw_objects(countdown)
         pygame.time.wait(1000)  # Wait 1 second
         countdown -= 1
@@ -105,11 +104,11 @@ while True:
     player2_paddle.y = WINDOW_HEIGHT // 2 - PADDLE_HEIGHT // 2
 
     # Game loop
-    while attempts > 0:
+    while True:
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 pygame.quit()
-                exit()
+                sys.exit()
         
         # Move player paddles
         keys = pygame.key.get_pressed()
@@ -124,13 +123,10 @@ while True:
         
         # Move ball
         if move_ball():
-            attempts -= 1
             if ball.left <= 0:
-                player2_wins += 1
-                print(f"ANGEL scores! Attempts left: {attempts}")
+                print("Player 2 scores!")
             elif ball.right >= WINDOW_WIDTH:
-                player1_wins += 1
-                print(f"RAMOZ scores! Attempts left: {attempts}")
+                print("Player 1 scores!")
             ball.x = WINDOW_WIDTH // 2 - BALL_SIZE // 2
             ball.y = WINDOW_HEIGHT // 2 - BALL_SIZE // 2
             ball_speed_x = BALL_SPEED_X * random.choice((1, -1))
