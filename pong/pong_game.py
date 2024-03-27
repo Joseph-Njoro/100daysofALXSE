@@ -16,10 +16,10 @@ BLACK = (0, 0, 0)
 # Game variables
 PADDLE_WIDTH = 10
 PADDLE_HEIGHT = 100
-PADDLE_SPEED = 5
-BALL_SIZE = 10
+PADDLE_SPEED = 12 
+BALL_SIZE = 5
 BALL_SPEED_X = 4
-BALL_SPEED_Y = 4
+BALL_SPEED_Y = 4 
 
 # Paddle class
 class Paddle(pygame.sprite.Sprite):
