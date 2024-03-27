@@ -13,6 +13,7 @@ pygame.display.set_caption("Pong")
 # Define colors
 WHITE = (255, 255, 255)
 BLACK = (0, 0, 0)
+RED = (255, 0, 0)
 
 # Define game variables
 PADDLE_WIDTH = 10
@@ -21,6 +22,10 @@ BALL_SIZE = 20
 PADDLE_SPEED = 12
 BALL_SPEED_X = 7
 BALL_SPEED_Y = 7
+
+# Load background image
+background_image = pygame.image.load("background.jpg")
+background_image = pygame.transform.scale(background_image, (WINDOW_WIDTH, WINDOW_HEIGHT))
 
 # Create paddles
 player1_paddle = pygame.Rect(50, WINDOW_HEIGHT // 2 - PADDLE_HEIGHT // 2, PADDLE_WIDTH, PADDLE_HEIGHT)
@@ -32,7 +37,7 @@ ball_speed_x = BALL_SPEED_X * random.choice((1, -1))
 ball_speed_y = BALL_SPEED_Y * random.choice((1, -1))
 
 # Define font for countdown text
-font = pygame.font.Font(None, 100)
+font = pygame.font.Font(None, 200)
 
 # Define game functions
 def move_ball():
@@ -55,8 +60,8 @@ def move_ball():
         ball_speed_x *= -1
 
 def draw_objects(countdown):
-    # Clear the screen
-    window.fill(BLACK)
+    # Draw background image
+    window.blit(background_image, (0, 0))
     
     # Draw paddles and ball
     pygame.draw.rect(window, WHITE, player1_paddle)
@@ -67,7 +72,7 @@ def draw_objects(countdown):
     pygame.draw.aaline(window, WHITE, (WINDOW_WIDTH // 2, 0), (WINDOW_WIDTH // 2, WINDOW_HEIGHT))
 
     # Draw countdown text
-    countdown_text = font.render(str(countdown), True, WHITE)
+    countdown_text = font.render(str(countdown), True, RED)
     countdown_rect = countdown_text.get_rect(center=(WINDOW_WIDTH // 2, WINDOW_HEIGHT // 2))
     window.blit(countdown_text, countdown_rect)
 
@@ -113,6 +118,7 @@ while running:
     if keys[pygame.K_DOWN] and player2_paddle.bottom < WINDOW_HEIGHT:
         player2_paddle.y += PADDLE_SPEED
     
+
     # Move ball
     if move_ball():
         attempts -= 1
