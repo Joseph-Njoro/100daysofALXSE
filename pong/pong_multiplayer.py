@@ -124,10 +124,10 @@ while running:
         attempts -= 1
         if ball.left <= 0:
             player2_wins += 1
-            print(f"Player 2 scores! Attempts left: {attempts}")
+            print(f"ANGEL scores! Attempts left: {attempts}")
         elif ball.right >= WINDOW_WIDTH:
             player1_wins += 1
-            print(f"Player 1 scores! Attempts left: {attempts}")
+            print(f"RAMOZ scores! Attempts left: {attempts}")
         ball.x = WINDOW_WIDTH // 2 - BALL_SIZE // 2
         ball.y = WINDOW_HEIGHT // 2 - BALL_SIZE // 2
         ball_speed_x = BALL_SPEED_X * random.choice((1, -1))
