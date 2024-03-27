@@ -45,7 +45,7 @@ def move_ball():
     
     # Ball collision with paddles
     if ball.colliderect(player_paddle) or ball.colliderect(opponent_paddle):
-        ball_speedx *= -1
+        ball_speed_x *= -1
 
 def move_opponent():
     if ball.top < opponent_paddle.top:
