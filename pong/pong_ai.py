@@ -8,7 +8,7 @@ pygame.init()
 WINDOW_WIDTH = 800
 WINDOW_HEIGHT = 600
 window = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
-pygamedisplay.set_caption("Pong")
+pygame.display.set_caption("Pong")
 
 # Define colors
 WHITE = (255, 255, 255)
