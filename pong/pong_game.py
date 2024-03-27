@@ -10,7 +10,7 @@ WINDOW_HEIGHT = 600
 window = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
 pygame.display.set_caption("Pong")
 
-
+# Game variables
 running = True
 while running:
     for event in pygame.event.get():
