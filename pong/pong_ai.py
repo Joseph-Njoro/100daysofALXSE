@@ -18,13 +18,13 @@ BLACK = (0, 0, 0)
 PADDLE_WIDTH = 10
 PADDLE_HEIGHT = 100
 BALL_SIZE = 20
-PADDLE_SPEED = 8
-BALL_SPEED_X = 5
-BALL_SPEED_Y = 5
+PADDLE_SPEED = 12
+BALL_SPEED_X = 7
+BALL_SPEED_Y = 7
 
 # Create paddles
-player_paddle = pygame.Rect(50, WINDOW_HEIGHT // 2 - PADDLE_HEIGHT // 2, PADDLE_WIDTH, PADDLE_HEIGHT)
-opponent_paddle = pygame.Rect(WINDOW_WIDTH - 50 - PADDLE_WIDTH, WINDOW_HEIGHT // 2 - PADDLE_HEIGHT // 2, PADDLE_WIDTH, PADDLE_HEIGHT)
+player1_paddle = pygame.Rect(50, WINDOW_HEIGHT // 2 - PADDLE_HEIGHT // 2, PADDLE_WIDTH, PADDLE_HEIGHT)
+player2_paddle = pygame.Rect(WINDOW_WIDTH - 50 - PADDLE_WIDTH, WINDOW_HEIGHT // 2 - PADDLE_HEIGHT // 2, PADDLE_WIDTH, PADDLE_HEIGHT)
 
 # Create ball
 ball = pygame.Rect(WINDOW_WIDTH // 2 - BALL_SIZE // 2, WINDOW_HEIGHT // 2 - BALL_SIZE // 2, BALL_SIZE, BALL_SIZE)
@@ -44,22 +44,16 @@ def move_ball():
         ball_speed_y *= -1
     
     # Ball collision with paddles
-    if ball.colliderect(player_paddle) or ball.colliderect(opponent_paddle):
+    if ball.colliderect(player1_paddle) or ball.colliderect(player2_paddle):
         ball_speed_x *= -1
-
-def move_opponent():
-    if ball.top < opponent_paddle.top:
-        opponent_paddle.y -= PADDLE_SPEED
-    elif ball.bottom > opponent_paddle.bottom:
-        opponent_paddle.y += PADDLE_SPEED
 
 def draw_objects():
     # Clear the screen
     window.fill(BLACK)
     
     # Draw paddles and ball
-    pygame.draw.rect(window, WHITE, player_paddle)
-    pygame.draw.rect(window, WHITE, opponent_paddle)
+    pygame.draw.rect(window, WHITE, player1_paddle)
+    pygame.draw.rect(window, WHITE, player2_paddle)
     pygame.draw.ellipse(window, WHITE, ball)
 
     # Draw center line
@@ -70,49 +64,26 @@ def draw_objects():
 
 # Main game loop
 clock = pygame.time.Clock()
-attempts = 5
-player_wins = 0
-opponent_wins = 0
 running = True
 while running:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             running = False
     
-    # Check if the game should end
-    if attempts == 0:
-        if player_wins > opponent_wins:
-            print("Congratulations! You win!")
-        elif player_wins < opponent_wins:
-            print("You lose! QWERTY wins!")
-        else:
-            print("It's a draw!")
-        running = False
-        break
-    
-    # Move player paddle
+    # Move player paddles
     keys = pygame.key.get_pressed()
-    if keys[pygame.K_UP] and player_paddle.top > 0:
-        player_paddle.y -= PADDLE_SPEED
-    if keys[pygame.K_DOWN] and player_paddle.bottom < WINDOW_HEIGHT:
-        player_paddle.y += PADDLE_SPEED
+    if keys[pygame.K_w] and player1_paddle.top > 0:
+        player1_paddle.y -= PADDLE_SPEED
+    if keys[pygame.K_s] and player1_paddle.bottom < WINDOW_HEIGHT:
+        player1_paddle.y += PADDLE_SPEED
+    if keys[pygame.K_UP] and player2_paddle.top > 0:
+        player2_paddle.y -= PADDLE_SPEED
+    if keys[pygame.K_DOWN] and player2_paddle.bottom < WINDOW_HEIGHT:
+        player2_paddle.y += PADDLE_SPEED
     
-    # Move opponent paddle
-    move_opponent()
-
     # Move ball
     move_ball()
 
-    # Check if player missed the ball
-    if ball.right >= WINDOW_WIDTH:
-        opponent_wins += 1
-        attempts -= 1
-        print(f"You missed the ball! Attempts left: {attempts}")
-        ball.x = WINDOW_WIDTH // 2 - BALL_SIZE // 2
-        ball.y = WINDOW_HEIGHT // 2 - BALL_SIZE // 2
-        ball_speed_x = BALL_SPEED_X * random.choice((1, -1))
-        ball_speed_y = BALL_SPEED_Y * random.choice((1, -1))
-    
     # Draw game objects
     draw_objects()
 
