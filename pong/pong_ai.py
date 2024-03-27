@@ -29,7 +29,7 @@ opponent_paddle = pygame.Rect(WINDOW_WIDTH - 50 - PADDLE_WIDTH, WINDOW_HEIGHT //
 # Create ball
 ball = pygame.Rect(WINDOW_WIDTH // 2 - BALL_SIZE // 2, WINDOW_HEIGHT // 2 - BALL_SIZE // 2, BALL_SIZE, BALL_SIZE)
 ball_speed_x = BALL_SPEED_X  random.choice((1, -1))
-ball_speed_y = BALL_SPEED_Y * randomchoice((1 -1))
+ball_speed_y = BALL_SPEED_Y * randomchoice((1, -1))
 
 # Define game functions
 def move_ball():
