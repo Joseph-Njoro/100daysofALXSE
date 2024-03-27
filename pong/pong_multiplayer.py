@@ -89,9 +89,14 @@ player2_wins = 0
 while True:
     countdown = 3
     while countdown > 0:
+        for event in pygame.event.get():  # Handle events to prevent video system error
+            if event.type == pygame.QUIT:
+                pygame.quit()
+                exit()
         draw_objects(countdown)
         pygame.time.wait(1000)  # Wait 1 second
         countdown -= 1
+    
     # Reset game state
     ball.center = (WINDOW_WIDTH // 2, WINDOW_HEIGHT // 2)
     ball_speed_x = BALL_SPEED_X * random.choice((1, -1))
@@ -104,37 +109,38 @@ while True:
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 pygame.quit()
-            
-    # Move player paddles
-    keys = pygame.key.get_pressed()
-    if keys[pygame.K_w] and player1_paddle.top > 0:
-        player1_paddle.y -= PADDLE_SPEED
-    if keys[pygame.K_s] and player1_paddle.bottom < WINDOW_HEIGHT:
-        player1_paddle.y += PADDLE_SPEED
-    if keys[pygame.K_UP] and player2_paddle.top > 0:
-        player2_paddle.y -= PADDLE_SPEED
-    if keys[pygame.K_DOWN] and player2_paddle.bottom < WINDOW_HEIGHT:
-        player2_paddle.y += PADDLE_SPEED
-    
-    # Move ball
-    if move_ball():
-        attempts -= 1
-        if ball.left <= 0:
-            player2_wins += 1
-            print(f"ANGEL scores! Attempts left: {attempts}")
-        elif ball.right >= WINDOW_WIDTH:
-            player1_wins += 1
-            print(f"RAMOZ scores! Attempts left: {attempts}")
-        ball.x = WINDOW_WIDTH // 2 - BALL_SIZE // 2
-        ball.y = WINDOW_HEIGHT // 2 - BALL_SIZE // 2
-        ball_speed_x = BALL_SPEED_X * random.choice((1, -1))
-        ball_speed_y = BALL_SPEED_Y * random.choice((1, -1))
-    
-    # Draw game objects
-    draw_objects(countdown)
+                exit()
+        
+        # Move player paddles
+        keys = pygame.key.get_pressed()
+        if keys[pygame.K_w] and player1_paddle.top > 0:
+            player1_paddle.y -= PADDLE_SPEED
+        if keys[pygame.K_s] and player1_paddle.bottom < WINDOW_HEIGHT:
+            player1_paddle.y += PADDLE_SPEED
+        if keys[pygame.K_UP] and player2_paddle.top > 0:
+            player2_paddle.y -= PADDLE_SPEED
+        if keys[pygame.K_DOWN] and player2_paddle.bottom < WINDOW_HEIGHT:
+            player2_paddle.y += PADDLE_SPEED
+        
+        # Move ball
+        if move_ball():
+            attempts -= 1
+            if ball.left <= 0:
+                player2_wins += 1
+                print(f"ANGEL scores! Attempts left: {attempts}")
+            elif ball.right >= WINDOW_WIDTH:
+                player1_wins += 1
+                print(f"RAMOZ scores! Attempts left: {attempts}")
+            ball.x = WINDOW_WIDTH // 2 - BALL_SIZE // 2
+            ball.y = WINDOW_HEIGHT // 2 - BALL_SIZE // 2
+            ball_speed_x = BALL_SPEED_X * random.choice((1, -1))
+            ball_speed_y = BALL_SPEED_Y * random.choice((1, -1))
+        
+        # Draw game objects
+        draw_objects(countdown)
 
-    # Control the frame rate
-    clock.tick(60)
+        # Control the frame rate
+        clock.tick(60)
 
 # Clean up
 pygame.quit()
