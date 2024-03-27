@@ -37,7 +37,7 @@ def move_ball():
     
     # Move the ball
     ball.x += ball_speed_x
-    ball.y + ball_speed_y
+    ball.y += ball_speed_y
     
     # Ball collision with top/bottom walls
     if ball.top < 0 or ball.bottom >= WINDOW_HEIGHT:
