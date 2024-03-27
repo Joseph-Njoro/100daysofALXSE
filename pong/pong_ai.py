@@ -81,7 +81,7 @@ while running:
     if keys[pygameK_UP] and player_paddle.top > 0:
         player_paddle.y -= PADDLE_SPEED
     if keys[pygameK_DOWN] and player_paddle.bottom < WINDOW_HEIGHT:
-        player_paddle.y = PADDLE_SPEED
+        player_paddle.y += PADDLE_SPEED
     
     # Move opponent paddle
     move_opponent()
