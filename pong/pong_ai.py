@@ -69,7 +69,7 @@ def draw_objects():
     pygame.display.flip()
 
 # Main game loop
-clock  pygame.time.Clock()
+clock = pygame.time.Clock()
 running = True
 while running:
     for event in pygame.event.get():
