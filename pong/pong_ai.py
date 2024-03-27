@@ -70,11 +70,25 @@ def draw_objects():
 
 # Main game loop
 clock = pygame.time.Clock()
+attempts = 5
+player_wins = 0
+opponent_wins = 0
 running = True
 while running:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             running = False
+    
+    # Check if the game should end
+    if attempts == 0:
+        if player_wins > opponent_wins:
+            print("Congratulations! You win!")
+        elif player_wins < opponent_wins:
+            print("You lose! QWERTY wins!")
+        else:
+            print("It's a draw!")
+        running = False
+        break
     
     # Move player paddle
     keys = pygame.key.get_pressed()
@@ -89,6 +103,16 @@ while running:
     # Move ball
     move_ball()
 
+    # Check if player missed the ball
+    if ball.right >= WINDOW_WIDTH:
+        opponent_wins += 1
+        attempts -= 1
+        print(f"You missed the ball! Attempts left: {attempts}")
+        ball.x = WINDOW_WIDTH // 2 - BALL_SIZE // 2
+        ball.y = WINDOW_HEIGHT // 2 - BALL_SIZE // 2
+        ball_speed_x = BALL_SPEED_X * random.choice((1, -1))
+        ball_speed_y = BALL_SPEED_Y * random.choice((1, -1))
+    
     # Draw game objects
     draw_objects()
 
