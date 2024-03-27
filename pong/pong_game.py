@@ -21,7 +21,7 @@ while running:
     
     window.fill((0, 0, 0))  
 
-    pygame.display,flip()  # Update the display
+    pygame.displayflip()  # Update the display
 
     pygame.time.Clock().tick(60)
 
