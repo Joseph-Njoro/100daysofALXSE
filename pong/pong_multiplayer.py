@@ -31,6 +31,9 @@ ball = pygame.Rect(WINDOW_WIDTH // 2 - BALL_SIZE // 2, WINDOW_HEIGHT // 2 - BALL
 ball_speed_x = BALL_SPEED_X * random.choice((1, -1))
 ball_speed_y = BALL_SPEED_Y * random.choice((1, -1))
 
+# Define font for countdown text
+font = pygame.font.Font(None, 100)
+
 # Define game functions
 def move_ball():
     global ball_speed_x, ball_speed_y
@@ -51,7 +54,7 @@ def move_ball():
     if ball.colliderect(player1_paddle) or ball.colliderect(player2_paddle):
         ball_speed_x *= -1
 
-def draw_objects():
+def draw_objects(countdown):
     # Clear the screen
     window.fill(BLACK)
     
@@ -63,6 +66,11 @@ def draw_objects():
     # Draw center line
     pygame.draw.aaline(window, WHITE, (WINDOW_WIDTH // 2, 0), (WINDOW_WIDTH // 2, WINDOW_HEIGHT))
 
+    # Draw countdown text
+    countdown_text = font.render(str(countdown), True, WHITE)
+    countdown_rect = countdown_text.get_rect(center=(WINDOW_WIDTH // 2, WINDOW_HEIGHT // 2))
+    window.blit(countdown_text, countdown_rect)
+
     # Update the display
     pygame.display.flip()
 
@@ -72,6 +80,12 @@ attempts = 5
 player1_wins = 0
 player2_wins = 0
 running = True
+countdown = 3
+while countdown > 0:
+    draw_objects(countdown)
+    pygame.time.wait(1000)  # Wait 1 second
+    countdown -= 1
+
 while running:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
@@ -114,7 +128,7 @@ while running:
         ball_speed_y = BALL_SPEED_Y * random.choice((1, -1))
     
     # Draw game objects
-    draw_objects()
+    draw_objects(countdown)
 
     # Control the frame rate
     clock.tick(60)
