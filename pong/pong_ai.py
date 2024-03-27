@@ -87,7 +87,7 @@ while running:
     move_opponent()
 
     # Move ball
-    moveball()
+    move_ball()
 
     # Draw game objects
     draw_objects()
