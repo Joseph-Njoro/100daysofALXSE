@@ -43,6 +43,10 @@ def move_ball():
     if ball.top <= 0 or ball.bottom >= WINDOW_HEIGHT:
         ball_speed_y *= -1
     
+    # Ball collision with left/right walls (miss)
+    if ball.left <= 0 or ball.right >= WINDOW_WIDTH:
+        return True
+    
     # Ball collision with paddles
     if ball.colliderect(player1_paddle) or ball.colliderect(player2_paddle):
         ball_speed_x *= -1
@@ -64,11 +68,25 @@ def draw_objects():
 
 # Main game loop
 clock = pygame.time.Clock()
+attempts = 5
+player1_wins = 0
+player2_wins = 0
 running = True
 while running:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             running = False
+    
+    # Check if the game should end
+    if attempts == 0:
+        if player1_wins > player2_wins:
+            print("Player 1 wins!")
+        elif player1_wins < player2_wins:
+            print("Player 2 wins!")
+        else:
+            print("It's a draw!")
+        running = False
+        break
     
     # Move player paddles
     keys = pygame.key.get_pressed()
@@ -82,8 +100,19 @@ while running:
         player2_paddle.y += PADDLE_SPEED
     
     # Move ball
-    move_ball()
-
+    if move_ball():
+        attempts -= 1
+        if ball.left <= 0:
+            player2_wins += 1
+            print(f"Player 2 scores! Attempts left: {attempts}")
+        elif ball.right >= WINDOW_WIDTH:
+            player1_wins += 1
+            print(f"Player 1 scores! Attempts left: {attempts}")
+        ball.x = WINDOW_WIDTH // 2 - BALL_SIZE // 2
+        ball.y = WINDOW_HEIGHT // 2 - BALL_SIZE // 2
+        ball_speed_x = BALL_SPEED_X * random.choice((1, -1))
+        ball_speed_y = BALL_SPEED_Y * random.choice((1, -1))
+    
     # Draw game objects
     draw_objects()
 
