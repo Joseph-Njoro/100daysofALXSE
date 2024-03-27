@@ -40,7 +40,7 @@ def move_ball():
     ball.y += ball_speed_y
     
     # Ball collision with top/bottom walls
-    if ball.top < 0 or ball.bottom >= WINDOW_HEIGHT:
+    if ball.top <= 0 or ball.bottom >= WINDOW_HEIGHT:
         ball_speed_y *= -1
     
     # Ball collision with paddles
