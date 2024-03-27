@@ -84,29 +84,27 @@ clock = pygame.time.Clock()
 attempts = 5
 player1_wins = 0
 player2_wins = 0
-running = True
-countdown = 3
-while countdown > 0:
-    draw_objects(countdown)
-    pygame.time.wait(1000)  # Wait 1 second
-    countdown -= 1
 
-while running:
-    for event in pygame.event.get():
-        if event.type == pygame.QUIT:
-            running = False
-    
-    # Check if the game should end
-    if attempts == 0:
-        if player1_wins > player2_wins:
-            print("Player 1 wins!")
-        elif player1_wins < player2_wins:
-            print("Player 2 wins!")
-        else:
-            print("It's a draw!")
-        running = False
-        break
-    
+# Countdown before every game starts
+while True:
+    countdown = 3
+    while countdown > 0:
+        draw_objects(countdown)
+        pygame.time.wait(1000)  # Wait 1 second
+        countdown -= 1
+    # Reset game state
+    ball.center = (WINDOW_WIDTH // 2, WINDOW_HEIGHT // 2)
+    ball_speed_x = BALL_SPEED_X * random.choice((1, -1))
+    ball_speed_y = BALL_SPEED_Y * random.choice((1, -1))
+    player1_paddle.y = WINDOW_HEIGHT // 2 - PADDLE_HEIGHT // 2
+    player2_paddle.y = WINDOW_HEIGHT // 2 - PADDLE_HEIGHT // 2
+
+    # Game loop
+    while attempts > 0:
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                pygame.quit()
+            
     # Move player paddles
     keys = pygame.key.get_pressed()
     if keys[pygame.K_w] and player1_paddle.top > 0:
@@ -118,7 +116,6 @@ while running:
     if keys[pygame.K_DOWN] and player2_paddle.bottom < WINDOW_HEIGHT:
         player2_paddle.y += PADDLE_SPEED
     
-
     # Move ball
     if move_ball():
         attempts -= 1
