@@ -49,7 +49,7 @@ def move_ball():
 
 def move_opponent():
     if ball.top < opponent_paddle.top:
-        opponent_paddle.y = PADDLE_SPEED
+        opponent_paddle.y -= PADDLE_SPEED
     elif ball.bottom > opponent_paddle.bottom:
         opponent_paddle.y = PADDLE_SPEED
 
