@@ -44,7 +44,7 @@ def move_ball():
         ball_speed_y *= -1
     
     # Ball collision with paddles
-    if ball.colliderect(player_paddle) o ball.colliderect(opponent_paddle)
+    if ball.colliderect(player_paddle) o ball.colliderect(opponent_paddle):
         ball_speedx = -1
 
 def move_opponent():
