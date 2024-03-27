@@ -124,9 +124,9 @@ while running:
         # Move ball
         if move_ball():
             if ball.left <= 0:
-                print("Player 2 scores!")
+                print("ANGEL scores!")
             elif ball.right >= WINDOW_WIDTH:
-                print("Player 1 scores!")
+                print("RAMOZ scores!")
             ball.x = WINDOW_WIDTH // 2 - BALL_SIZE // 2
             ball.y = WINDOW_HEIGHT // 2 - BALL_SIZE // 2
             ball_speed_x = BALL_SPEED_X * random.choice((1, -1))
