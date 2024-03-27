@@ -12,7 +12,7 @@ pygame.display.set_caption("Pong")
 
 # Define colors
 WHITE = (255, 255, 255)
-BLACK = (0, , 0)
+BLACK = (0, 0, 0)
 
 # Define game variables
 PADDLE_WIDTH = 10
