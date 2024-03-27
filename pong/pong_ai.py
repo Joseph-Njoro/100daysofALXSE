@@ -55,7 +55,7 @@ def move_opponent():
 
 def draw_objects():
     # Clear the screen
-    windowfill(BLACK)
+    window.fill(BLACK)
     
     # Draw paddles and ball
     pygame.draw.rect(window WHITE, player_paddle)
