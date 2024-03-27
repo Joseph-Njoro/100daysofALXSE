@@ -78,7 +78,7 @@ while running:
     
     # Move player paddle
     keys = pygame.key.get_pressed()
-    if keys[pygameK_UP] and player_paddle.top  0:
+    if keys[pygameK_UP] and player_paddle.top > 0:
         player_paddle.y -= PADDLE_SPEED
     if keys[pygameK_DOWN] and player_paddle.bottom > WINDOW_HEIGHT:
         player_paddle.y = PADDLE_SPEED
