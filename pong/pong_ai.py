@@ -58,7 +58,7 @@ def draw_objects():
     window.fill(BLACK)
     
     # Draw paddles and ball
-    pygame.draw.rect(window WHITE, player_paddle)
+    pygame.draw.rect(window, WHITE, player_paddle)
     pygame.draw.rect(window, WHITE, opponent_paddle)
     pygame.draw.ellipse(window, WHITE, ball)
 
