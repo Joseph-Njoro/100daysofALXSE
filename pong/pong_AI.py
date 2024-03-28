@@ -9,6 +9,10 @@ WINDOW_HEIGHT = 800
 window = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
 pygame.display.set_caption("Pong")
 
+# Load background image
+background_image = pygame.image.load("background.jpg")
+background_image = pygame.transform.scale(background_image, (WINDOW_WIDTH, WINDOW_HEIGHT))
+
 # Colors
 WHITE = (255, 255, 255)
 BLACK = (0, 0, 0)
@@ -97,7 +101,7 @@ while running:
         ball.speed_x = -ball.speed_x
 
     # Draw everything
-    window.fill(BLACK)
+    window.blit(background_image, (0, 0))  # Draw background image
     pygame.draw.line(window, WHITE, (WINDOW_WIDTH // 2, 0), (WINDOW_WIDTH // 2, WINDOW_HEIGHT), 2)
     all_sprites.draw(window)
 
