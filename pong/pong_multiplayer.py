@@ -23,10 +23,10 @@ background_image = pygame.transform.scale(background_image, (WINDOW_WIDTH, WINDO
 # Define game variables
 PADDLE_WIDTH = 10
 PADDLE_HEIGHT = 100
-BALL_SIZE = 20
-PADDLE_SPEED = 12
-BALL_SPEED_X = 7
-BALL_SPEED_Y = 7
+BALL_SIZE = 14
+PADDLE_SPEED = 15
+BALL_SPEED_X = 10
+BALL_SPEED_Y = 10
 
 # Create paddles
 player1_paddle = pygame.Rect(50, WINDOW_HEIGHT // 2 - PADDLE_HEIGHT // 2, PADDLE_WIDTH, PADDLE_HEIGHT)
