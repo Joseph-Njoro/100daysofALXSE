@@ -4,8 +4,8 @@ import random
 pygame.init()
 
 # Set up the game window
-WINDOW_WIDTH = 800
-WINDOW_HEIGHT = 600
+WINDOW_WIDTH = 1200
+WINDOW_HEIGHT = 800
 window = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
 pygame.display.set_caption("Pong")
 
@@ -16,10 +16,10 @@ BLACK = (0, 0, 0)
 # Game variables
 PADDLE_WIDTH = 10
 PADDLE_HEIGHT = 100
-PADDLE_SPEED = 12 
-BALL_SIZE = 5
-BALL_SPEED_X = 4
-BALL_SPEED_Y = 4 
+PADDLE_SPEED = 15  # Increased paddle speed
+BALL_SIZE = 10  # Increased ball size
+BALL_SPEED_X = 8  # Increased ball speed
+BALL_SPEED_Y = 8  # Increased ball speed
 
 # Paddle class
 class Paddle(pygame.sprite.Sprite):
@@ -65,6 +65,11 @@ class Ball(pygame.sprite.Sprite):
 all_sprites = pygame.sprite.Group()
 paddle1 = Paddle(20, WINDOW_HEIGHT // 2)
 paddle2 = Paddle(WINDOW_WIDTH - 20, WINDOW_HEIGHT // 2)
+
+# AI-controlled paddle
+ai_paddle = Paddle(WINDOW_WIDTH - 20, WINDOW_HEIGHT // 2)
+all_sprites.add(ai_paddle)
+
 ball = Ball()
 all_sprites.add(paddle1, paddle2, ball)
 
@@ -76,6 +81,13 @@ while running:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             running = False
+
+    # AI movement
+    if ball.speed_x > 0:
+        if ball.rect.centery < ai_paddle.rect.centery:
+            ai_paddle.rect.y -= PADDLE_SPEED
+        elif ball.rect.centery > ai_paddle.rect.centery:
+            ai_paddle.rect.y += PADDLE_SPEED
 
     # Update game state
     all_sprites.update()
