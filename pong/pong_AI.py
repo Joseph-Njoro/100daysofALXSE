@@ -1,157 +1,96 @@
 import pygame
 import random
 
-# Initialize Pygame
 pygame.init()
 
 # Set up the game window
-WINDOW_WIDTH = 1200
-WINDOW_HEIGHT = 800
+WINDOW_WIDTH = 800
+WINDOW_HEIGHT = 600
 window = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
 pygame.display.set_caption("Pong")
 
-# Define colors
+# Colors
 WHITE = (255, 255, 255)
 BLACK = (0, 0, 0)
-RED = (255, 0, 0)
 
-# Define game variables
+# Game variables
 PADDLE_WIDTH = 10
 PADDLE_HEIGHT = 100
-BALL_SIZE = 20
-PADDLE_SPEED = 12
-BALL_SPEED_X = 7
-BALL_SPEED_Y = 7
+PADDLE_SPEED = 12 
+BALL_SIZE = 5
+BALL_SPEED_X = 4
+BALL_SPEED_Y = 4 
 
-# Load background image
-background_image = pygame.image.load("background.jpg")
-background_image = pygame.transform.scale(background_image, (WINDOW_WIDTH, WINDOW_HEIGHT))
+# Paddle class
+class Paddle(pygame.sprite.Sprite):
+    def __init__(self, x, y):
+        super().__init__()
+        self.image = pygame.Surface((PADDLE_WIDTH, PADDLE_HEIGHT))
+        self.image.fill(WHITE)
+        self.rect = self.image.get_rect()
+        self.rect.center = (x, y)
 
-# Create paddles
-player1_paddle = pygame.Rect(50, WINDOW_HEIGHT // 2 - PADDLE_HEIGHT // 2, PADDLE_WIDTH, PADDLE_HEIGHT)
-player2_paddle = pygame.Rect(WINDOW_WIDTH - 50 - PADDLE_WIDTH, WINDOW_HEIGHT // 2 - PADDLE_HEIGHT // 2, PADDLE_WIDTH, PADDLE_HEIGHT)
-ai_paddle = pygame.Rect(WINDOW_WIDTH - 50 - PADDLE_WIDTH, WINDOW_HEIGHT // 2 - PADDLE_HEIGHT // 2, PADDLE_WIDTH, PADDLE_HEIGHT)
+    def update(self):
+        keys = pygame.key.get_pressed()
+        if keys[pygame.K_UP] and self.rect.top > 0:
+            self.rect.y -= PADDLE_SPEED
+        if keys[pygame.K_DOWN] and self.rect.bottom < WINDOW_HEIGHT:
+            self.rect.y += PADDLE_SPEED
 
-# Create ball
-ball = pygame.Rect(WINDOW_WIDTH // 2 - BALL_SIZE // 2, WINDOW_HEIGHT // 2 - BALL_SIZE // 2, BALL_SIZE, BALL_SIZE)
-ball_speed_x = BALL_SPEED_X * random.choice((1, -1))
-ball_speed_y = BALL_SPEED_Y * random.choice((1, -1))
+# Ball class
+class Ball(pygame.sprite.Sprite):
+    def __init__(self):
+        super().__init__()
+        self.image = pygame.Surface((BALL_SIZE, BALL_SIZE))
+        self.image.fill(WHITE)
+        self.rect = self.image.get_rect()
+        self.reset()
 
-# Define font for countdown text
-font = pygame.font.Font(None, 200)
+    def reset(self):
+        self.rect.center = (WINDOW_WIDTH // 2, WINDOW_HEIGHT // 2)
+        self.speed_x = random.choice((BALL_SPEED_X, -BALL_SPEED_X))
+        self.speed_y = random.choice((BALL_SPEED_Y, -BALL_SPEED_Y))
 
-# Define game functions
-def move_ball():
-    global ball_speed_x, ball_speed_y
-    
-    # Move the ball
-    ball.x += ball_speed_x
-    ball.y += ball_speed_y
-    
-    # Ball collision with top/bottom walls
-    if ball.top <= 0 or ball.bottom >= WINDOW_HEIGHT:
-        ball_speed_y *= -1
-    
-    # Ball collision with left/right walls (miss)
-    if ball.left <= 0 or ball.right >= WINDOW_WIDTH:
-        return True
-    
-    # Ball collision with paddles
-    if ball.colliderect(player1_paddle) or ball.colliderect(player2_paddle) or ball.colliderect(ai_paddle):
-        ball_speed_x *= -1
+    def update(self):
+        self.rect.x += self.speed_x
+        self.rect.y += self.speed_y
 
-def move_ai():
-    # Simple AI movement
-    if ball.top < ai_paddle.top:
-        ai_paddle.y -= PADDLE_SPEED
-    elif ball.bottom > ai_paddle.bottom:
-        ai_paddle.y += PADDLE_SPEED
+        # Check collision with walls
+        if self.rect.top <= 0 or self.rect.bottom >= WINDOW_HEIGHT:
+            self.speed_y = -self.speed_y
+        if self.rect.left <= 0 or self.rect.right >= WINDOW_WIDTH:
+            self.reset()
 
-def draw_objects(countdown):
-    # Draw background image
-    window.blit(background_image, (0, 0))
-    
-    # Draw paddles and ball
-    pygame.draw.rect(window, WHITE, player1_paddle)
-    pygame.draw.rect(window, WHITE, player2_paddle)
-    pygame.draw.rect(window, WHITE, ai_paddle)
-    pygame.draw.ellipse(window, WHITE, ball)
-
-    # Draw center line
-    pygame.draw.aaline(window, WHITE, (WINDOW_WIDTH // 2, 0), (WINDOW_WIDTH // 2, WINDOW_HEIGHT))
-
-    # Draw countdown text
-    countdown_text = font.render(str(countdown), True, RED)
-    countdown_rect = countdown_text.get_rect(center=(WINDOW_WIDTH // 2, WINDOW_HEIGHT // 2))
-    window.blit(countdown_text, countdown_rect)
-
-    # Update the display
-    pygame.display.flip()
+# Create sprites
+all_sprites = pygame.sprite.Group()
+paddle1 = Paddle(20, WINDOW_HEIGHT // 2)
+paddle2 = Paddle(WINDOW_WIDTH - 20, WINDOW_HEIGHT // 2)
+ball = Ball()
+all_sprites.add(paddle1, paddle2, ball)
 
 # Main game loop
 clock = pygame.time.Clock()
-attempts = 5
-player1_wins = 0
-player2_wins = 0
 running = True
-
 while running:
-    countdown = 3
-    # Countdown before every game starts
-    while countdown > 0:
-        draw_objects(countdown)
-        pygame.time.wait(1000)  # Wait 1 second
-        countdown -= 1
-
+    # Handle events
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             running = False
-    
-    # Check if the game should end
-    if attempts == 0:
-        if player1_wins > player2_wins:
-            print("Player 1 wins!")
-        elif player1_wins < player2_wins:
-            print("Player 2 wins!")
-        else:
-            print("It's a draw!")
-        running = False
-        break
-    
-    # Move player 1 paddle
-    keys = pygame.key.get_pressed()
-    if keys[pygame.K_w] and player1_paddle.top > 0:
-        player1_paddle.y -= PADDLE_SPEED
-    if keys[pygame.K_s] and player1_paddle.bottom < WINDOW_HEIGHT:
-        player1_paddle.y += PADDLE_SPEED
-    
-    # Move player 2 paddle
-    if keys[pygame.K_UP] and player2_paddle.top > 0:
-        player2_paddle.y -= PADDLE_SPEED
-    if keys[pygame.K_DOWN] and player2_paddle.bottom < WINDOW_HEIGHT:
-        player2_paddle.y += PADDLE_SPEED
-    
-    # Move AI paddle
-    move_ai()
 
-    # Move ball
-    if move_ball():
-        attempts -= 1
-        if ball.left <= 0:
-            player2_wins += 1
-            print(f"Player 2 scores! Attempts left: {attempts}")
-        elif ball.right >= WINDOW_WIDTH:
-            player1_wins += 1
-            print(f"Player 1 scores! Attempts left: {attempts}")
-        ball.x = WINDOW_WIDTH // 2 - BALL_SIZE // 2
-        ball.y = WINDOW_HEIGHT // 2 - BALL_SIZE // 2
-        ball_speed_x = BALL_SPEED_X * random.choice((1, -1))
-        ball_speed_y = BALL_SPEED_Y * random.choice((1, -1))
-    
-    # Draw game objects
-    draw_objects(countdown)
+    # Update game state
+    all_sprites.update()
 
-    # Control the frame rate
+    # Check collision with paddles
+    if pygame.sprite.collide_rect(ball, paddle1) or pygame.sprite.collide_rect(ball, paddle2):
+        ball.speed_x = -ball.speed_x
+
+    # Draw everything
+    window.fill(BLACK)
+    pygame.draw.line(window, WHITE, (WINDOW_WIDTH // 2, 0), (WINDOW_WIDTH // 2, WINDOW_HEIGHT), 2)
+    all_sprites.draw(window)
+
+    # Update display
+    pygame.display.flip()
     clock.tick(60)
 
 # Clean up
