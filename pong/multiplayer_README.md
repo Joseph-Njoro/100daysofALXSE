@@ -33,5 +33,6 @@ This game was created by Joseph Njoroge as part of the ALX Software Engineering 
 
 ## Feedback and Support
 If you encounter any issues or have suggestions for improvement, feel free to submit an issue on GitHub or reach out via email.
+You can fork and customize freely.
 
 Enjoy playing Pong!
