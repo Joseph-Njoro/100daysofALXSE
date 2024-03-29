@@ -16,7 +16,7 @@ int main() {
     printf("Data as float: %.2f\n", data.f);
 
     strcpy(data.str, "Hello");
-    printf("Data as string: %s\n" data.str);
+    printf("Data as string: %s\n", data.str);
 
     return 0;
 }
