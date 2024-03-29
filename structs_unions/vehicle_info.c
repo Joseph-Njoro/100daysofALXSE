@@ -7,7 +7,7 @@ struct Vehicle {
         float engine_size;
         int seating_capacity;
     } details;
-}
+};
 
 int main() {
     struct Vehicle car = {"Toyota Camry", 2022, {.engine_size = 2.5}};
