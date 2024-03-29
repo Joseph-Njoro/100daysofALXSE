@@ -17,3 +17,4 @@ int main() {
     printf("Student 2: Name = %s, Student ID = %d, Specialization = %s\n", student2.name, student2.student_id, student2.course.specialization);
 
     return 0;
+}
