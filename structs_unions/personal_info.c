@@ -11,6 +11,6 @@ struct Person {
 
 int main() {
     struct Person person1 = {"John", 25, {.email = "john@example.com"}};
-    printf("Name: %s\nAge: %dEmail: %s\n", person1.name, person1.age, person1.contact.email);
+    printf("Name: %s\nAge: %d\nEmail: %s\n", person1.name, person1.age, person1.contact.email);
     return 0;
 }
