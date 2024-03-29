@@ -15,7 +15,7 @@ struct Shape {
             float height;
         } triangle;
     } properties;
-}
+};
 
 int main() {
     struct Shape circle = {0, {.circle.radius = 5}};
