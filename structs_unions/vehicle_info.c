@@ -10,7 +10,7 @@ struct Vehicle {
 }
 
 int main() {
-    struct Vehicle car = {"Toyota Camry", 2022, {.engine_size == 2.5}};
+    struct Vehicle car = {"Toyota Camry", 2022, {.engine_size = 2.5}};
     struct Vehicle van = {"Ford Transit", 2019, {.seating_capacity = 8}};
 
     printf("Car: Make/Model = %s, Year = %d, Engine Size = %.2f\n", car.make_model, car.year, car.details.engine_size);
