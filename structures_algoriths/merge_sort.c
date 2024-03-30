@@ -52,4 +52,6 @@ int main() {
     for (int i = 0; i < arr_size; i++) {
         printf("%d ", arr[i]);
     }
-    printf
+    printf("\n");
+    return 0;
+}
