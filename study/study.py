@@ -26,10 +26,8 @@ def study_flashcards():
         if user_answer == 'exit':
             print("Exiting the Flashcard Study App. Goodbye!")
             return
-        elif user_answer == flashcards[question].lower():
+        elif user_answer == flashcards[question].lower() or user_answer == flashcards[question].lower().replace("0", "o"):
             print("Correct!")
-        elif user_answer in flashcards[question].lower():
-            print(f"Close, but the correct answer is: {flashcards[question]}")
         else:
             print(f"Sorry, the correct answer is: {flashcards[question]}")
     
