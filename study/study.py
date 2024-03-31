@@ -28,6 +28,8 @@ def study_flashcards():
             return
         elif user_answer == flashcards[question].lower():
             print("Correct!")
+        elif user_answer in flashcards[question].lower():
+            print(f"Close, but the correct answer is: {flashcards[question]}")
         else:
             print(f"Sorry, the correct answer is: {flashcards[question]}")
     
