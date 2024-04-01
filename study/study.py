@@ -72,14 +72,17 @@ class StudyApp:
             self.questions.append(sentence)
             doc = nlp(sentence)
             nouns = [token.text for token in doc if token.pos_ == "NOUN"]
+            correct_answer = random.choice(nouns)
             options = random.sample(nouns, min(len(nouns), 4))
-            self.answer_vars.append(tk.StringVar(value=options[0]))
+            options.remove(correct_answer)
+            options.insert(random.randint(0, len(options)), correct_answer)
+            self.answer_vars.append(tk.StringVar(value=correct_answer))
             question_frame = ttk.Frame(self.frame)
             question_frame.pack(pady=(10, 0), padx=20, fill=tk.X)
-            question_label = ttk.Label(question_frame, text=f"{sentence}?")
+            question_label = ttk.Label(question_frame, text=f"{sentence}?", wraplength=400)
             question_label.pack(side=tk.LEFT)
-            for option in options:
-                option_checkbox = ttk.Checkbutton(question_frame, text=option, variable=self.answer_vars[-1], onvalue=option)
+            for i, option in enumerate(options, start=65):
+                option_checkbox = ttk.Radiobutton(question_frame, text=f"{chr(i)}. {option}", variable=self.answer_vars[-1], value=option)
                 option_checkbox.pack(side=tk.LEFT)
 
     def display_questions(self):
@@ -96,8 +99,8 @@ class StudyApp:
         total_questions = len(self.questions)
 
         for i, question in enumerate(self.questions):
-            correct_answer = question.split("?")[0].strip()
             user_answer = self.answer_vars[i].get()
+            correct_answer = self.questions[i].split("?")[0].split()[-1]
             if user_answer == correct_answer:
                 score += 1
 
