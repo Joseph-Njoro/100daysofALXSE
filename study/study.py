@@ -1,5 +1,5 @@
 import tkinter as tk
-from tkinter import messagebox
+from tkinter import messagebox, ttk
 import spacy
 import random
 
@@ -10,17 +10,26 @@ class StudyApp:
     def __init__(self, master):
         self.master = master
         master.title("Study App")
+        master.geometry("600x400")  # Set the initial size of the window
 
-        self.text_label = tk.Label(master, text="Enter the text information:")
-        self.text_label.pack()
+        self.style = ttk.Style()
+        self.style.configure("TFrame", background="#f0f0f0")
+        self.style.configure("TLabel", background="#f0f0f0", font=("Arial", 12))
+        self.style.configure("TButton", background="#007bff", foreground="#ffffff", font=("Arial", 12))
 
-        self.text_entry = tk.Text(master, height=10, width=50)
+        self.frame = ttk.Frame(master)
+        self.frame.pack(fill=tk.BOTH, expand=True)
+
+        self.text_label = ttk.Label(self.frame, text="Enter the text information:")
+        self.text_label.pack(pady=(20, 10))
+
+        self.text_entry = tk.Text(self.frame, height=8, width=50, font=("Arial", 12))
         self.text_entry.pack()
 
-        self.analyze_button = tk.Button(master, text="Analyze Text", command=self.analyze_text)
-        self.analyze_button.pack()
+        self.analyze_button = ttk.Button(self.frame, text="Analyze Text", command=self.analyze_text)
+        self.analyze_button.pack(pady=10)
 
-        self.quit_button = tk.Button(master, text="Quit", command=master.quit)
+        self.quit_button = ttk.Button(self.frame, text="Quit", command=master.quit)
         self.quit_button.pack()
 
     def analyze_text(self):
