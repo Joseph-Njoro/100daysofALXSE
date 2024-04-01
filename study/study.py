@@ -99,10 +99,7 @@ class StudyApp:
             correct_answer = question.split("?")[0].strip()
             user_answer = self.answer_vars[i].get()
             if user_answer == correct_answer:
-                print(f"Question {i+1}: Correct!")
                 score += 1
-            else:
-                print(f"Question {i+1}: Incorrect. Correct answer: {correct_answer}")
 
             # Update progress bar
             progress_value = int(((i + 1) / total_questions) * 100)
