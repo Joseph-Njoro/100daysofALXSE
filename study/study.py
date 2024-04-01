@@ -1,5 +1,5 @@
 import tkinter as tk
-from tkinter import ttk, messagebox
+from tkinter import ttk
 import spacy
 import random
 
@@ -38,15 +38,18 @@ class StudyApp:
         self.progress_bar = ttk.Progressbar(self.frame, orient=tk.HORIZONTAL, length=200, mode='determinate')
         self.progress_bar.pack(side=tk.LEFT)
 
+        self.questions = []
+        self.answer_vars = []
+
     def analyze_text(self):
         text = self.text_entry.get("1.0", tk.END)
         sentences, lemmatized_words = self.analyze_text_core(text)
 
         # Question Generation
-        questions, correct_answers = self.generate_questions(sentences)
+        self.generate_questions(sentences)
 
-        # Quiz Interaction
-        self.quiz_interaction(questions, correct_answers)
+        # Display questions
+        self.display_questions()
 
     def analyze_text_core(self, text):
         # Tokenization and sentence splitting
@@ -63,48 +66,55 @@ class StudyApp:
         key_sentences = random.sample(sentences, min(len(sentences), 5))
 
         # Formulate questions and options
-        questions = []
-        correct_answers = []
+        self.questions = []
+        self.answer_vars = []
         for sentence in key_sentences:
-            questions.append(sentence + "?")
+            self.questions.append(sentence)
             doc = nlp(sentence)
             nouns = [token.text for token in doc if token.pos_ == "NOUN"]
-            correct_answer = random.choice(nouns)
             options = random.sample(nouns, min(len(nouns), 4))
-            if correct_answer not in options:
-                options[0] = correct_answer
-            random.shuffle(options)
-            correct_answers.append(correct_answer)
-            questions[-1] += f"\nOptions: {', '.join(options)}"
-        
-        return questions, correct_answers
+            self.answer_vars.append(tk.StringVar())
+            self.answer_vars[-1].set(options[0])  # Set default option
+            question_frame = ttk.Frame(self.frame)
+            question_frame.pack(pady=(10, 0), padx=20, fill=tk.X)
+            question_label = ttk.Label(question_frame, text=f"{sentence}?")
+            question_label.pack(side=tk.LEFT)
+            for i, option in enumerate(options):
+                option_checkbox = ttk.Checkbutton(question_frame, text=option, variable=self.answer_vars[-1], onvalue=option)
+                option_checkbox.pack(side=tk.LEFT)
 
-    def quiz_interaction(self, questions, correct_answers):
-        messagebox.showinfo("Quiz", "Let's start the quiz!")
+    def display_questions(self):
+        self.analyze_button.configure(state="disabled")
+        self.quit_button.configure(state="disabled")
+        for i, question in enumerate(self.questions):
+            print(f"Question {i+1}: {question}")
+
+        # Submit button
+        submit_button = ttk.Button(self.frame, text="Submit", command=self.submit_answers)
+        submit_button.pack(pady=10)
+
+    def submit_answers(self):
+        # Quiz Interaction
         score = 0
-        total_questions = len(questions)
+        total_questions = len(self.questions)
 
-        for i, question in enumerate(questions):
-            user_answer = messagebox.askquestion(f"Question {i+1}", question)
-
-            # Compare user's answer to correct answer
-            if user_answer.lower() == "yes":
-                user_answer = "True"
-            else:
-                user_answer = "False"
-
-            if user_answer.lower() == correct_answers[i].lower():
-                messagebox.showinfo("Result", "Correct!")
+        for i, question in enumerate(self.questions):
+            correct_answer = question.split("?")[0].strip()
+            user_answer = self.answer_vars[i].get()
+            if user_answer == correct_answer:
+                print(f"Question {i+1}: Correct!")
                 score += 1
             else:
-                messagebox.showinfo("Result", f"Sorry, the correct answer is: {correct_answers[i]}")
+                print(f"Question {i+1}: Incorrect. Correct answer: {correct_answer}")
 
             # Update progress bar
             progress_value = int(((i + 1) / total_questions) * 100)
             self.progress_bar["value"] = progress_value
             self.progress_bar.update()
 
-        messagebox.showinfo("Quiz Complete", f"You scored {score}/{total_questions}")
+        print(f"\nQuiz Complete! You scored {score}/{total_questions}")
+        self.analyze_button.configure(state="normal")
+        self.quit_button.configure(state="normal")
 
     def quit_app(self):
         self.master.destroy()
