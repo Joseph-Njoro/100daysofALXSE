@@ -43,13 +43,10 @@ class StudyApp:
         sentences, lemmatized_words = self.analyze_text_core(text)
 
         # Question Generation
-        questions = self.generate_questions(sentences)
-
-        # Answer Extraction
-        answers = self.extract_answers(lemmatized_words)
+        questions, correct_answers = self.generate_questions(sentences)
 
         # Quiz Interaction
-        self.quiz_interaction(questions, answers)
+        self.quiz_interaction(questions, correct_answers)
 
     def analyze_text_core(self, text):
         # Tokenization and sentence splitting
@@ -65,18 +62,24 @@ class StudyApp:
         # Identify key sentences
         key_sentences = random.sample(sentences, min(len(sentences), 5))
 
-        # Formulate questions
-        questions = [sentence + "?" for sentence in key_sentences]
+        # Formulate questions and options
+        questions = []
+        correct_answers = []
+        for sentence in key_sentences:
+            questions.append(sentence + "?")
+            doc = nlp(sentence)
+            nouns = [token.text for token in doc if token.pos_ == "NOUN"]
+            correct_answer = random.choice(nouns)
+            options = random.sample(nouns, min(len(nouns), 4))
+            if correct_answer not in options:
+                options[0] = correct_answer
+            random.shuffle(options)
+            correct_answers.append(correct_answer)
+            questions[-1] += f"\nOptions: {', '.join(options)}"
+        
+        return questions, correct_answers
 
-        return questions
-
-    def extract_answers(self, lemmatized_words):
-        # For simplicity, we'll just extract nouns as answers for demonstration
-        nouns = [token.text for token in nlp(" ".join(lemmatized_words)) if token.pos_ == "NOUN"]
-        answers = random.sample(nouns, min(len(nouns), 5))
-        return answers
-
-    def quiz_interaction(self, questions, answers):
+    def quiz_interaction(self, questions, correct_answers):
         messagebox.showinfo("Quiz", "Let's start the quiz!")
         score = 0
         total_questions = len(questions)
@@ -85,12 +88,16 @@ class StudyApp:
             user_answer = messagebox.askquestion(f"Question {i+1}", question)
 
             # Compare user's answer to correct answer
-            correct_answer = answers[i]
             if user_answer.lower() == "yes":
+                user_answer = "True"
+            else:
+                user_answer = "False"
+
+            if user_answer.lower() == correct_answers[i].lower():
                 messagebox.showinfo("Result", "Correct!")
                 score += 1
             else:
-                messagebox.showinfo("Result", f"Sorry, the correct answer is: {correct_answer}")
+                messagebox.showinfo("Result", f"Sorry, the correct answer is: {correct_answers[i]}")
 
             # Update progress bar
             progress_value = int(((i + 1) / total_questions) * 100)
