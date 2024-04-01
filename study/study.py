@@ -73,21 +73,18 @@ class StudyApp:
             doc = nlp(sentence)
             nouns = [token.text for token in doc if token.pos_ == "NOUN"]
             options = random.sample(nouns, min(len(nouns), 4))
-            self.answer_vars.append(tk.StringVar())
-            self.answer_vars[-1].set(options[0])  # Set default option
+            self.answer_vars.append(tk.StringVar(value=options[0]))
             question_frame = ttk.Frame(self.frame)
             question_frame.pack(pady=(10, 0), padx=20, fill=tk.X)
             question_label = ttk.Label(question_frame, text=f"{sentence}?")
             question_label.pack(side=tk.LEFT)
-            for i, option in enumerate(options):
+            for option in options:
                 option_checkbox = ttk.Checkbutton(question_frame, text=option, variable=self.answer_vars[-1], onvalue=option)
                 option_checkbox.pack(side=tk.LEFT)
 
     def display_questions(self):
         self.analyze_button.configure(state="disabled")
         self.quit_button.configure(state="disabled")
-        for i, question in enumerate(self.questions):
-            print(f"Question {i+1}: {question}")
 
         # Submit button
         submit_button = ttk.Button(self.frame, text="Submit", command=self.submit_answers)
