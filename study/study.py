@@ -1,98 +1,88 @@
+import tkinter as tk
+from tkinter import messagebox
 import spacy
-from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.metrics.pairwise import cosine_similarity
 import random
 
-# spaCy English language model
+# Load the spaCy English language model
 nlp = spacy.load("en_core_web_sm")
 
-# Function to get user input (from file or manual typing)
-def get_user_text():
-    print("Do you want to enter text manually or provide a file path?")
-    print("1. Manually")
-    print("2. File Path")
-    choice = input("Enter your choice (1 or 2): ").strip()
-    
-    if choice == '1':
-        print("Please enter the text information:")
-        user_text = input()
-        return user_text
-    elif choice == '2':
-        file_path = input("Please enter the file path: ").strip()
-        with open(file_path, 'r') as file:
-            user_text = file.read()s
-        return user_text
-    else:
-        print("Invalid choice. Please try again.")
-        return get_user_text()
+class StudyApp:
+    def __init__(self, master):
+        self.master = master
+        master.title("Study App")
 
-# Text Analysis
-def analyze_text(text):
-    # Tokenization and sentence splitting
-    doc = nlp(text)
-    sentences = [sent.text for sent in doc.sents]
+        self.text_label = tk.Label(master, text="Enter the text information:")
+        self.text_label.pack()
 
-    # Lemmatization
-    lemmatized_words = [token.lemma_ for token in doc]
+        self.text_entry = tk.Text(master, height=10, width=50)
+        self.text_entry.pack()
 
-    return sentences, lemmatized_words
+        self.analyze_button = tk.Button(master, text="Analyze Text", command=self.analyze_text)
+        self.analyze_button.pack()
 
-# Question Generation
-def generate_questions(sentences):
-    # Identify key sentences
-    key_sentences = random.sample(sentences, min(len(sentences), 5))
+        self.quit_button = tk.Button(master, text="Quit", command=master.quit)
+        self.quit_button.pack()
 
-    # Formulate questions
-    questions = [sentence + "?" for sentence in key_sentences]
+    def analyze_text(self):
+        text = self.text_entry.get("1.0", tk.END)
+        sentences, lemmatized_words = self.analyze_text_core(text)
 
-    # Randomizing question order
-    random.shuffle(questions)
+        # Question Generation
+        questions = self.generate_questions(sentences)
 
-    return questions
+        # Answer Extraction
+        answers = self.extract_answers(lemmatized_words)
 
-# Answer Extraction
-def extract_answers(lemmatized_words):
-    # For simplicity, we'll just extract nouns as answers for demonstration
-    nouns = [token.text for token in nlp(" ".join(lemmatized_words)) if token.pos_ == "NOUN"]
-    answers = random.sample(nouns, min(len(nouns), 5))
-    return answers
+        # Quiz Interaction
+        self.quiz_interaction(questions, answers)
 
-# Quiz Interaction
-def quiz_interaction(questions, answers):
-    print("Let's start the quiz!")
-    score = 0
-    total_questions = len(questions)
+    def analyze_text_core(self, text):
+        # Tokenization and sentence splitting
+        doc = nlp(text)
+        sentences = [sent.text for sent in doc.sents]
 
-    for i, question in enumerate(questions):
-        print(f"\nQuestion {i+1}: {question}")
-        user_answer = input("Your Answer: ").strip().lower()
-        
-        # Compare user's answer to correct answer
-        correct_answer = answers[i]
-        if user_answer == correct_answer.lower():
-            print("Correct!")
-            score += 1
-        else:
-            print(f"Sorry, the correct answer is: {correct_answer}")
+        # Lemmatization
+        lemmatized_words = [token.lemma_ for token in doc]
 
-    print(f"\nQuiz Complete! You scored {score}/{total_questions}")
+        return sentences, lemmatized_words
 
-# Main function
+    def generate_questions(self, sentences):
+        # Identify key sentences
+        key_sentences = random.sample(sentences, min(len(sentences), 5))
+
+        # Formulate questions
+        questions = [sentence + "?" for sentence in key_sentences]
+
+        return questions
+
+    def extract_answers(self, lemmatized_words):
+        # For simplicity, we'll just extract nouns as answers for demonstration
+        nouns = [token.text for token in nlp(" ".join(lemmatized_words)) if token.pos_ == "NOUN"]
+        answers = random.sample(nouns, min(len(nouns), 5))
+        return answers
+
+    def quiz_interaction(self, questions, answers):
+        messagebox.showinfo("Quiz", "Let's start the quiz!")
+        score = 0
+        total_questions = len(questions)
+
+        for i, question in enumerate(questions):
+            user_answer = messagebox.askquestion(f"Question {i+1}", question)
+
+            # Compare user's answer to correct answer
+            correct_answer = answers[i]
+            if user_answer.lower() == "yes":
+                messagebox.showinfo("Result", "Correct!")
+                score += 1
+            else:
+                messagebox.showinfo("Result", f"Sorry, the correct answer is: {correct_answer}")
+
+        messagebox.showinfo("Quiz Complete", f"You scored {score}/{total_questions}")
+
 def main():
-    # User Input
-    text = get_user_text()
-
-    # Text Analysis
-    sentences, lemmatized_words = analyze_text(text)
-
-    # Question Generation
-    questions = generate_questions(sentences)
-
-    # Answer Extraction
-    answers = extract_answers(lemmatized_words)
-
-    # Quiz Interaction
-    quiz_interaction(questions, answers)
+    root = tk.Tk()
+    app = StudyApp(root)
+    root.mainloop()
 
 if __name__ == "__main__":
     main()
