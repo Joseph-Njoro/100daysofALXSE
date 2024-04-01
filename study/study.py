@@ -40,6 +40,7 @@ class StudyApp:
 
         self.questions = []
         self.answer_vars = []
+        self.current_question_index = 0
 
     def analyze_text(self):
         text = self.text_entry.get("1.0", tk.END)
@@ -49,7 +50,7 @@ class StudyApp:
         self.generate_questions(sentences)
 
         # Display questions
-        self.display_questions()
+        self.display_current_question()
 
     def analyze_text_core(self, text):
         # Tokenization and sentence splitting
@@ -80,38 +81,48 @@ class StudyApp:
             question_frame = ttk.Frame(self.frame)
             question_frame.pack(pady=(10, 0), padx=20, fill=tk.X)
             question_label = ttk.Label(question_frame, text=f"{sentence}?", wraplength=400)
-            question_label.pack(side=tk.LEFT)
+            question_label.pack(side=tk.TOP)
             for i, option in enumerate(options, start=65):
                 option_checkbox = ttk.Radiobutton(question_frame, text=f"{chr(i)}. {option}", variable=self.answer_vars[-1], value=option)
-                option_checkbox.pack(side=tk.LEFT)
+                option_checkbox.pack(side=tk.TOP)
 
-    def display_questions(self):
-        self.analyze_button.configure(state="disabled")
-        self.quit_button.configure(state="disabled")
+    def display_current_question(self):
+        # Hide previous question
+        if hasattr(self, 'current_question_frame'):
+            self.current_question_frame.pack_forget()
 
-        # Submit button
-        submit_button = ttk.Button(self.frame, text="Submit", command=self.submit_answers)
-        submit_button.pack(pady=10)
+        self.current_question_frame = ttk.Frame(self.frame)
+        self.current_question_frame.pack(pady=20)
 
-    def submit_answers(self):
-        # Quiz Interaction
-        score = 0
-        total_questions = len(self.questions)
+        question_text = self.questions[self.current_question_index]
+        question_label = ttk.Label(self.current_question_frame, text=question_text)
+        question_label.pack()
 
-        for i, question in enumerate(self.questions):
-            user_answer = self.answer_vars[i].get()
-            correct_answer = self.questions[i].split("?")[0].split()[-1]
-            if user_answer == correct_answer:
-                score += 1
+        options_frame = ttk.Frame(self.current_question_frame)
+        options_frame.pack(pady=10)
 
-            # Update progress bar
-            progress_value = int(((i + 1) / total_questions) * 100)
-            self.progress_bar["value"] = progress_value
-            self.progress_bar.update()
+        answer_options = ['A', 'B', 'C', 'D']
+        for i, option in enumerate(answer_options):
+            option_label = ttk.Label(options_frame, text=f"{option}. {self.answer_vars[self.current_question_index].get()}")
+            option_label.grid(row=0, column=i, padx=10)
 
-        print(f"\nQuiz Complete! You scored {score}/{total_questions}")
-        self.analyze_button.configure(state="normal")
-        self.quit_button.configure(state="normal")
+        if self.current_question_index > 0:
+            prev_button = ttk.Button(self.current_question_frame, text="Previous", command=self.show_previous_question)
+            prev_button.pack(side=tk.LEFT)
+
+        if self.current_question_index < len(self.questions) - 1:
+            next_button = ttk.Button(self.current_question_frame, text="Next", command=self.show_next_question)
+            next_button.pack(side=tk.RIGHT)
+
+    def show_previous_question(self):
+        if self.current_question_index > 0:
+            self.current_question_index -= 1
+            self.display_current_question()
+
+    def show_next_question(self):
+        if self.current_question_index < len(self.questions) - 1:
+            self.current_question_index += 1
+            self.display_current_question()
 
     def quit_app(self):
         self.master.destroy()
