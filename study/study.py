@@ -45,6 +45,9 @@ def generate_questions(sentences):
     # Formulate questions
     questions = [sentence + "?" for sentence in key_sentences]
 
+    # Randomizing question order
+    random.shuffle(questions)
+
     return questions
 
 # Answer Extraction
