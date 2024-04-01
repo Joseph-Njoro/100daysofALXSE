@@ -3,7 +3,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 import random
 
-# Load the spaCy English language model
+# spaCy English language model
 nlp = spacy.load("en_core_web_sm")
 
 # Function to get user input (from file or manual typing)
@@ -20,7 +20,7 @@ def get_user_text():
     elif choice == '2':
         file_path = input("Please enter the file path: ").strip()
         with open(file_path, 'r') as file:
-            user_text = file.read()
+            user_text = file.read()s
         return user_text
     else:
         print("Invalid choice. Please try again.")
