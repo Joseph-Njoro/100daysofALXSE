@@ -1,5 +1,5 @@
 import tkinter as tk
-from tkinter import messagebox, ttk
+from tkinter import ttk, messagebox
 import spacy
 import random
 
@@ -10,7 +10,7 @@ class StudyApp:
     def __init__(self, master):
         self.master = master
         master.title("Study App")
-        master.geometry("600x400")  # Set the initial size of the window
+        master.geometry("600x400")
 
         self.style = ttk.Style()
         self.style.configure("TFrame", background="#f0f0f0")
@@ -29,8 +29,14 @@ class StudyApp:
         self.analyze_button = ttk.Button(self.frame, text="Analyze Text", command=self.analyze_text)
         self.analyze_button.pack(pady=10)
 
-        self.quit_button = ttk.Button(self.frame, text="Quit", command=master.quit)
-        self.quit_button.pack()
+        self.quit_button = ttk.Button(self.frame, text="Quit", command=self.quit_app)
+        self.quit_button.pack(side=tk.BOTTOM)
+
+        self.progress_label = ttk.Label(self.frame, text="Progress:")
+        self.progress_label.pack(side=tk.LEFT, padx=20)
+
+        self.progress_bar = ttk.Progressbar(self.frame, orient=tk.HORIZONTAL, length=200, mode='determinate')
+        self.progress_bar.pack(side=tk.LEFT)
 
     def analyze_text(self):
         text = self.text_entry.get("1.0", tk.END)
@@ -86,7 +92,15 @@ class StudyApp:
             else:
                 messagebox.showinfo("Result", f"Sorry, the correct answer is: {correct_answer}")
 
+            # Update progress bar
+            progress_value = int(((i + 1) / total_questions) * 100)
+            self.progress_bar["value"] = progress_value
+            self.progress_bar.update()
+
         messagebox.showinfo("Quiz Complete", f"You scored {score}/{total_questions}")
+
+    def quit_app(self):
+        self.master.destroy()
 
 def main():
     root = tk.Tk()
