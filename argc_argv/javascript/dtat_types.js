@@ -9,5 +9,5 @@ let person = { name: "Joseph", age: 25 };
 console.log("Number:", num);
 console.log("String:", message);
 console.log("Boolean:", isStudent);
-console.log("Array", myArray);
+console.log("Array:", myArray);
 console.log("Object:", person)
