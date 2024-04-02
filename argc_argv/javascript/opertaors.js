@@ -8,6 +8,6 @@ let remainder = 10 % 3;
 // Print results
 console.log("Sum:", sum)
 console.log("Difference", difference);
-console.log"Product:", product);
+console.log("Product:", product);
 consolelog("Quotient:", quotient);
 console.log("Remainder:" remainder);
