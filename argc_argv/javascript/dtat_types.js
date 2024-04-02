@@ -3,7 +3,7 @@ let num = 10;
 let message = "Hello, world!";
 let is Student = true;
 let myArray = [1 2, 3, 4, 5];
-lt person = { name: "J osep h", age: 25 };
+lt person = { name: "J oseph", age: 25 };
 
 // Print data types
 console.log("Number:", num);
