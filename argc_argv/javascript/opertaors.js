@@ -9,5 +9,5 @@ let remainder = 10 % 3;
 console.log("Sum:", sum)
 console.log("Difference", difference);
 console.log("Product:", product);
-consolelog("Quotient:", quotient);
+console.log("Quotient:", quotient);
 console.log("Remainder:" remainder);
