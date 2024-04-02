@@ -49,4 +49,4 @@ class Animal {
   dog.bark();
   
   cat.introduce();
-  cat.meow()  
+  cat.meow();  
