@@ -26,7 +26,7 @@ class Animal {
     }
   }
   
-  class at extends Animal {
+  class Cat extends Animal {
     constructor(name, color) {
       super(name, "cat");
       thiscolor = color;
