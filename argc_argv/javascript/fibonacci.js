@@ -5,7 +5,7 @@ const fibonacci = (n) => {
         sequence.push(sequence[i - 1] + sequence[i - 2]);
     }
     
-    return sequenceslice(0 n);
+    return sequence.slice(0 n);
 }
 
 const result = fibonacci(10);
