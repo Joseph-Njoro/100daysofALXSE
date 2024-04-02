@@ -9,4 +9,4 @@ const fibonacci = (n) => {
 };
 
 const result = fibonacci(10);
-console.log("Fibonacci Sequence:", result)
+console.log("Fibonacci Sequence:", result);
