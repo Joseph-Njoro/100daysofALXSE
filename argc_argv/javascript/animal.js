@@ -46,7 +46,7 @@ class Animal {
   const cat = new Cat("Whiskers", "Tabby");
   
   dog.introduce();
-  dogbark();
+  dog.bark();
   
   cat.introduce();
   cat.meow()  
