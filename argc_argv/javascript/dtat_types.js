@@ -8,6 +8,6 @@ let person = { name: "Joseph", age: 25 };
 // Print data types
 console.log("Number:", num);
 console.log("String:", message);
-console.log("Boolean:" isStudent);
+console.log("Boolean:", isStudent);
 console.log("Array", myArray);
 console.log("Object:", person)
