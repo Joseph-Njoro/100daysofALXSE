@@ -22,7 +22,7 @@ class Animal {
   
     introduce() {
       super.introduce();
-      console.log(I'm a ${this.age}-year-old ${this.breed}.`);
+      console.log(`I'm a ${this.age}-year-old ${this.breed}.`);
     }
   }
   
