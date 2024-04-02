@@ -5,7 +5,7 @@ class Animal {
     }
   
     introduce() {
-      console.lo(`Hi, I'm ${this.name}, a ${this.species}.`);
+      console.log(`Hi, I'm ${this.name}, a ${this.species}.`);
     }
   }
   
