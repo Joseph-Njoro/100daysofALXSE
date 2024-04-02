@@ -42,7 +42,7 @@ class Animal {
     }
   }
   
-  const dog = new Dog("Buddy", "Golden Retriever" 5);
+  const dog = new Dog("Buddy", "Golden Retriever", 5);
   const cat = new Cat("Whiskers", "Tabby");
   
   dog.introduce();
