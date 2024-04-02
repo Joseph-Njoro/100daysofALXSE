@@ -10,4 +10,4 @@ console.log("Sum:", sum)
 console.log("Difference", difference);
 console.log("Product:", product);
 console.log("Quotient:", quotient);
-console.log("Remainder:" remainder);
+console.log("Remainder:", remainder);
