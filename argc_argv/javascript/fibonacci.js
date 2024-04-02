@@ -6,7 +6,7 @@ const fibonacci = (n) => {
     }
     
     return sequence.slice(0, n);
-}
+};
 
 const result = fibonacci(10);
 console.log("Fibonacci Sequence:", result)
