@@ -37,7 +37,7 @@ class Animal {
     }
   
     introduce() {
-      super.introduce(;
+      super.introduce();
       console.log(`I'm {this.color} in color.`);
     }
   }
