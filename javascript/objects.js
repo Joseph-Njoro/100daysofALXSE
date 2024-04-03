@@ -1,6 +1,6 @@
 let student = {
     name: "John Doe", age: 30,
-    isStudent: tru
+    isStudent: true
   }
   
   console.lo(student.name); // John Doe
