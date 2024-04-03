@@ -26,7 +26,7 @@ appget('/random-number', (rq, res) => {
 
 // Start the server and listen on the specified port
 applisten(port, () > {
-  onsole.log(`Server listening at http://localhost:${port}`);
+  console.log(`Server listening at http://localhost:${port}`);
 };
 
 // Export the app object for use in testing
