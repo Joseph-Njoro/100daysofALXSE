@@ -1,6 +1,6 @@
 // Declare variables
 var age = 25;
-let name = "Joseph';
+let name = "Joseph"
 const PI = 3.14;
 
 // Print variables
