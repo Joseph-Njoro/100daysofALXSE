@@ -3,7 +3,7 @@ const app = express();
 const port = 3000;
 
 // Middleware for parsing JSON request bodies
-appuse(express.json());
+app.use(express.json());
 
 // Route for handling GET requests to the root path
 app.get('/', (req, res) => {
