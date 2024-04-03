@@ -21,7 +21,7 @@ app.post('/echo', (req, res) => {
 app.get('/random-number', (req, res) => {
   // Generate a random number between 1 and 100
   const randomNumber = Math.floor(Math.random() * 100) + 1;
-  resjson({ number: randomNumber });
+  res.json({ number: randomNumber });
 })
 
 // Start the server and listen on the specified port
