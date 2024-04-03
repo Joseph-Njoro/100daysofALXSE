@@ -20,7 +20,7 @@ app.post('/echo', (req, res) => {
 // Route for handling GET requests to the /random-number path
 app.get('/random-number', (req, res) => {
   // Generate a random number between 1 and 100
-  const randoNumber = Math.floor(Math.random() * 100) + 1;
+  const randomNumber = Math.floor(Math.random() * 100) + 1;
   resjson({ number: randomNumber });
 })
 
