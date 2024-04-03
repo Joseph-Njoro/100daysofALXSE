@@ -30,4 +30,4 @@ app.listen(port, () => {
 });
 
 // Export the app object for use in testing
-module.exports = app
+module.exports = app;
