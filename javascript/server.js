@@ -30,4 +30,4 @@ applisten(port, () > {
 };
 
 // Export the app object for use in testing
-mdule.exports = app
+module.exports = app
