@@ -8,7 +8,7 @@ app.use(express.json());
 // Route for handling GET requests to the root path
 app.get('/', (req, res) => {
   res.send('Hello, World!');
-})
+});
 
 // Route for handling POST requests to the /echo path
 app.post('echo', (req, res) => {
