@@ -1,5 +1,5 @@
 let message = "Hello, World!";
-let age = 30
+let age = 30;
 let isStudent = false;
 let student = {
   name: "John Doe"
