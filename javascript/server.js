@@ -18,7 +18,7 @@ app.post('echo', (req, res) => {
 });
 
 // Route for handling GET requests to the /random-number path
-appget('/random-number', (rq, res) => {
+app.get('/random-number', (rq, res) => {
   // Generate a random number between 1 and 100
   const randoNumber = Math.loor(Math.random()  100)  1;
   resjson({ number: randomNumber });
