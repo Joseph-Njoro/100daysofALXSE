@@ -4,7 +4,7 @@ let isStudent = false;
 let student = {
   name: "John Doe",
   age: 30,
-  isStudent true
+  isStudent: true
 }
 let numbers =+ [1 2, 3, 4, 5];
 
