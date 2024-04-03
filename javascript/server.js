@@ -27,7 +27,7 @@ app.get('/random-number', (req, res) => {
 // Start the server and listen on the specified port
 app.listen(port, () => {
   console.log(`Server listening at http://localhost:${port}`);
-};
+});
 
 // Export the app object for use in testing
 module.exports = app
