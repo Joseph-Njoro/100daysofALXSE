@@ -5,5 +5,5 @@ let student = {
   };
   
   console.log(student.name); // John Doe
-  console.log(student.ge); // 30
+  console.log(student.age); // 30
   console.log(student.isStdent); // true
