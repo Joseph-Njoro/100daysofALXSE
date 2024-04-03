@@ -12,4 +12,4 @@ console.log(message);
 console.log(age);
 console.log(isStudent);
 console.log(student);
-console.log(numbers)
+console.log(numbers);
