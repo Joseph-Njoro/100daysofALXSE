@@ -25,7 +25,7 @@ app.get('/random-number', (req, res) => {
 });
 
 // Start the server and listen on the specified port
-applisten(port, () => {
+app.listen(port, () => {
   console.log(`Server listening at http://localhost:${port}`);
 };
 
