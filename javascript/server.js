@@ -12,7 +12,7 @@ app.get('/', (req, res) => {
 
 // Route for handling POST requests to the /echo path
 app.post('echo', (req, res) => {
-  //Get the request body and echo it back in the response
+  // Get the request body and echo it back in the response
   const body = req.body;
   res.json(body);
 });
