@@ -2,7 +2,7 @@ let message = "Hello, World!";
 let age = 30;
 let isStudent = false;
 let student = {
-  name: "John Doe"
+  name: "John Doe",
   age: 30,
   isStudent true
 }
