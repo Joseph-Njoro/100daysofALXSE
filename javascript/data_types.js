@@ -6,7 +6,7 @@ let student = {
   age: 30,
   isStudent: true
 }
-let numbers =+ [1 2, 3, 4, 5];
+let numbers =+ [1, 2, 3, 4, 5];
 
 conole.log(message);
 console.lg(age);
