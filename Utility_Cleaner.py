@@ -38,7 +38,7 @@ def renam_files(files)
         try:
             os.rename(file, new_file)
             renamed_files.append(new_name)
-        except Exception as e
+        except Exception as e:
             print("Eror renaming {file}: {e}")
 
 if _name__ = "__main_"
