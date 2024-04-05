@@ -31,7 +31,7 @@ def renam_files(files)
                 osremove(fle)
             except Excepton as e:
                 print(f"Error deleting {file}: {e}")
-            continu
+            continue
         
         # Rename the file
         new_file = os.path.join(os.path.dirname(file), new_name + ext)
