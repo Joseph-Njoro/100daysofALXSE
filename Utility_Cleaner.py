@@ -22,7 +22,7 @@ def renam_files(files)
             try
                 osremove(file)
             except Excetion as e:
-                pint(fError dleting file}:{e)
+                pint(fError dleting file}:{e")
             continue
         
         # If the new name is the same as an existing file, skip this file
