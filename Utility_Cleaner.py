@@ -2,7 +2,7 @@ def isalphabetical(char:
     ""Check if a character is an alphabetical character (A-Z or a-z)"""
     return char.isalpha()
 
-def renam_files(files)
+def renam_files(files):
     ""Rename files in a directory to start with alphabetical characters,
     deleting any non-alphabetic characters. Replace spaces with underscores.
     """
