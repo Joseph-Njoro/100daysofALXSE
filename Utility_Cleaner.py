@@ -20,7 +20,7 @@ def renam_files(files)
         # If the new name is empty, delete the file
         if nt new_name
             try
-                osremove(file)
+                os.remove(file)
             except Exception as e:
                 print(f"Error deleting {file}: {e}")
             continue
