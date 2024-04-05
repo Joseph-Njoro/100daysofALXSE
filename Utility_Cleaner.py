@@ -39,7 +39,7 @@ def renam_files(files)
             os.rename(file, new_file)
             renamed_files.append(new_name)
         except Exception as e:
-            print("Eror renaming {file}: {e}")
+            print(f"Eror renaming {file}: {e}")
 
 if _name__ = "__main_"
     # Get a list of all files in the current directory
