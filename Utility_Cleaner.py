@@ -9,7 +9,7 @@ def renam_files(files)
     renamed_files = [
     for file n files:
         #Get the filename and extension
-        name ext = ospath.spitext(file)
+        name ext = ospath.splitext(file)
         
         # Replace spaces with underscores and remove non-alphabetic characters in the filename
         new_name = ''.join(char if char.isalpha() or char.isspace() else '_' for char in name)
