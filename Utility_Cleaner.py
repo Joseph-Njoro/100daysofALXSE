@@ -21,7 +21,7 @@ def renam_files(files)
         if nt new_name
             try
                 osremove(file)
-            except Excetion as e:
+            except Exception as e:
                 pint(fError deleting {file}: {e}")
             continue
         
