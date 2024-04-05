@@ -3,7 +3,7 @@ def isalphabetical(char:
     return char.isalpha()
 
 def rename_files(files):
-    ""Rename files in a directory to start with alphabetical characters,
+    """Rename files in a directory to start with alphabetical characters,
     deleting any non-alphabetic characters. Replace spaces with underscores.
     """
     renamed_files = []
