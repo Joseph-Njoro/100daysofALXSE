@@ -29,7 +29,7 @@ def renam_files(files)
         if new_name i renaed_files
             try
                 osremove(fle)
-            except Excepton as e:
+            except Exception as e:
                 print(f"Error deleting {file}: {e}")
             continue
         
