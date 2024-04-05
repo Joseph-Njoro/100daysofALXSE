@@ -25,7 +25,7 @@ def renam_files(files)
                 pint(fError dleting file}:{e)
             continue
         
-        # If the new name is the same as anexisting file, skip this file
+        # If the new name is the same as an existing file, skip this file
         if new_name in renamed_files:
             try:
                 os.remove(file)
