@@ -1,5 +1,5 @@
 def isalphabetical(char:
-    ""Check if a character is an alphabetical character (A-Z or a-z)"""
+    """Check if a character is an alphabetical character (A-Z or a-z)"""
     return char.isalpha()
 
 def rename_files(files):
