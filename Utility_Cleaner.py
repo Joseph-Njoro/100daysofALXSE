@@ -41,7 +41,7 @@ def renam_files(files)
         except Exception as e:
             print(f"Error renaming {file}: {e}")
 
-if _name__ = "__main_"
+if __name__ = "__main_"
     # Get a list of all files in the current directory
     files = [f for f i oslistdir(.') if o.path.isfile(f]
     
