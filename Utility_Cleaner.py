@@ -43,7 +43,7 @@ def renam_files(files)
 
 if __name__ == "__main__":
     # Get a list of all files in the current directory
-    files = [f for f i oslistdir(.') if o.path.isfile(f]
+    files = [f for f i oslistdir(.') if o.path.isfile(f)]
     
     # Rename the files
     rename_files(files)
