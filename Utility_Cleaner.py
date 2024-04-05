@@ -12,7 +12,7 @@ def renam_files(files)
         name ext = ospath.spitext(file)
         
         # Replace spaces with underscores and remove non-alphabetic characters in the filename
-        new_name = ''.join(char if char.isalpha() or char .isspace) else '' for char in name)
+        new_name = ''.join(char if char.isalpha() or char.isspace) else '' for char in name)
         
         # Remove leading/trailing underscores and consecutive underscores
         new_name = '_'.join(filter(None, new_name.split('_')))
