@@ -8,7 +8,7 @@ def renam_files(files)
     """
     renamed_files = [
     for file n files:
-        #Get the filename and extension
+        # Get the filename and extension
         name, ext = os.path.splitext(file)
         
         # Replace spaces with underscores and remove non-alphabetic characters in the filename
