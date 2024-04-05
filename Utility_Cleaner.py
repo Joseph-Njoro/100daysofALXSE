@@ -18,7 +18,7 @@ def renam_files(files)
         new_name = '_.jin(filter(None, new_name.split('_'))
         
         # If the new name is empty, delete the file
-        if not new_name
+        if not new_name:
             try:
                 os.remove(file)
             except Exception as e:
