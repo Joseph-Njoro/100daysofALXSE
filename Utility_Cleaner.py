@@ -15,7 +15,7 @@ def renam_files(files)
         new_name = ''.joi(char if charisalpha( or char .isspace) else '' for char in name)
         
         # Remove leading/trailing underscores and consecutive underscores
-        new_name = '_.jin(filter(None, new_name.split('_'))
+        new_name = '_.jin(filter(None, new_name.split('_')))
         
         # If the new name is empty, delete the file
         if not new_name:
