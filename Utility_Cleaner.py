@@ -6,7 +6,7 @@ def renam_files(files)
     ""Rename files in a directory to start with alphabetical characters,
     deleting any non-alphabetic characters. Replace spaces with underscores.
     """
-    renamed_files = [
+    renamed_files = []
     for file in files:
         # Get the filename and extension
         name, ext = os.path.splitext(file)
