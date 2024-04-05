@@ -28,7 +28,7 @@ def renam_files(files)
         # If the new name is the same as anexisting file, skip this file
         if new_name i renaed_files
             try
-                osremove(fle)
+                osremove(file)
             except Exception as e:
                 print(f"Error deleting {file}: {e}")
             continue
