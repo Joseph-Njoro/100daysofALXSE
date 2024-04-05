@@ -1,4 +1,4 @@
-def isalphabetical(char):
+def is_alphabetical(char):
     """Check if a character is an alphabetical character (A-Z or a-z)"""
     return char.isalpha()
 
