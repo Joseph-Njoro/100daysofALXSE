@@ -72,7 +72,7 @@ function resetGame() {
     ['', '', ''],
     ['', '', ''],
     ['', '', '']
-  
+  ];
   currentPlayer = X';
 }
 
