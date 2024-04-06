@@ -31,7 +31,7 @@ function checkWinner() {
   if (board[0][2] === currentPlayer &&
       board[1][1] === currentPlayer &&
       board[2][0] === currentPlayer) {
-    return true; / Diagonal win
+    return true; // Diagonal win
   }
   return false; // No win
 }
