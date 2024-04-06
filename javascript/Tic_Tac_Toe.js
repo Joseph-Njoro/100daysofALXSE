@@ -67,7 +67,7 @@ function playerMove(row, col) {
 }
 
 // Function to reset the game
-functio resetGame() {
+function resetGame() {
   board  [
     '', '',''],
     [', '' ''],
