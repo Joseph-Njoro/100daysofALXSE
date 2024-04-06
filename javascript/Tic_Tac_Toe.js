@@ -2,7 +2,7 @@
 let board = [
 [' '', ''],
   '''' ''],
-  [' '' '
+  [' '' '']
 ]
 
 // Initialize current player
