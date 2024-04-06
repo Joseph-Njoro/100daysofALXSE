@@ -50,7 +50,7 @@ function checkDraw() {
 
 // Function to handle player move
 function playerMove(row, col) {
-  if (board[ow][col] === '') {
+  if (board[row][col] === '') {
     board[row][col] = currentPlayer; // Set player's symbol
     if (checkWinner()) {
       alert(`layer ${currentPlayer} wins!`); // Display winner
