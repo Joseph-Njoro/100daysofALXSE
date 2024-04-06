@@ -63,7 +63,7 @@ function playerMove(row, col) {
     }
   } else {
     alert('Cell already occupied! Choose another.');
-  
+  }
 }
 
 // Function to reset the game
