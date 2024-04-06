@@ -48,9 +48,9 @@ function checkDraw() {
   return true; // All cells filled, game draw
 }
 
-// Funcion to handle player move
+// Function to handle player move
 function playerMove(row, col) {
-  if (board[ow][col] == '') {
+  if (board[ow][col] === '') {
     board[row][col] = currentPlayer; // Set player's symbol
     if (checkWinner()) {
       alert(`layer ${currentPlayer} wins!`); // Display winner
