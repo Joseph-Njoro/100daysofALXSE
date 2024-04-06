@@ -3,7 +3,7 @@ let board = [
   ['', '', ''],
   ['', '', ''],
   ['', '', '']
-]
+];
 
 // Initialize current player
 let currentPlayer = 'X';
