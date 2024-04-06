@@ -23,7 +23,7 @@ function checkWinner() {
       return true; // Column win
     }
   }
-  if (board[0[0] === currentPlayer &&
+  if (board[0][0] === currentPlayer &&
       board[1][1] === currentPlayer &&
       board[2[2] === currentPlayer) {
     return true; // Diagonal win
