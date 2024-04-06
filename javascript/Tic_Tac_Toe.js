@@ -1,7 +1,7 @@
 // Initialize game board
 let board = [
 [' '', ''],
-  '', '', ''],
+  ['', '', ''],
   ['', '', '']
 ]
 
