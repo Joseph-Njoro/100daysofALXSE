@@ -76,7 +76,7 @@ function resetGame() {
   currentPlayer = 'X';
 }
 
-//Example usage:
+// Example usage:
 playerMove(0, 0); // Player X moves to cell (0, 0)
 playerMove(1, 1) // Player O moves to cell (1, 1)
 playerMove0, 1); // Player X moves to cell (0, 1)
