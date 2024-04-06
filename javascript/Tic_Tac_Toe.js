@@ -53,11 +53,11 @@ function playerMove(row, col) {
   if (board[row][col] === '') {
     board[row][col] = currentPlayer; // Set player's symbol
     if (checkWinner()) {
-      alert(`layer ${currentPlayer} wins!`); // Display winner
+      alert(`Player ${currentPlayer} wins!`); // Display winner
       resetGame();
     } else if (checkDraw()) {
       alert('It\'s a draw!'); // Display draw
-      resetGae();
+      resetGame();
     } else {
       currentPlayer = currentPlayer === 'X' ? 'O' : 'X'; // Switch players
     
