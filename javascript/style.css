@@ -1,38 +1,41 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     background-image: url('background.jpg'); /* Replace 'background.jpg' with the path to your own background image */
     background-size: cover;
     background-position: center;
     margin: 0;
     padding: 0;
-}
-
-.container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
 }
 
-.game-board {
-    background-color: rgba(255, 255, 255, 0.7);
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 150px); /* Increased size of grid columns */
+    grid-template-rows: repeat(3, 150px); /* Increased size of grid rows */
+    gap: 2px;
+    border: 4px solid #333; /* Added border around the grid */
+    padding: 10px; /* Added padding to the container */
+    background-color: rgba(255, 255, 255, 0.7); /* Added a semi-transparent white background */
+    border-radius: 10px; /* Added border radius */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Added box shadow for depth */
 }
 
 .cell {
-    width: 80px;
-    height: 80px;
-    border: 2px solid #333;
-    text-align: center;
-    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #333; /* Made borders thicker */
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    font-size: 36px; /* Increased font size */
+    background-color: rgba(255, 255, 255, 0.9); /* Added a lighter background color */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
 }
 
 .cell:hover {
-    background-color: #ddd;
+    background-color: rgba(255, 255, 255, 0.95); /* Lighten the background color on hover */
 }
 
 .player-text {
