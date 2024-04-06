@@ -16,7 +16,7 @@ function checkWinner() {
         board[i][1] === currentPlayer &&
         board[i][2] === currentPlayer) {
       return true; // Row win
-    
+    }
     if (board0][] ==currentPlayer &&
         board[1][i] === currentPlayer &&
         board[2[i] === curretPlayer) {
