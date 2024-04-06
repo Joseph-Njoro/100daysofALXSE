@@ -1,4 +1,4 @@
-/ Initialize game board
+// Initialize game board
 let board = [
 [' '', ''],
   '''' ''],
