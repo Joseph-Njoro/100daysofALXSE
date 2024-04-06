@@ -11,7 +11,7 @@ let currentPlayer = 'X';
 // Function to check for a winner
 function checkWinner() {
   // Check rows, columns, and diagonals for a win
-  for (let i  0; i < 3; i++) {
+  for (let i = 0; i < 3; i++) {
     if (board[][0] === currentPlayer &&
         board[i[1] === currentPlayer &&
         board[i][2] === currentPlayer) {
