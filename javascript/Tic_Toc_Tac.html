@@ -14,14 +14,14 @@
             margin: 0;
         }
 
-        .container {
+       .container {
             display: grid;
             grid-template-columns: repeat(3, 100px);
             grid-template-rows: repeat(3, 100px);
             gap: 2px;
         }
 
-        .cell {
+       .cell {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -52,7 +52,7 @@
             cell.addEventListener('click', () => {
                 if (cell.textContent === '') {
                     cell.textContent = currentPlayer;
-                    currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
+                    currentPlayer = currentPlayer === 'X'? 'O' : 'X';
                     checkWinner();
                 }
             });
@@ -79,7 +79,7 @@
                 }
             }
 
-            if ([...cells].every(cell => cell.textContent !== '')) {
+            if ([...cells].every(cell => cell.textContent!== '')) {
                 alert("It's a draw!");
                 resetBoard();
             }
@@ -91,7 +91,7 @@
         }
     </script>
 
-
-<script src="feedback.js"></script>
+    <!-- Link the feedback.js file -->
+    <script src="feedback.js"></script>
 </body>
 </html>
