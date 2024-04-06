@@ -60,7 +60,7 @@ function playerMove(row, col) {
       resetGame();
     } else {
       currentPlayer = currentPlayer === 'X' ? 'O' : 'X'; // Switch players
-    
+    }
 } else {
     alertCell already occupied! Choose another.');
   
