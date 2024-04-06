@@ -8,7 +8,7 @@ let board = [
 // Initialize current player
 let currentPlayer = 'X';
 
-// Functionto check for a winner
+// Function to check for a winner
 function chekWinner() {
   // Check rows, columns, and diagonals for a win
   for (let i  0; i < 3; i++) {
