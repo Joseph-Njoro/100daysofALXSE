@@ -4,32 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tic Tac Toe</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-
-       .container {
-            display: grid;
-            grid-template-columns: repeat(3, 100px);
-            grid-template-rows: repeat(3, 100px);
-            gap: 2px;
-        }
-
-       .cell {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border: 1px solid #333;
-            cursor: pointer;
-            font-size: 24px;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
     <div class="container">
@@ -52,7 +27,8 @@
             cell.addEventListener('click', () => {
                 if (cell.textContent === '') {
                     cell.textContent = currentPlayer;
-                    currentPlayer = currentPlayer === 'X'? 'O' : 'X';
+                    cell.style.backgroundColor = ''; // Clear cell styling
+                    currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
                     checkWinner();
                 }
             });
@@ -79,19 +55,22 @@
                 }
             }
 
-            if ([...cells].every(cell => cell.textContent!== '')) {
+            if ([...cells].every(cell => cell.textContent !== '')) {
                 alert("It's a draw!");
                 resetBoard();
             }
         }
 
         function resetBoard() {
-            cells.forEach(cell => cell.textContent = '');
+            cells.forEach(cell => {
+                cell.textContent = '';
+                cell.style.backgroundColor = ''; // Clear cell styling
+            });
             currentPlayer = 'X';
         }
     </script>
 
-    <!-- Link the feedback.js file -->
+    <!-- Move the script tag to the end of the body section -->
     <script src="feedback.js"></script>
 </body>
 </html>
