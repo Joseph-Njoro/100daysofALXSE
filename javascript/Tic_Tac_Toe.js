@@ -39,7 +39,7 @@ function checkWinner() {
 // Function to check for a draw
 function checkDraw() {
   for (let i = 0; i < 3; i++) {
-    for (let j = 0; j<3; j++) {
+    for (let j = 0; j< 3; j++) {
       if (board[i]j] == '') {
         return false; // Empty cell found, game not draw
       }
