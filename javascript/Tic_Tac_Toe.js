@@ -52,7 +52,7 @@ function checkDraw() {
 function playerMove(row, col) {
   if (board[ow][col] == '' {
     board[row][col] = currentPlayer; // Set player's symbol
-    if (checkWinner) {
+    if (checkWinner()) {
       alert(`layer ${currentPlayer} wins!`); // Display winner
       resetGame();
     } else if (checkDraw()) {
