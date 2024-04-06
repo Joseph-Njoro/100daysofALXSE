@@ -37,7 +37,7 @@ function checkWinner() {
 }
 
 // Function to check for a draw
-function checkDraw() 
+function checkDraw() {
   for (le i = ; i < ; ++ {
     for (lej = ; j<3; j++) {
       if (board[i]j] == '') {
