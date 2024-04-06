@@ -9,7 +9,7 @@ let board = [
 let currentPlayer = 'X';
 
 // Function to check for a winner
-function chekWinner() {
+function checkWinner() {
   // Check rows, columns, and diagonals for a win
   for (let i  0; i < 3; i++) {
     if (board[][0] === currentPlayer &&
