@@ -70,8 +70,8 @@ function playerMove(row, col) {
 function resetGame() {
   board = [
     '', '',''],
-    [', '' ''],
-    ['', ', '']
+    [', '', ''],
+    ['', '', '']
   
   currentPlayer = X';
 }
