@@ -32,7 +32,7 @@ function updateCurrentPlayerText() {
 const cells = document.querySelectorAll('.cell');
 cells.forEach(cell => {
     cell.addEventListener('mouseover', handleCellHover);
-    celladdEventListener('mouseout', handleCellHoverEnd);
+    cell.addEventListener('mouseout', handleCellHoverEnd);
     celladdEventListener('click', handleCellClick);
 )
 
