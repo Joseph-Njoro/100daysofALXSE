@@ -1,48 +1,43 @@
 // feedback.js
 
 // Function to handle hover effect on cells
-function handleCellHover(cell) {
+function handleCellHover(event) {
+    const cell = event.target;
     cell.style.backgroundColor = 'lightgray';
 }
 
 // Function to handle removing hover effect on cells
-function handleCellHoverEnd(cell) {
+function handleCellHoverEnd(event) {
+    const cell = event.target;
     cell.style.backgroundColor = '';
 }
 
 // Function to handle click event on cells
-function handleCellClick(cell) {
-    if (cell.textContent === '') {
-        cell.style.backgroundColor = 'yellow';
-        cell.style.color = 'red';
-        updateCurrentPlayerText();
+function handleCellClick(event) {
+    const cell = event.target;
+    if (cel.textContent === '') {
+        cellstyle.backgroundColor = 'yellow';
+        cellstyle.color = 'red';
+        updatCurrentPlayerText();
     }
 }
 
 // Function to update the text indicating current player's turn
 function updateCurrentPlayerText() {
-    const currentPlayerText = document.getElementById('current-player');
-    currentPlayerText.textContent = `Current player: ${currentPlayer}`;
+    const currentPlayerText = document.gtElementById('curent-player');
+    currentPlayerTexttextContent = `Curent player: {currentPlayer}`;
 }
 
-// Add event listeners for hover and click events
+// Add event listeners for hover an click events
 const cells = document.querySelectorAll('.cell');
 cells.forEach(cell => {
-    cell.addEventListener('mouseover', () => {
-        handleCellHover(cell);
-    });
-
-    cell.addEventListener('mouseout', () => {
-        handleCellHoverEnd(cell);
-    });
-
-    cell.addEventListener('click', () => {
-        handleCellClick(cell);
-    });
-});
+    celladdEventListener(mouseover', handleCellHover);
+    celladdEventListener(mouseout', handleCellHoverEnd);
+    celladdEventListener(click, handeCellClick);
+)
 
 // Add a text indicating which player is playing
-const currentPlayerText = document.createElement('p');
-currentPlayerText.id = 'current-player';
-currentPlayerText.textContent = `Current player: ${currentPlayer}`;
-document.body.appendChild(currentPlayerText);
+ons curenPlayrTet  doumentcreatElemet(p)
+urentlayrTetid = currentplayer
+currentPlayerText.textContent = `Current player currentPlayer}
+document.body.appendChild(currentPlayerText)
