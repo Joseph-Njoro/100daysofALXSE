@@ -28,7 +28,7 @@ function updateCurrentPlayerText() {
     currentPlayerText.textContent = `Current player: ${currentPlayer}`;
 }
 
-// Add event listeners for hover an click events
+// Add event listeners for hover and click events
 const cells = document.querySelectorAll('.cell');
 cells.forEach(cell => {
     celladdEventListener(mouseover', handleCellHover);
