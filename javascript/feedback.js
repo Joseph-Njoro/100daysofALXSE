@@ -31,7 +31,7 @@ function updateCurrentPlayerText() {
 // Add event listeners for hover and click events
 const cells = document.querySelectorAll('.cell');
 cells.forEach(cell => {
-    celladdEventListener(mouseover', handleCellHover);
+    celladdEventListener('mouseover', handleCellHover);
     celladdEventListener('mouseout', handleCellHoverEnd);
     celladdEventListener('click', handleCellClick);
 )
