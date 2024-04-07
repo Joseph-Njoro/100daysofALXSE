@@ -18,7 +18,7 @@ function handleCellClick(event) {
     if (cell.textContent === '') {
         cell.style.backgroundColor = 'yellow';
         cell.style.color = 'red';
-        updatCurrentPlayerText();
+        updateCurrentPlayerText();
     }
 }
 
