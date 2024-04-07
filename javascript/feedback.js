@@ -15,7 +15,7 @@ function handleCellHoverEnd(event) {
 // Function to handle click event on cells
 function handleCellClick(event) {
     const cell = event.target;
-    if (cel.textContent === '') {
+    if (cell.textContent === '') {
         cellstyle.backgroundColor = 'yellow';
         cellstyle.color = 'red';
         updatCurrentPlayerText();
