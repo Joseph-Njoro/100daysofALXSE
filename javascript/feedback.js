@@ -34,7 +34,7 @@ cells.forEach(cell => {
     cell.addEventListener('mouseover', handleCellHover);
     cell.addEventListener('mouseout', handleCellHoverEnd);
     cell.addEventListener('click', handleCellClick);
-)
+);
 
 // Add a text indicating which player is playing
 ons curenPlayrTet  doumentcreatElemet(p)
