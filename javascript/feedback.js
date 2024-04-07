@@ -37,7 +37,7 @@ cells.forEach(cell => {
 });
 
 // Add a text indicating which player is playing
-ons curenPlayrTet  document.createElement('p');
+ons curenPlayrTet = document.createElement('p');
 urentlayrTetid = currentplayer
 currentPlayerText.textContent = `Current player currentPlayer}
 document.body.appendChild(currentPlayerText)
