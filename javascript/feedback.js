@@ -33,7 +33,7 @@ const cells = document.querySelectorAll('.cell');
 cells.forEach(cell => {
     cell.addEventListener('mouseover', handleCellHover);
     cell.addEventListener('mouseout', handleCellHoverEnd);
-    celladdEventListener('click', handleCellClick);
+    cell.addEventListener('click', handleCellClick);
 )
 
 // Add a text indicating which player is playing
