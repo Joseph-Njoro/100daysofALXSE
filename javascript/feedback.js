@@ -24,7 +24,7 @@ function handleCellClick(event) {
 
 // Function to update the text indicating current player's turn
 function updateCurrentPlayerText() {
-    const currentPlayerText = document.gtElementById('curent-player');
+    const currentPlayerText = document.gtElementById('current-player');
     currentPlayerTexttextContent = `Curent player: {currentPlayer}`;
 }
 
