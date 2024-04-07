@@ -40,4 +40,4 @@ cells.forEach(cell => {
 const currentPlayerText = document.createElement('p');
 currentPlayerText.id = 'current-player';
 currentPlayerText.textContent = `Current player: ${currentPlayer}`;
-document.body.appendChild(currentPlayerText)
+document.body.appendChild(currentPlayerText);
