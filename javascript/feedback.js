@@ -25,7 +25,7 @@ function handleCellClick(event) {
 // Function to update the text indicating current player's turn
 function updateCurrentPlayerText() {
     const currentPlayerText = document.getElementById('current-player');
-    currentPlayerTexttextContent = `Current player: ${currentPlayer}`;
+    currentPlayerText.textContent = `Current player: ${currentPlayer}`;
 }
 
 // Add event listeners for hover an click events
