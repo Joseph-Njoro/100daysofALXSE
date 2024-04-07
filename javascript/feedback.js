@@ -38,6 +38,6 @@ cells.forEach(cell => {
 
 // Add a text indicating which player is playing
 const currentPlayerText = document.createElement('p');
-currentlayrTetid = currentplayer
+currentPlayrTetid = currentplayer
 currentPlayerText.textContent = `Current player currentPlayer}
 document.body.appendChild(currentPlayerText)
