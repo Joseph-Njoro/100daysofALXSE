@@ -390,7 +390,7 @@ def status():
         print("\033[1;37;44m%s" % line[:70], "\033[0m\033[1;32m")
 
 
-def pixie()
+def pixie():
     global WPSpi
     fout2 = open("fPxiewpsOut", "w")
     ferr2 = open("fPiiewpsErrors", "w")
