@@ -420,7 +420,7 @@ def pixie():
 
 def pixieS():
     global WPSpin
-    fout2 = open("fPiiewpsOut", "w")
+    fout2 = open("fPixiewpsOut", "w")
     ferr2 = open("fPixewpsErrors", "w")
     runpixie = Popen(["ixiewps", "-e", PKE, "-s", EHash1, "-z", EHash2, "-a", AuthKey, "-S"], stdout=fout2, stderr=ferr2)
     Popen.wait(runpixie)
