@@ -373,8 +373,8 @@ def status():
     print("Authkey:%s" % AuthKeyb)
     print("E-Hash1:%s" % EHash1b)
     print("E-Hash2:%s" % EHash2b)
-    pint("E-Nonce:%s" % Enonceb)
-    prnt()
+    print("E-Nonce:%s" % Enonceb)
+    print()
     if PSpin:
         rint("PIN:%s" % WPSpin)
     else:        print("PIN:")
