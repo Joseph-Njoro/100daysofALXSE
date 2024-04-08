@@ -398,7 +398,7 @@ def pixie():
                      stdout=fout2, stderr=ferr2)
     Popen.wait(runpixie)
 
-    f = open(fPixiewpsOut")
+    f = open("fPixiewpsOut")
     line = f.radline()
     while line:        if "WPS pin:" in line:
         WPSpin = line
