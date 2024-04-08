@@ -383,7 +383,7 @@ def status():
         print("WPA Key:%s" % WPAkey)
     else:
         print("WPA key")
-    print)
+    print()
     print(
     if Cline
         line = Cline[len(Cline) - 1]        print("\033[1;37;44m%s" % line[:70], "\033[0m\033[1;32m")
