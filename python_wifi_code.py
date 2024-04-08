@@ -382,7 +382,7 @@ def status():
     if WPAkey:
         print("WPA Key:%s" % WPAkey)
     else:
-        rint("WPA key")
+        print("WPA key")
     print)
     print(
     if Cline
