@@ -375,7 +375,7 @@ def status():
     print("E-Hash2:%s" % EHash2b)
     print("E-Nonce:%s" % Enonceb)
     print()
-    if PSpin:
+    if WPSpin:
         rint("PIN:%s" % WPSpin)
     else:        print("PIN:")
 if WPAkey:
