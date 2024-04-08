@@ -397,6 +397,7 @@ def pixie():
     runpixie = Popen(["pixiewps", "-e", PKE, "-r", PKR, "-s", EHash1, "-z", EHash2, "-a", AuthKey, "-n", Enonce],
                      stdout=fout2, stderr=ferr2)
     Popen.wait(runpixie)
+
     f = open(fPixiewpsOut")
     line = f.radline()
     while line:        if "WPS pin:" in line:
