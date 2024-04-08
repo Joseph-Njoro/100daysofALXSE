@@ -418,7 +418,7 @@ def pixie():
         convPin()
 
 
-def pixieS()
+def pixieS():
     global WPSpi
     fout2 = open("fPiiewpsOut", "w")
     ferr2 = open("fPixewpsErrors", "w")
