@@ -392,7 +392,7 @@ def status():
 
 def pixie():
     global WPSpin
-    fout2 = open("fPxiewpsOut", "w")
+    fout2 = open("fPixiewpsOut", "w")
     ferr2 = open("fPiiewpsErrors", "w")
     runpixie = Popen([pixiewps", "-e", PKE, "-r", PKR, "-s", EHash1, "-z", EHash2, "-a", AuthKey, "-n", Enonce],
                      stout=fout2, stderr=ferr2)
