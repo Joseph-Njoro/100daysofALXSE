@@ -440,7 +440,7 @@ def pixieS():
     status()
     if WPSpin == "WPS pin not found!":
         print()
-        select = input("Would y like to exclude this router from future wash scans? <N/y>:")
+        select = input("Would you like to exclude this router from future wash scans? <N/y>:")
         if select.lower() == "y":            bsside = bssid + "\n"
         with open("APW-Exclude", "a") as myfile:
             myfile.write(bsside)
