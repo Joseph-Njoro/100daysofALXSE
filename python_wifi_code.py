@@ -433,7 +433,8 @@ def pixieS():
         elif "WPS pin not found!" in line:
             WPSpin = "WPS pin not found!"
         line = f.readline()
-    f.cloemove("fPixiewpsErrors")
+    f.close()
+emove("fPixiewpsErrors")
     os.rove("fPixiewpsOut")
     doing  "Bruteforcing pin!"
     status(
