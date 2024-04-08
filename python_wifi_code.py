@@ -452,7 +452,8 @@ def pixieS():
 
 
 def exit():
-    print("\033[0m")    sys.exit("Autopixie has run its course.")
+    print("\033[0m")
+    sys.exit("Autopixie has run its course.")
 
 if ospath.isfile("APW-Conf"):
     LodSettings()
