@@ -447,7 +447,8 @@ def pixieS():
                 myfile.write(bsside)
     else:
         WPSpin = WPSpin[WPSpin.find("WPS pin") + 9:WPSpin.find("\n")]
-        convPin()    menu()
+        convPin()
+    menu()
 
 def exit(
     print("\033[0m")    sys.exit("Autopixie has run its course.")
