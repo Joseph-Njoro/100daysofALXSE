@@ -413,7 +413,7 @@ def pixie():
     status()
     if WPSpin == "WPS pin not found!":
         pixieS()
-    else
+    else:
         WPSpin = WPSpin[WPSpin.find("WPS pin") + 9:WPSpin.find("\n")]        convPin()
 
 def pixieS()
