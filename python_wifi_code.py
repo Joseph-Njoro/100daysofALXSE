@@ -457,7 +457,7 @@ def exit():
 
 
 if os.path.isfile("APW-Conf"):
-    LodSettings()
+    LoadSettings()
 print"\33[1;32m")
 
 menu(
