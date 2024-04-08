@@ -437,7 +437,7 @@ def pixieS():
     os.remove("fPixiewpsErrors")
     os.remove("fPixiewpsOut")
     doing = "Bruteforcing pin!"
-    status(
+    status()
     if WPSpin== "WPS pin not found!":
         print(
         select = input("Would y like to exclude this router from future wash scans? <N/y>:")
