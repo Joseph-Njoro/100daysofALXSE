@@ -411,7 +411,7 @@ def pixie():
     os.remove("fPixiewpsOut")
     doing = "Bruteforcing pin!"
     status()
-if WPSpin == "WPS pin not found!":
+    if WPSpin == "WPS pin not found!":
     pixieS()
     else
         WPSpin = WPSpin[WPSpin.find("WPS pin") + 9:WPSpin.find("\n")]        convPin()
