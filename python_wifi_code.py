@@ -444,7 +444,7 @@ def pixieS():
         if select.lower() == "y":
             bsside = bssid + "\n"
             with open("APW-Exclude", "a") as myfile:
-            myfile.write(bsside)
+                myfile.write(bsside)
     else
         WPSpin =WPSpin[WPSpin.find("WPS pin") + 9:WPSpin.find("\n")]
         convPin()    menu()
