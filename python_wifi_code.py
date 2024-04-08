@@ -22,10 +22,13 @@ USAGE:
         Follow the on-screen menu prompts to perform various actions such as manual input, network scanning, starting monitor mode, adjusting settings, and exiting the program.
 
     Functionality:
-        Manual Input: Manually input the target network's details (channel, BSSID, etc.).
-        Wash Scan: Scan for access points with WPS enabled.
-        Start Mon0: Start monitor mode on the specified WLAN interface.
-        Settings: Configure Autopixie settings such as WLAN card, monitor mode interface, logging options, etc.
+        Manual Input: This option allows the user to manually input certain parameters or settings required by the script.
+        Wash Scan: The wash tool is typically used for detecting Wi-Fi access points that have the Wi-Fi Protected Setup (WPS) feature enabled.
+         It scans for access points with WPS enabled and provides information such as their BSSID, ESSID, and whether they are locked.
+        Start mon0 (setup in settings): This option starts the monitor mode on the specified interface.
+        Settings: This option allows the user to configure settings for the script. This could include setting the default wireless LAN (wlan) card to use,
+         specifying the default monitor mode (mon), and setting options such as whether to log certain information or not.
+        Exit: This option exits the script and terminates its execution.
 
     Output:
         Autopixie provides real-time feedback on the scanning and cracking progress, displaying information such as BSSID, ESSID, WPS pin, WPA key, etc.
