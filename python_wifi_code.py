@@ -1,3 +1,46 @@
+'''
+Autopixie - WiFi Hacking Tool
+
+Autopixie is a Python script designed for network penetration testing and WiFi hacking purposes.
+It provides functionalities for scanning wireless networks, capturing handshakes, and attempting to crack WPS pins to gain unauthorized access to WiFi networks.
+
+USAGE:
+
+    Installation:
+        Ensure you have Python installed on your system.
+        Clone or download the repository with Autopixie code to your local machine.
+
+    Dependencies:
+        Autopixie relies on external tools such as wash, reaver, and pixiewps. Make sure these tools are installed and accessible in your system's PATH.
+
+    Setup:
+        Before running Autopixie, make sure to configure the settings by executing the script and selecting the "Settings" option from the menu.
+        Provide the physical WLAN card to use, default monitor mode interface, and other preferences as prompted.
+
+    Execution:
+        Run the script by executing the autopixie.py file.
+        Follow the on-screen menu prompts to perform various actions such as manual input, network scanning, starting monitor mode, adjusting settings, and exiting the program.
+
+    Functionality:
+        Manual Input: Manually input the target network's details (channel, BSSID, etc.).
+        Wash Scan: Scan for access points with WPS enabled.
+        Start Mon0: Start monitor mode on the specified WLAN interface.
+        Settings: Configure Autopixie settings such as WLAN card, monitor mode interface, logging options, etc.
+
+    Output:
+        Autopixie provides real-time feedback on the scanning and cracking progress, displaying information such as BSSID, ESSID, WPS pin, WPA key, etc.
+        Cracked WPA keys are logged to a specified logfile if logging is enabled in the settings.
+
+    Exiting:
+        To exit Autopixie, select the "Exit" option from the menu.
+
+Disclaimer
+
+    Autopixie is intended for educational and ethical purposes only.
+    Usage of Autopixie for unauthorized access to networks is illegal and unethical.
+    Use Autopixie responsibly and only on networks you are authorized to test.
+'''
+
 import time
 from subprocess import Popen, call
 import os
