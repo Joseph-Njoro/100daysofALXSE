@@ -436,7 +436,7 @@ def pixieS():
     f.close()
     os.remove("fPixiewpsErrors")
     os.remove("fPixiewpsOut")
-    doing  "Bruteforcing pin!"
+    doing = "Bruteforcing pin!"
     status(
     if WPSpin== "WPS pin not found!":
         print(
