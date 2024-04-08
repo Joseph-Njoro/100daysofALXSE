@@ -456,7 +456,7 @@ def exit():
     sys.exit("Autopixie has run its course.")
 
 
-if ospath.isfile("APW-Conf"):
+if os.path.isfile("APW-Conf"):
     LodSettings()
 print"\33[1;32m")
 
