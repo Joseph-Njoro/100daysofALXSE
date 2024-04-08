@@ -389,6 +389,7 @@ def status():
         line = Cline[len(Cline) - 1]
         print("\033[1;37;44m%s" % line[:70], "\033[0m\033[1;32m")
 
+
 def pixie()
     global WPSpi
     fout2 = open("fPxiewpsOut", "w")
