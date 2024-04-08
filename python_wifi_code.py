@@ -402,7 +402,7 @@ def pixie():
     line = f.readline()
     while line:
         if "WPS pin:" in line:
-        WPSpin = line
+            WPSpin = line
     elif "WPS pin not found!" in line:
          WPSpin = "WPS pin not found!"
         lin = f.readline()
