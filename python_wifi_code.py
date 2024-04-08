@@ -379,7 +379,7 @@ def status():
         print("PIN:%s" % WPSpin)
     else:
         print("PIN:")
-if WPAkey:
+    if WPAkey:
      print("WPA Key:%s" % WPAkey)
     els:
         rint("WPA key")
