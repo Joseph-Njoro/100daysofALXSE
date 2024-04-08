@@ -443,7 +443,7 @@ def pixieS():
         select = input("Would you like to exclude this router from future wash scans? <N/y>:")
         if select.lower() == "y":
             bsside = bssid + "\n"
-        with open("APW-Exclude", "a") as myfile:
+            with open("APW-Exclude", "a") as myfile:
             myfile.write(bsside)
     else
         WPSpin =WPSpin[WPSpin.find("WPS pin") + 9:WPSpin.find("\n")]
