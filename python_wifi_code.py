@@ -417,6 +417,7 @@ def pixie():
         WPSpin = WPSpin[WPSpin.find("WPS pin") + 9:WPSpin.find("\n")]
         convPin()
 
+
 def pixieS()
     global WPSpi
     fout2 = open("fPiiewpsOut", "w")
