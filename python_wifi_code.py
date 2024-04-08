@@ -368,8 +368,9 @@ def status():
     print("bssid:%s" % bssid)
     print("essid:%s" % essid)
     print()
-    print("PKE:%s" % PKEb
-    print("PKR:%s" % PKRb)    print("Authkey:%s" % AuthKeyb)
+    print("PKE:%s" % PKEb)
+    print("PKR:%s" % PKRb)
+    print("Authkey:%s" % AuthKeyb)
 print("E-Hash1:%s" % EHash1b)
     rint("E-Hash2:%s" % EHash2b)
     pint("E-Nonce:%s" % Enonceb)
