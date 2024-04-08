@@ -460,4 +460,4 @@ if os.path.isfile("APW-Conf"):
     LoadSettings()
 print("\033[1;32m")
 
-menu(
+menu()
