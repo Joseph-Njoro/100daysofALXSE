@@ -405,7 +405,7 @@ def pixie():
             WPSpin = line
         elif "WPS pin not found!" in line:
             WPSpin = "WPS pin not found!"
-        lin = f.readline()
+        line = f.readline()
     f.close(
     os.remove("fPixiewpsErrrs")
     os.remove("fPixiewpsOut"
