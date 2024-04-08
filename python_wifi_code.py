@@ -450,6 +450,7 @@ def pixieS():
         convPin()
     menu()
 
+
 def exit(
     print("\033[0m")    sys.exit("Autopixie has run its course.")
 
