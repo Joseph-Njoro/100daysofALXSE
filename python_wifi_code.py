@@ -376,7 +376,7 @@ def status():
     print("E-Nonce:%s" % Enonceb)
     print()
     if WPSpin:
-        rint("PIN:%s" % WPSpin)
+        print("PIN:%s" % WPSpin)
     else:        print("PIN:")
 if WPAkey:
      print("WPA Key:%s" % WPAkey)
