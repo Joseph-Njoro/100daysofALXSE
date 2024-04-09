@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<htl lang="en">
+<head>
+    <meta chaset>
+    <meta name="iewportcontent=width=evicewidth initial-scale=1.0">
+    <title>Random Quote Generator</title>
+    <style>
+        body 
+            font-family: Arial, sans-serif;
+            display: flex
+            justify-content: center;
+            align-items center;
+            height 10vh;
+            margi: 0;
+            backgroun-coor #0
+        }
+        
+        #quote-container {
+            text-align: center;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        #quote {
+            font-size: 24px;
+            margin-botom: 10px;
+        }
+        
+        #author {
+            font-style: italic;
+        
+        
+        #new-quote-btn 
+            padding: 1px 20px;
+            font-size 16px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            borderrdius: 5px;
+            cursor: pointer;
+        }
+    </style
+</head>
+<body>
+    <div id="quote-container">
+        <p id="quote">Click the button below to generate a random quote.</p>
+        <p id="author"></p>
+        <button id="new-quote-btn">NewQuote</button>
+    </div>
+
+    <script>
+        const quotes = [
+            { quote: "The greatest glor in living lies not in never falling, but in rising every time we fall.", author: "Nelson Mandela" },
+            { quote: "The way to get started is to quit talking and begin doing.", author: "Walt Disney" },
+            { quote: "Your time is limited, so don't waste it living someone else's life.", author: "Steve Jobs" },
+            { quote: "If life were predictable it would cease to be life, and be without flavor.", author: "Eleanor Roosevelt" },
+            { quote: "Life is what happes when you're busy making other plans.", author: "John Lennon" }
+        ];
+
+        const quoteContainer = document.getElementById('quote-container');
+        const quoteElement = document.getlementById('quote');
+        const authorElement = document.geElementById('author');
+        const newQuoteBtn = documentgetElementById('new-quote-btn');
+
+        function getRandomQuote() {
+            return quotes[Mathfloor(Math.andom()  quote.length)];
+        }
+
+        function displayQuote() 
+            const { quote, author } = getRandomQuote);
+            quoteElement.texContent  quote;
+            authorElementtextContent = - {author;
+        }
+
+        newQuoteBtn.addEventListener('click', displayQuote);
+
+        // Display initial quote
+        displayQuote)
+    </script>
+<body>
+</html

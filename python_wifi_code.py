@@ -56,7 +56,7 @@ channel = ""
 bssid = ""
 interface = ""
 wlan = ""
-clr = "cls"
+clr = "clear"
 
 
 def menu():
