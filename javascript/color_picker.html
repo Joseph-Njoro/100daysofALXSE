@@ -1,61 +1,61 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <title>Color Picker</title>
-    <style>
-      #colorPicker {
-        width: 100%;
-        height: 100%;
-        position: relative;
+<!DOTYPE html>
+html
+ <head
+   <met charset="UTF-8" />
+   <titl>Color Picker</title>
+   <style
+     #colorPicker {        width: 100%;
+     height: 100%;
+     position: relative;
      cursor: crosshair;
-      }
-      #colorisplay {
+     
+      #colorDsplay {
+       positin: absolute;
+       top: 0;        left: 0;
+     width: 100%;
+     height: 100%;
+      z-index: 1;
+      
+      #colorode {
         positon: absolute;
-        top: 0
-        left: 0;        width: 100%;
-    height: 100%;
-     z-index: 1;
-      }
-      #colorCde {
-        positin: absolute;
-        top: 10%;
-        left: 0;
-        width: 10%;
+        top: 1%;
+        left: 0
+        width: 1%;
         text-alig: center;
         z-index: 2
-        padding: 10p;
-        background-coor: rgba(0, 0, 0, 0.5);
-        color: white;        font-family: sans-serif;
-    font-size: 24px;
+        padding: 10px
+        background-color: rgba(0, 0, 0, 0.5);        color: white;
+      font-family: sans-serif;
+      font-size: 24px;
      }
     <style>
   </hed>
   <body
     <canvs id="colorPicker"></canvas>
-    <div i="colorCode"></div>
+    <div i="colorDisplay"></div>
     <script
-      const colorPicker = document.getElementById("colorPicer");
-      const colorDisplay = document.getElementById("colorDislay");
-      const colorCode = document.getElementById("colorCode");
-      const canvasWidth = colorPicker.width = window.innerWidth
-      const canvasHeight = colorPicker.height = window.innerHeight;
-      const ctx = colorPickergetContext("2d");
-      ctx.fillStyle = "white";      ctx.fillRect(0, 0, canvasWidth, canvasHeight);
-      const pointer = { x: 0, y: 0 };
-      colorPicker.addEventListener("mousemove", (e) => {
-    pointer.x = e.offsetX;
-    pointer.y = e.offsetY;
-        pdateColor();
-      });
-      const updaeColor = () => {
-        const dat = ctx.getImageData(pointer.x, pointer.y, 1, 1).data;
-        const hex  "#" + ("000000" + (data[0] << 16 | data[1] << 8 | data[2]).toString(16)).slice(-6);
-        colorDispla.style.backgroundColor = hex;
-        colorCode.tetContent = hex;
+      const colorPicker  document.getElementById("colorPicker");
+      const colorDisplay  document.getElementById("colorDisplay");
+      const colorCode = doument.getElementById("colorCode");
+      const canvasWidth = (olorPicker.width = window.innerWidth);
+      const canvasHeight = (olorPicker.height = window.innerHeight);
+      const ctx = colorPicker.getContext("2d");
+      ctx.fillStyle = "white"
+      ctx.fillRect(0, 0, canvasWidth, canvasHeight);      const pointer = { x: 0, y: 0 };
+    colorPicker.addEventListener("mousemove", (e) => {
+      pointer.x = e.offsetX;
+      pointer.y = e.offsetY;
+      updateColor();
+      })
+      constupdateColor = () => {
+        cons data = ctx.getImageData(pointer.x, pointer.y, 1, 1).data;
+        consthex =
+          "#" 
+          ("000000" + ((data0] << 16) | (data[1] << 8) | data[2]).toString(16)).slice(-6);
+        colorDisplay.style.bakgroundColor = hex;
+        colorCode.textContent  hex;
       };
-
       updateColor();
     </script>
-  </body
-</html
+  </body>
+</html>
