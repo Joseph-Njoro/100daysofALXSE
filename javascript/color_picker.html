@@ -54,7 +54,7 @@
       const updateColor = () => {
         const data = ctx.getImageData(pointer.x, pointer.y, 1, 1).data;
         const hex =
-          "#" 
+          "#" +
           ("000000" + ((data0] << 16) | (data[1] << 8) | data[2]).toString(16)).slice(-6);
         colorDisplay.style.bakgroundColor = hex;
         colorCode.textContent  hex;
