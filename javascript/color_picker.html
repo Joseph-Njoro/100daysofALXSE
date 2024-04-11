@@ -56,7 +56,7 @@
         const hex =
           "#" +
           ("000000" + ((data[0] << 16) | (data[1] << 8) | data[2]).toString(16)).slice(-6);
-        colorDisplay.style.bakgroundColor = hex;
+        colorDisplay.style.backgroundColor = hex;
         colorCode.textContent  hex;
       };
       updateColor();
