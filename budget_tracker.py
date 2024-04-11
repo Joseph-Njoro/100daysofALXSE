@@ -38,38 +38,39 @@ class BudgetTrackerGUI:
     def __init__(self, master):
         self.master = master
         self.master.title("Personal Budget Tracker")
+        self.master.configure(bg='darkblue')
 
-        self.date_label = tk.Label(master, text="Date:")
-        self.date_label.grid(row=0, column=0)
-        self.date_entry = tk.Entry(master)
-        self.date_entry.grid(row=0, column=1)
+        self.date_label = tk.Label(master, text="Date:", bg='darkblue', fg='white', font=('Arial', 14))
+        self.date_label.grid(row=0, column=0, padx=10, pady=10)
+        self.date_entry = tk.Entry(master, font=('Arial', 14))
+        self.date_entry.grid(row=0, column=1, padx=10, pady=10)
 
-        self.description_label = tk.Label(master, text="Description:")
-        self.description_label.grid(row=1, column=0)
-        self.description_entry = tk.Entry(master)
-        self.description_entry.grid(row=1, column=1)
+        self.description_label = tk.Label(master, text="Description:", bg='darkblue', fg='white', font=('Arial', 14))
+        self.description_label.grid(row=1, column=0, padx=10, pady=10)
+        self.description_entry = tk.Entry(master, font=('Arial', 14))
+        self.description_entry.grid(row=1, column=1, padx=10, pady=10)
 
-        self.category_label = tk.Label(master, text="Category:")
-        self.category_label.grid(row=2, column=0)
-        self.category_entry = tk.Entry(master)
-        self.category_entry.grid(row=2, column=1)
+        self.category_label = tk.Label(master, text="Category:", bg='darkblue', fg='white', font=('Arial', 14))
+        self.category_label.grid(row=2, column=0, padx=10, pady=10)
+        self.category_entry = tk.Entry(master, font=('Arial', 14))
+        self.category_entry.grid(row=2, column=1, padx=10, pady=10)
 
-        self.amount_label = tk.Label(master, text="Amount:")
-        self.amount_label.grid(row=3, column=0)
-        self.amount_entry = tk.Entry(master)
-        self.amount_entry.grid(row=3, column=1)
+        self.amount_label = tk.Label(master, text="Amount:", bg='darkblue', fg='white', font=('Arial', 14))
+        self.amount_label.grid(row=3, column=0, padx=10, pady=10)
+        self.amount_entry = tk.Entry(master, font=('Arial', 14))
+        self.amount_entry.grid(row=3, column=1, padx=10, pady=10)
 
-        self.add_button = tk.Button(master, text="Add Transaction", command=self.add_transaction)
-        self.add_button.grid(row=4, columnspan=2)
+        self.add_button = tk.Button(master, text="Add Transaction", command=self.add_transaction, font=('Arial', 14))
+        self.add_button.grid(row=4, columnspan=2, padx=10, pady=10)
 
-        self.view_transactions_button = tk.Button(master, text="View Transactions", command=self.view_transactions)
-        self.view_transactions_button.grid(row=5, columnspan=2)
+        self.view_transactions_button = tk.Button(master, text="View Transactions", command=self.view_transactions, font=('Arial', 14))
+        self.view_transactions_button.grid(row=5, columnspan=2, padx=10, pady=10)
 
-        self.summary_button = tk.Button(master, text="View Summary", command=self.view_summary)
-        self.summary_button.grid(row=6, columnspan=2)
+        self.summary_button = tk.Button(master, text="View Summary", command=self.view_summary, font=('Arial', 14))
+        self.summary_button.grid(row=6, columnspan=2, padx=10, pady=10)
 
-        self.result_label = tk.Label(master, text="")
-        self.result_label.grid(row=7, columnspan=2)
+        self.result_label = tk.Label(master, text="", bg='darkblue', fg='white', font=('Arial', 14))
+        self.result_label.grid(row=7, columnspan=2, padx=10, pady=10)
 
         self.budget_tracker = BudgetTracker()
 
@@ -79,17 +80,18 @@ class BudgetTrackerGUI:
         category = self.category_entry.get()
         amount = self.amount_entry.get()
         self.budget_tracker.add_transaction(date, description, category, amount)
-        self.result_label.config(text="Transaction added successfully")
+        self.result_label.config(text="Transaction added successfully", fg='green')
 
     def view_transactions(self):
         transactions = self.budget_tracker.view_transactions()
-        self.result_label.config(text=transactions)
+        self.result_label.config(text=transactions, fg='white')
 
     def view_summary(self):
         summary = self.budget_tracker.view_summary()
-        self.result_label.config(text=summary)
+        self.result_label.config(text=summary, fg='white')
 
 if __name__ == "__main__":
     root = tk.Tk()
+    root.geometry("600x600")
     app = BudgetTrackerGUI(root)
     root.mainloop()
