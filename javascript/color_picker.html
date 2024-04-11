@@ -43,7 +43,7 @@
       const canvasWidth = (colorPicker.width = window.innerWidth);
       const canvasHeight = (colorPicker.height = window.innerHeight);
       const ctx = colorPicker.getContext("2d");
-      ctx.fillStyle = "white"
+      ctx.fillStyle = "white";
       ctx.fillRect(0, 0, canvasWidth, canvasHeight);      const pointer = { x: 0, y: 0 };
     colorPicker.addEventListener("mousemove", (e) => {
       pointer.x = e.offsetX;
