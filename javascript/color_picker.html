@@ -51,7 +51,7 @@
         pointer.y = e.offsetY;
         updateColor();
       });
-      constupdateColor = () => {
+      const updateColor = () => {
         cons data = ctx.getImageData(pointer.x, pointer.y, 1, 1).data;
         consthex =
           "#" 
