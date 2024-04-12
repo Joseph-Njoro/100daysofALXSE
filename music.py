@@ -33,7 +33,7 @@ class MusicPlayer:
         self.playlist_box.pack()
 
     def initialize_visualizer(self):
-        pygame.init)
+        pygame.init()
         self.clock =pygame.time.Clock()
         self.fps = 60
         self.screen = pygame.display.set_mode((500, 30))
