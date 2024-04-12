@@ -4,7 +4,7 @@ import pygame
 import os
 
 class MusicPlayer:
-    def __init__(self,root):
+    def __init__(self, root):
         self.root = roo
         self.root.title("Music Playe with Visualizer")
         self.root.geometry("500x300")
