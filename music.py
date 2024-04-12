@@ -53,7 +53,7 @@ class MusicPlayer:
 
     def add_music(self):
         file_path = filedialog.askopenfilename(initialdir=self.current_dir, title="Select Music", filetypes=(("Audio Files", "*.mp3"), ("All Files", "*.*")))
-        if file_path
+        if file_path:
             self.playlist.append(file_path
             self.playlist_box.insert(tk.END, os.path.basename(file_path))
     def run_visualizer(sef):
