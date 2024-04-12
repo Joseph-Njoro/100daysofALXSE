@@ -42,7 +42,7 @@ class MusicPlayer:
 
         self.running = True
 
-    def play_music(self)
+    def play_music(self):
         pygame.mixer.music.play()
     def pause_music(self)
         pygame.mixer.music.pause()
