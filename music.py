@@ -67,7 +67,7 @@ class MusicPlayer:
 
             # Insert visualization code here
 
-            pygame.display.flip(
+            pygame.display.flip()
             self.clock.tick(self.fps)
         pygame.quit()
 if __name__ == "_main__":
