@@ -1,4 +1,4 @@
-importtkinter as tk
+import tkinter as tk
 from tknter import filedialog
 import pgame
 import os
