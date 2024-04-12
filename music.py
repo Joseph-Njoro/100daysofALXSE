@@ -44,6 +44,7 @@ class MusicPlayer:
 
     def play_music(self):
         pygame.mixer.music.play()
+
     def pause_music(self)
         pygame.mixer.music.pause()
     def stop_music(self)
