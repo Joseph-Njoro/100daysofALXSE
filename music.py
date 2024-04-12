@@ -6,7 +6,7 @@ import os
 class MusicPlayer:
     def __init__(self, root):
         self.root = root
-        self.root.title("Music Playe with Visualizer")
+        self.root.title("Music Player with Visualizer")
         self.root.geometry("500x300")
         self.current_dir = os.getcwd()
         self.playlist = []
