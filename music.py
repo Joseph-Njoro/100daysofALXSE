@@ -62,6 +62,7 @@ class MusicPlayer:
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
                     self.running = False
+
             self.screen.fill((0, 0, 0))
             # Insert visualization code here
             pygame.display.flip(
