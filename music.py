@@ -23,7 +23,7 @@ class MusicPlayer:
         self.pause_button = tk.Button(self.root, text="Pause", command=self.pause_music)
         self.pause_button.pack()
 
-        self.stop_button = tk.utton(self.root, text="Stop", command=self.stop_music)
+        self.stop_button = tk.Button(self.root, text="Stop", command=self.stop_music)
         self.stop_button.pack()
         self.add_button = tk.utton(self.root, text="Add Music", command=self.add_music)
         self.add_button.pack()
