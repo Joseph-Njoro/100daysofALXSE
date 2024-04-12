@@ -59,7 +59,7 @@ class MusicPlayer:
 
     def run_visualizer(self):
         while self.running:
-            for event in pygame.event.et():
+            for event in pygame.event.get():
                 if event.type == pygameQUIT:
                     self.running = False
             self.screen.fill((0, 0, 0))
