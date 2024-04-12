@@ -26,7 +26,7 @@ class MusicPlayer:
         self.stop_button = tk.Button(self.root, text="Stop", command=self.stop_music)
         self.stop_button.pack()
 
-        self.add_button = tk.utton(self.root, text="Add Music", command=self.add_music)
+        self.add_button = tk.Button(self.root, text="Add Music", command=self.add_music)
         self.add_button.pack()
         self.playlist_box = tk.istbox(self.root)
         self.playlist_box.pack()
