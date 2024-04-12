@@ -13,7 +13,7 @@ class MusicPlayer:
 
         self.playlist = []
 
-        self.initialize_player(
+        self.initialize_player()
         self.initialize_visualizer()
     def initialize_player(sel):
         self.play_button = tk.utton(self.root, text="Play", command=self.play_music)
