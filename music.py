@@ -48,7 +48,7 @@ class MusicPlayer:
     def pause_music(self):
         pygame.mixer.music.pause()
 
-    def stop_music(self)
+    def stop_music(self):
         pygame.mixer.music.stop()
     def add_music(elf):
         file_path =filedialog.askopenfilename(initialdir=self.current_dir, title="Select Music", filetypes=(("Audio Files", "*.mp3"), ("All Files", "*.*")))
