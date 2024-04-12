@@ -74,5 +74,5 @@ class MusicPlayer:
 
 if __name__ == "__main__":
     root = tk.Tk()
-    music_player = MusicPlayer(oot)
+    music_player = MusicPlayer(root)
     music_player.run_visualizer(
