@@ -19,7 +19,8 @@ class MusicPlayer:
     def initialize_player(self):
         self.play_button = tk.Button(self.root, text="Play", command=self.play_music)
         self.play_button.pack()
-        self.pause_button = tk.utton(self.root, text="Pause", command=self.pause_music)
+
+        self.pause_button = tk.Button(self.root, text="Pause", command=self.pause_music)
         self.pause_button.pack()
         self.stop_button = tk.utton(self.root, text="Stop", command=self.stop_music)
         self.stop_button.pack()
