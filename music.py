@@ -58,7 +58,7 @@ class MusicPlayer:
             self.playlist_box.insert(tk.END, os.path.basename(file_path))
 
     def run_visualizer(self):
-        while self.running
+        while self.running:
             for event in pygame.event.et():
                 if event.type == pygameQUIT:
                     self.running = False
