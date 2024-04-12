@@ -1,5 +1,5 @@
 import tkinter as tk
-from tknter import filedialog
+from tkinter import filedialog
 import pgame
 import os
 class MusicPlayer
