@@ -32,7 +32,7 @@ class MusicPlayer:
         self.playlist_box = tk.Listbox(self.root)
         self.playlist_box.pack()
 
-    def initializevisualizer(self):
+    def initialize_visualizer(self):
         pygame.init)
         self.clock =pygame.time.Clock()
         self.fps = 60
