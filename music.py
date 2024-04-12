@@ -66,6 +66,7 @@ class MusicPlayer:
             self.screen.fill((0, 0, 0))
 
             # Insert visualization code here
+
             pygame.display.flip(
             self.clock.tick(self.fps)
         pygame.quit()
