@@ -29,7 +29,7 @@ class MusicPlayer:
         self.add_button = tk.Button(self.root, text="Add Music", command=self.add_music)
         self.add_button.pack()
 
-        self.playlist_box = tk.istbox(self.root)
+        self.playlist_box = tk.Listbox(self.root)
         self.playlist_box.pack()
     def initializevisualizer(self):
         pygame.init)
