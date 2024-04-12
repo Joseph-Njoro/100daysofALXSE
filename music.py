@@ -69,6 +69,7 @@ class MusicPlayer:
 
             pygame.display.flip()
             self.clock.tick(self.fps)
+
         pygame.quit()
 if __name__ == "_main__":
     root = tk.Tk(
