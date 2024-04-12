@@ -36,6 +36,7 @@ class MusicPlayer:
         pygame.init()
         self.clock = pygame.time.Clock()
         self.fps = 60
+
         self.screen = pygame.display.set_mode((500, 30))
         pygame.display.set_caption("Music Visualizer")
         self.running = True
