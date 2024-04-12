@@ -73,6 +73,6 @@ class MusicPlayer:
         pygame.quit()
 
 if __name__ == "__main__":
-    root = tk.Tk(
+    root = tk.Tk()
     music_player = MusicPlayer(oot)
     music_player.run_visualizer(
