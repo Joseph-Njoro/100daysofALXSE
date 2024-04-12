@@ -12,6 +12,7 @@ class MusicPlayer:
         self.current_dir = os.getcwd()
 
         self.playlist = []
+
         self.initialize_player(
         self.initialize_visualizer()
     def initialize_player(sel):
