@@ -15,6 +15,7 @@ class MusicPlayer:
 
         self.initialize_player()
         self.initialize_visualizer()
+
     def initialize_player(sel):
         self.play_button = tk.utton(self.root, text="Play", command=self.play_music)
         self.play_button.pack()
