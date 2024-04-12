@@ -10,6 +10,7 @@ class MusicPlayer:
         self.root.geometry("500x300")
 
         self.current_dir = os.getcwd()
+
         self.playlist = []
         self.initialize_player(
         self.initialize_visualizer()
