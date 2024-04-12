@@ -39,7 +39,9 @@ class MusicPlayer:
 
         self.screen = pygame.display.set_mode((500, 300))
         pygame.display.set_caption("Music Visualizer")
+
         self.running = True
+
     def play_music(self)
         pygame.mixer.music.play()
     def pause_music(self)
