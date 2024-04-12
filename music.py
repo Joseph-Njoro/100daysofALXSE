@@ -3,7 +3,7 @@ from tkinter import filedialog
 import pygame
 import os
 
-class MusicPlayer
+class MusicPlayer:
     def __init__(self,root):
         self.root = roo
         self.root.title("Music Playe with Visualizer")
