@@ -31,7 +31,7 @@ while True:
     print("Let's see what's cooking today...")
     input("Press Enter to generate a random recipe!")
 
-    # Generate a random recip
+    # Generate a random recipe
     recipe_name, random_ingredients = generate_random_recipe()
     # Printthe generated recipe
     print("\ recipe_name)
