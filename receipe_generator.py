@@ -24,7 +24,8 @@ def generate_random_recipe():
     ingredients_needed = recipes[recipe_name]
     random_ingredients = {category: random.choice(ingredients[category]) for category in ingredients_needed}
     return recipe_name, random_ingredients
-# Main prgram loop
+
+# Main program loop
 while True
     print("Welcome to the Random Recipe Geneator!")
     print("Let's see what's cooking today..."
