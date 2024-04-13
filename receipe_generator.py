@@ -42,7 +42,7 @@ while True:
 
     # Ask the user if they want to generate another recipe
     print("\nEnjoy your meal!")
-    again = nput("Would you like to generate another random recipe? (yes/no): ")
+    again = input("Would you like to generate another random recipe? (yes/no): ")
     if again.ower() != 'yes':
         print(Thanks for using the Random Recipe Generator. Bon appétit!")
         break
