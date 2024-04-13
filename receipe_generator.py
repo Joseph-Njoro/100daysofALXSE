@@ -11,7 +11,7 @@ ingredients = {
 
 recipes = {
     'Stir-Fry': ['protein', 'vegetables', 'soy sauce', 'rice'],
-    'Pasta Primavera': ['pasta', 'vegetables', 'garlic', 'olive oil']
+    'Pasta Primavera': ['pasta', 'vegetables', 'garlic', 'olive oil'],
     'Grilled Chicken Salad': ['chicken', 'vegetables', 'vinaigrette', 'greens']
     'Vegetable Curry': ['vegetables', 'protein', 'curry powder', 'coconut milk', 'rice'],    'Bean Burritos': ['protein', 'tortillas', 'beans', 'vegetables', 'salsa'],
    'Salmon with Roasted Vegetables': ['salmon', 'vegetables', 'olive oil', 'spices']
