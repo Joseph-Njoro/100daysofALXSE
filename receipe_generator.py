@@ -8,6 +8,7 @@ ingredients = {
     'spices': ['salt', 'pepper', 'garlic powder', 'paprika', 'cumin', 'oregano', 'curry powder', 'chili flakes'],
     'sauces': ['soy sauce', 'tomato sauce', 'pesto', 'barbecue sauce', 'sriracha', 'honey mustard', 'vinaigrette']
 }
+
 recipes = 
     'Stir-Fry': ['protein', 'vegetables', 'soy sauce', 'rice']
     'Pasta Primavera': ['pasta', 'vegetables', 'garlic', 'olive oil']
