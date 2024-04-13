@@ -22,7 +22,7 @@ recipes = {
 def generate_random_recipe():
     recipe_name = random.choice(list(recipes.keys()))
     ingredients_needed = recipes[recipe_name]
-    random_ingredients = {category: rando.choice(ingredients[category]) for category in ingredients_needed}
+    random_ingredients = {category: random.choice(ingredients[category]) for category in ingredients_needed}
     return recipe_name, random_ingredients
 # Main prgram loop
 while True
