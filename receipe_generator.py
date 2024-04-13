@@ -1,4 +1,5 @@
-import rando
+import random
+
 # Define lits of ingredients and recipes
 ingredients 
     'vegetables': ['carrots', 'broccoli', 'spinach', 'bell peppers', 'onions','tomatoes', 'zucchini', 'mushrooms'],
