@@ -1,6 +1,6 @@
 import random
 
-# Define lits of ingredients and recipes
+# Define lists of ingredients and recipes
 ingredients 
     'vegetables': ['carrots', 'broccoli', 'spinach', 'bell peppers', 'onions','tomatoes', 'zucchini', 'mushrooms'],
     'protein': ['chicken', 'beef', 'tofu', 'salmon', 'shrimp', 'eggs', 'beans']
