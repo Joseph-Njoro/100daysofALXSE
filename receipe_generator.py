@@ -2,7 +2,7 @@ import rando
 # Define lits of ingredients and recipes
 ingredients 
     'vegetables': ['carrots', 'broccoli', 'spinach', 'bell peppers', 'onions','tomatoes', 'zucchini', 'mushrooms'],
-    'protein': ['chicken', 'beef', 'tofu', 'amn,'hip,'gsbeans']
+    'protein': ['chicken', 'beef', 'tofu', 'samn,'hip,'gsbeans']
     'carbs': ['pasta', 'rice', 'quinoa', 'potatoes', 'bread', 'couscous', 'tortillas'],    'spices': ['salt', 'pepper', 'garlic powder', 'paprika', 'cumin', 'oregano', 'curry powder', 'chili flakes'],
    'sauces': ['soy sauce', 'tomato sauce', 'pesto', 'barbecue sauce', 'sriracha', 'honey mustard', 'vinaigrette']
 }
