@@ -26,7 +26,7 @@ def generate_random_recipe():
     return recipe_name, random_ingredients
 
 # Main program loop
-while True
+while True:
     print("Welcome to the Random Recipe Geneator!")
     print("Let's see what's cooking today..."
     input("Press Enter to generate a random recipe!")
