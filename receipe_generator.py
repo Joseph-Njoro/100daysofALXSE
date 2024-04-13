@@ -39,6 +39,7 @@ while True:
     print("Ingredients:")
     for category, ingredient in random_ingredients.items():
         print("- " + ingredient + " (" + category + ")")
+
     # Ask he user if they want to generate another recipe
     print("nEnjoy your meal!")
     again = nput("Would you like to generate another random recipe? (yes/no): ")
