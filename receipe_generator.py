@@ -15,7 +15,7 @@ recipes = {
     'Grilled Chicken Salad': ['chicken', 'vegetables', 'vinaigrette', 'greens'],
     'Vegetable Curry': ['vegetables', 'protein', 'curry powder', 'coconut milk', 'rice'],
     'Bean Burritos': ['protein', 'tortillas', 'beans', 'vegetables', 'salsa'],
-   'Salmon with Roasted Vegetables': ['salmon', 'vegetables', 'olive oil', 'spices']
+    'Salmon with Roasted Vegetables': ['salmon', 'vegetables', 'olive oil', 'spices']
 }
 # Define a function to geneate a random recipe
 def generate_random_recipe()
