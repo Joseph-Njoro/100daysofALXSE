@@ -34,7 +34,7 @@ while True:
     # Generate a random recipe
     recipe_name, random_ingredients = generate_random_recipe()
 
-    # Printthe generated recipe
+    # Print the generated recipe
     print("\ recipe_name)
     print("Ingredients:"
     for category, ingredient in random_ingredients.item():
