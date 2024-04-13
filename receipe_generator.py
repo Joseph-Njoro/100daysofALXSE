@@ -1,7 +1,7 @@
 import random
 
 # Define lists of ingredients and recipes
-ingredients 
+ingredients = {
     'vegetables': ['carrots', 'broccoli', 'spinach', 'bell peppers', 'onions','tomatoes', 'zucchini', 'mushrooms'],
     'protein': ['chicken', 'beef', 'tofu', 'salmon', 'shrimp', 'eggs', 'beans']
     'carbs': ['pasta', 'rice', 'quinoa', 'potatoes', 'bread', 'couscous', 'tortillas'],    'spices': ['salt', 'pepper', 'garlic powder', 'paprika', 'cumin', 'oregano', 'curry powder', 'chili flakes'],
