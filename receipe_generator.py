@@ -9,7 +9,7 @@ ingredients = {
     'sauces': ['soy sauce', 'tomato sauce', 'pesto', 'barbecue sauce', 'sriracha', 'honey mustard', 'vinaigrette']
 }
 
-recipes = 
+recipes = {
     'Stir-Fry': ['protein', 'vegetables', 'soy sauce', 'rice']
     'Pasta Primavera': ['pasta', 'vegetables', 'garlic', 'olive oil']
     'Grilled Chicken Salad': ['chicken', 'vegetables', 'vinaigrette', 'greens']
