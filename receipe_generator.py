@@ -6,7 +6,7 @@ ingredients = {
     'protein': ['chicken', 'beef', 'tofu', 'salmon', 'shrimp', 'eggs', 'beans'],
     'carbs': ['pasta', 'rice', 'quinoa', 'potatoes', 'bread', 'couscous', 'tortillas'],
     'spices': ['salt', 'pepper', 'garlic powder', 'paprika', 'cumin', 'oregano', 'curry powder', 'chili flakes'],
-   'sauces': ['soy sauce', 'tomato sauce', 'pesto', 'barbecue sauce', 'sriracha', 'honey mustard', 'vinaigrette']
+    'sauces': ['soy sauce', 'tomato sauce', 'pesto', 'barbecue sauce', 'sriracha', 'honey mustard', 'vinaigrette']
 }
 recipes = 
     'Stir-Fry': ['protein', 'vegetables', 'soy sauce', 'rice']
