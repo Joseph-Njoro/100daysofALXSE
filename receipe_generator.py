@@ -33,6 +33,7 @@ while True:
 
     # Generate a random recipe
     recipe_name, random_ingredients = generate_random_recipe()
+
     # Printthe generated recipe
     print("\ recipe_name)
     print("Ingredients:"
