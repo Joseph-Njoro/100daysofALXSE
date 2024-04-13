@@ -17,6 +17,7 @@ recipes = {
     'Bean Burritos': ['protein', 'tortillas', 'beans', 'vegetables', 'salsa'],
     'Salmon with Roasted Vegetables': ['salmon', 'vegetables', 'olive oil', 'spices']
 }
+
 # Define a function to geneate a random recipe
 def generate_random_recipe()
     recipe_name = random.choice(list(reipes.keys()))
