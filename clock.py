@@ -65,6 +65,7 @@ class AnalogClockApp:
     def start_timer(self):
         self.timer_running = True
         Thread(target=self.update_timer).start()
+
     def stop_timer(self):
         self.timer_running = False
     def reset_timer(self)
