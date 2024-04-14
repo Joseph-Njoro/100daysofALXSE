@@ -24,6 +24,7 @@ class AnalogClockApp:
 
         self.stopwatch_running = False
         self.stopwatch_seconds = 0
+
         self.timer_running =False
         self.timer_seconds = 
         self.timer_duration = 0
