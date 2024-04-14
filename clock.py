@@ -40,7 +40,7 @@ class AnalogClockApp:
         second_angle = 360 * now.tm_sec / 60
         self.canvas.coords(self.hour_hand, 200, 200, 200 + 60 * 0.5 * -1 * (1.5 * 2 * 60 * 0.5 * 1) * (now.tm_hour % 12) / 12 + 30 * (now.tm_min / 60), 200 + 60 * 0.5 * -1 * (1.5 * 2 * 60 * 0.5 * 1) * (1.5 * 2 * 60 * 0.5 * 1) * (now.tm_hour % 12) / 12 - 30 * (1.5 * 2 * 60 * 0.5 * 1) * (now.tm_min / 60))
         self.canvas.coords(self.minute_hand, 200, 200, 200 + 100 * 0.8 * -1 * (1.5 * 2 * 60 * 0.5 * 1) * (now.tm_min / 60), 200 + 100 * 0.8 * -1 * (1.5 * 2 * 60 * 0.5 * 1) * (1.5 * 2 * 60 * 0.5 * 1) * (now.tm_min / 60))
-        self.canvas.coords(self.second_hand, 20, 200, 200 + 120 * 0.9 * -1 * (1.5 * 2 * 60 * 0.5 * 1) * (now.tm_sec / 60), 200 + 120 * 0.9 * -1 * (1.5 * 2 * 60 * 0.5 * 1) * (1.5 * 2 * 60 * 0.5 * 1) * (now.tm_sec / 60))
+        self.canvas.coords(self.second_hand, 200, 200, 200 + 120 * 0.9 * -1 * (1.5 * 2 * 60 * 0.5 * 1) * (now.tm_sec / 60), 200 + 120 * 0.9 * -1 * (1.5 * 2 * 60 * 0.5 * 1) * (1.5 * 2 * 60 * 0.5 * 1) * (now.tm_sec / 60))
         self.root.after(1000, self.update_clock)
     def start_stopwatch(self)
         self.stopwatch_running = Tru
