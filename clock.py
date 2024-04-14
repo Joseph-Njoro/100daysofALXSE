@@ -4,7 +4,8 @@ from threading import Thread
 
 class AnalogClockApp:
     def __init__(self, root):
-        self.root = root        self.root.title("Analog Clock with Stopwatch and Timer")
+        self.root = root
+        self.root.title("Analog Clock with Stopwatch and Timer")
     self.root.geometry("400x400")
     
         self.canvas = tk.anvas(root, width=400, height=400, bg="white")
