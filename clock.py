@@ -3,7 +3,7 @@ import time
 from threading import Thread
 
 class AnalogClockApp:
-    def __init__(self, oot):
+    def __init__(self, root):
         self.root = root        self.root.title("Analog Clock with Stopwatch and Timer")
     self.root.geometry("400x400")
     
