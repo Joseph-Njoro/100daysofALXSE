@@ -68,5 +68,5 @@ class AnalogClockApp:
 
     def stop_timer(self):
         self.timer_running = False
-    def reset_timer(self)
+    def reset_timer(self):
         selftimersecond
