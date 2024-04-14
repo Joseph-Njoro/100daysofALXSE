@@ -36,7 +36,7 @@ class AnalogClockApp:
     def update_clock(self):
         now = time.localtime()
         hour_angle = 360 * (now.tm_hour % 12) / 12 + 30 * (now.tm_min / 60)
-        minute_angle = 360 * now.tm_min / 0
+        minute_angle = 360 * now.tm_min / 60
         second_angle = 360 * now.tm_sec / 6
         self.canvas.coords(self.hour_hand, 20, 200, 200 + 60 * 0.5 * -1 * (1.5 * 2 * 60 * 0.5 * 1) * (now.tm_hour % 12) / 12 + 30 * (now.tm_min / 60), 200 + 60 * 0.5 * -1 * (1.5 * 2 * 60 * 0.5 * 1) * (1.5 * 2 * 60 * 0.5 * 1) * (now.tm_hour % 12) / 12 - 30 * (1.5 * 2 * 60 * 0.5 * 1) * (now.tm_min / 60))
         self.canvas.coords(self.minute_hand, 20, 200, 200 + 100 * 0.8 * -1 * (1.5 * 2 * 60 * 0.5 * 1) * (now.tm_min / 60), 200 + 100 * 0.8 * -1 * (1.5 * 2 * 60 * 0.5 * 1) * (1.5 * 2 * 60 * 0.5 * 1) * (now.tm_min / 60))
