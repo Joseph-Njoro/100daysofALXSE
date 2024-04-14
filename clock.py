@@ -59,7 +59,7 @@ class AnalogClockApp:
             minutes = (self.stopwatch_seconds % 3600) // 60
             seconds = self.stopwatch_seconds % 60
             self.stopwatch_label.config(text=f"Stopwatch: {hours:02d}:{minutes:02d}:{seconds:02d}")
-            self.stopwath_seconds += 1
+            self.stopwatch_seconds += 1
             time.sleep(1)
     def start_timer(self)
         self.timer_running = True
