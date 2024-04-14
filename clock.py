@@ -21,6 +21,7 @@ class AnalogClockApp:
 
         self.timer_label = tk.Label(root, text="Timer: --:--:--", font=("Helvetica", 14))
         self.timer_label.pack()
+
         self.stopwatch_running = alse
         self.stopwatch_seconds = 0
         self.timer_running =False
