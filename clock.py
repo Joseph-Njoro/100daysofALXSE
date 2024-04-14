@@ -49,6 +49,7 @@ class AnalogClockApp:
 
     def stop_stopwatch(self):
         self.stopwatch_running = False
+
     def reset_stopwatch(self)
         self.stopwatch_seconds = 0
     def update_stowatch(self):
