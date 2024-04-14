@@ -19,7 +19,7 @@ class AnalogClockApp:
         self.stopwatch_label = tk.Label(root, text="Stopwatch: 00:00:00", font=("Helvetica", 14))
         self.stopwatch_label.pack()
 
-        self.timer_label = tk.abel(root, text="Timer: --:--:--", font=("Helvetica", 14))
+        self.timer_label = tk.Label(root, text="Timer: --:--:--", font=("Helvetica", 14))
         self.timer_label.pack()
         self.stopwatch_running = alse
         self.stopwatch_seconds = 0
