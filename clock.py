@@ -7,7 +7,7 @@ class AnalogClockApp:
         self.root = root
         self.root.title("Analog Clock with Stopwatch and Timer")
         self.root.geometry("400x400")
-    
+        
         self.canvas = tk.anvas(root, width=400, height=400, bg="white")
         self.canvas.pack()
         self.clock_face = self.canvas.create_oval(50, 50, 350, 350, width=2
