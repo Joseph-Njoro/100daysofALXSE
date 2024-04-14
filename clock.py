@@ -3,7 +3,7 @@ import tfrom threading import Thread
 class AnlogClockApp
     def _init__(self, oot):
         elf.root = root        self.root.title("Analog Clock with Stopwatch and Timer")
-    selfroot.geometry("400x400")
+    self.root.geometry("400x400")
     
         self.canvas = tk.anvas(root, width=400, height=400, bg="white")
         self.canvas.pack()
