@@ -71,3 +71,22 @@ class AnalogClockApp:
 
     def reset_timer(self):
         self.timer_seconds = 0
+        self.timer_duration = 0
+
+    def update_timer(self):
+        while self.timer_running:
+            if self.timer_seconds >= self.timer_duration:
+                self.stop_timer()
+                self.timer_label.config(text="Timer: --:--:--")
+                return
+            remaining_seconds = self.timer_duration - self.timer_seconds
+            hours = remaining_seconds // 3600
+            minutes = (remaining_seconds % 3600) // 60
+            seconds = remaining_seconds % 60
+            self.timer_label.config(text=f"Timer: {hours:02d}:{minutes:02d}:{seconds:02d}")
+            self.timer_seconds += 1
+            time.sleep(1)
+
+root = tk.Tk()
+app = AnalogClockApp(root)
+root.mainloop()
