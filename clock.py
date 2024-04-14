@@ -46,6 +46,7 @@ class AnalogClockApp:
     def start_stopwatch(self):
         self.stopwatch_running = True
         Thread(target=self.update_stopwatch).start()
+
     def stop_stopwatch(self)
         self.stopwatch_running = False
     def reset_stopwatch(self)
