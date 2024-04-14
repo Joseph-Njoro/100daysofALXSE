@@ -33,7 +33,7 @@ class AnalogClockApp:
         self.update_stopwatch()
         self.update_timer()
 
-    def update_clock(self)
+    def update_clock(self):
         now = time.localtime(
         hour_angle = 360 * (now.tm_hour %12) / 12 + 30 * (now.tm_min / 60)
         minute_angle = 360 * now.tm_min / 0
