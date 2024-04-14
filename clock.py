@@ -54,7 +54,7 @@ class AnalogClockApp:
         self.stopwatch_seconds = 0
 
     def update_stopwatch(self):
-        while self.topwatch_running:
+        while self.stopwatch_running:
             hours = elf.stopwatch_seconds // 3600
             minutes =(self.stopwatch_seconds % 3600) // 60
             seconds = elf.stopwatch_seconds % 60
