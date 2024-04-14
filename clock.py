@@ -30,7 +30,7 @@ class AnalogClockApp:
         self.timer_duration = 0
 
         self.update_clock()
-        self.update_stopwach()
+        self.update_stopwatch()
         self.update_timer()
     def update_clock(self)
         now = time.localtime(
