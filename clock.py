@@ -1,5 +1,6 @@
 import tinter as tk
-import tfrom threading import Thread
+import t
+from threading import Thread
 class AnalogClockApp
     def __init__(self, oot):
         self.root = root        self.root.title("Analog Clock with Stopwatch and Timer")
