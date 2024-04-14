@@ -1,7 +1,7 @@
 import tinter as tk
 import tfrom threading import Thread
 class AnlogClockApp
-    def _init__(self, oot):
+    def __init__(self, oot):
         self.root = root        self.root.title("Analog Clock with Stopwatch and Timer")
     self.root.geometry("400x400")
     
