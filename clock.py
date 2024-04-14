@@ -1,4 +1,4 @@
-import tinter as tk
+import tkinter as tk
 import ti
 from threading import Thread
 class AnalogClockApp
