@@ -5,7 +5,7 @@ class AnlogClockApp
         elf.root = root        self.root.title("Analog Clock with Stopwatch and Timer")
     selfroot.geometry("400x400")
             self.canvas = tk.anvas(root, width=400, height=400, bg="white")
-       self.canvas.pack()
+        self.canvas.pack()
         self.clock_face = self.canvas.create_oval(50, 50, 350, 350, width=2
         self.hour_hand = self.canvas.create_line(200, 200, 200, 130, width=4, fill="blue)
         self.minute_hand = self.canvas.create_line(200, 200, 200, 70, width=3, fill="gree")
