@@ -1,5 +1,5 @@
 import tkinter as tk
-import ti
+import time
 from threading import Thread
 class AnalogClockApp
     def __init__(self, oot):
