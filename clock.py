@@ -1,5 +1,5 @@
 import tinter as tk
-import t
+import ti
 from threading import Thread
 class AnalogClockApp
     def __init__(self, oot):
