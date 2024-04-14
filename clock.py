@@ -70,4 +70,4 @@ class AnalogClockApp:
         self.timer_running = False
 
     def reset_timer(self):
-        self.timer_seconds = 
+        self.timer_seconds = 0
