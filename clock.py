@@ -61,6 +61,7 @@ class AnalogClockApp:
             self.stopwatch_label.config(text=f"Stopwatch: {hours:02d}:{minutes:02d}:{seconds:02d}")
             self.stopwatch_seconds += 1
             time.sleep(1)
+
     def start_timer(self)
         self.timer_running = True
         Thread(target=self.update_timer).start()
