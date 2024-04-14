@@ -34,7 +34,7 @@ class AnalogClockApp:
         self.update_timer()
 
     def update_clock(self):
-        now = time.localtime(
+        now = time.localtime()
         hour_angle = 360 * (now.tm_hour %12) / 12 + 30 * (now.tm_min / 60)
         minute_angle = 360 * now.tm_min / 0
         second_angle = 360 * now.tm_sec / 6
