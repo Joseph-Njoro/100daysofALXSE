@@ -16,7 +16,7 @@ class AnalogClockApp:
         self.minute_hand = self.canvas.create_line(200, 200, 200, 70, width=3, fill="green")
         self.second_hand = self.canvas.create_line(200, 200, 200, 90, width=1, fill="red")
 
-        self.stopwatch_label = tk.abel(root, text="Stopwatch: 00:00:00", font=("Helvetica", 14))
+        self.stopwatch_label = tk.Label(root, text="Stopwatch: 00:00:00", font=("Helvetica", 14))
         self.stopwatch_label.pack()
         self.timer_label = tk.abel(root, text="Timer: --:--:--", font=("Helvetica", 14))
         self.timer_label.pack()
