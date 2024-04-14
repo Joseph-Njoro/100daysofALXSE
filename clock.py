@@ -10,7 +10,8 @@ class AnalogClockApp:
         
         self.canvas = tk.Canvas(root, width=400, height=400, bg="white")
         self.canvas.pack()
-        self.clock_face = self.canvas.create_oval(50, 50, 350, 350, width=2
+
+        self.clock_face = self.canvas.create_oval(50, 50, 350, 350, width=2)
         self.hour_hand = self.canvas.create_line(200, 200, 200, 130, width=4, fill="blue)
         self.minute_hand = self.canvas.create_line(200, 200, 200, 70, width=3, fill="gree")
         self.second_hand = self.canvas.create_line(200, 200, 200, 90, width=1, fill="red")
