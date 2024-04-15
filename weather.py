@@ -4,7 +4,7 @@ lass WeatherApp
    def __init__(self,root):
        self.root = roo
        self.root.title("Weather App)
-       selfroot.geometry("400x200")
+       self.root.geometry("400x200")
        selfcity_label = tk.Label(root, text="Enter City:"
        selfcity_label.grid(row=0, column=0, padx=10, pady=10)
        selfcity_entry = tk.Entry(root
