@@ -19,7 +19,7 @@ lass WeatherApp
        url = f"http://api.oenweathermap.org/data/2.5/weather?q={city}&appid={api_key}&units=metric"
        response = requests.gt(url)
        data = response.json()
-       if data["cod"] == 200
+        if data["cod"] == 200
             weather_description  data["weather"][0]["description"].capitalize()
             temperature = data["min"]["temp"]
             humidity = data["main"["humidity"]
