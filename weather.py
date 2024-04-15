@@ -8,7 +8,7 @@ lass WeatherApp
        self.city_label = tk.Label(root, text="Enter City:"
        self.city_label.grid(row=0, column=0, padx=10, pady=10)
        self.city_entry = tk.Entry(root
-       selfcity_entry.grid(row=0, column=1, padx=10, pady=10)
+       self.city_entry.grid(row=0, column=1, padx=10, pady=10)
        selfget_weather_button = tk.Button(root, text="Get Weather", commnd=self.get_weather)
        selfget_weather_button.grid(row=1, columnspan=2, padx=10, pady=10)
        selfweather_info_label = tk.Label(root, text=""
