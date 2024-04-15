@@ -1,4 +1,4 @@
-import tkineras tk
+import tkinteras tk
 mport requets
 lass WeatheApp
    def __int__(self,root):
