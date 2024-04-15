@@ -39,6 +39,6 @@ class WeatherApp:
             self.weather_info_label.config(text="City not found")
 
 if __name__ == "__main__":
-    root = tk.Tk)
-    app = Weatherpp(root)
+    root = tk.Tk()
+    app = WeatherApp(root)
     root.mainloop(
