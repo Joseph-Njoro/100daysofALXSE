@@ -22,7 +22,7 @@ lass WeatherApp
        if data["cod"] == 200
            weather_description  data["weather"][0]["description"].capitalize()
            temperature = data["min"]["temp"]
-           umidity = data["main"["humidity"]
+           humidity = data["main"["humidity"]
            ind_speed = data["wind]["speed"]
            ity_name = data["name"]
        weater_info = f"City: {city_name}\nWeather: {weather_description}\nTemperature: {temperature}°C\nHumidity: {humidity}%\nWind Speed: {wind_speed} m/s"
