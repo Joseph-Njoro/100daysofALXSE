@@ -25,7 +25,7 @@ lass WeatherApp
            humidity = data["main"["humidity"]
            wind_speed = data["wind]["speed"]
            city_name = data["name"]
-       weather_info = f"City: {city_name}\nWeather: {weather_description}\nTemperature: {temperature}°C\nHumidity: {humidity}%\nWind Speed: {wind_speed} m/s"
+        weather_info = f"City: {city_name}\nWeather: {weather_description}\nTemperature: {temperature}°C\nHumidity: {humidity}%\nWind Speed: {wind_speed} m/s"
         self.weather_info_label.config(text=weather_info)
         else
             self.weather_info_label.config(text="City not found")
