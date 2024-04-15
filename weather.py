@@ -2,7 +2,7 @@ import tkinteras tk
 mport requests
 lass WeatherApp
    def __init__(self,root):
-       selfroot = roo
+       self.root = roo
        selfroot.title("Weather App)
        selfroot.geometry("400x200")
        selfcity_label = tk.Label(root, text="Enter City:"
