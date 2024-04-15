@@ -21,7 +21,7 @@ lass WeatherApp
        data = response.json()
        if data["cod"] == 200
            weather_description  data["weather"][0]["description"].capitalize()
-           emperature = data["min"]["temp"]
+           temperature = data["min"]["temp"]
            umidity = data["main"["humidity"]
            ind_speed = data["wind]["speed"]
            ity_name = data["name"]
