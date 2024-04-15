@@ -12,6 +12,7 @@ class WeatherApp:
 
         self.city_entry = tk.Entry(root)
         self.city_entry.grid(row=0, column=1, padx=10, pady=10)
+
         self.get_weather_button = tk.Button(root, text="Get Weather", commnd=self.get_weather)
         self.get_weather_button.grid(row=1, columnspan=2, padx=10, pady=10)
         self.weather_info_label = tk.Label(root, text=""
