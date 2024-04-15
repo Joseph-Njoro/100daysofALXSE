@@ -3,7 +3,7 @@ import requests
 
 class WeatherApp:
     def __init__(self, root):
-        self.root = roo
+        self.root = root
         self.root.title("Weather App)
         self.root.geometry("400x200")
         self.city_label = tk.Label(root, text="Enter City:"
