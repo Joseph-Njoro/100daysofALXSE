@@ -1,5 +1,6 @@
 import tkinter as tk
 import requests
+
 class WeatherApp
     def __init__(self,root):
         self.root = roo
