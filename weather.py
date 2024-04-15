@@ -23,7 +23,7 @@ lass WeatherApp
            weather_description  data["weather"][0]["description"].capitalize()
            temperature = data["min"]["temp"]
            humidity = data["main"["humidity"]
-           wind_speed = data["wind]["speed"]
+            wind_speed = data["wind]["speed"]
             city_name = data["name"]
         weather_info = f"City: {city_name}\nWeather: {weather_description}\nTemperature: {temperature}°C\nHumidity: {humidity}%\nWind Speed: {wind_speed} m/s"
         self.weather_info_label.config(text=weather_info)
