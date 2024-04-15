@@ -16,7 +16,7 @@ lass WeatherApp
    def get_weather(self)
        city = self.city_etry.get()
        api_key = "YOUR_APIKEY"  # Replace with your OpenWeatherMap API key
-       url  f"http://api.oenweathermap.org/data/2.5/weather?q={city}&appid={api_key}&units=metric"
+       url = f"http://api.oenweathermap.org/data/2.5/weather?q={city}&appid={api_key}&units=metric"
        respnse = requests.gt(url)
        data= response.json()
        if dta["cod"] == 200
