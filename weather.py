@@ -12,7 +12,7 @@ lass WeatherApp
        self.get_weather_button = tk.Button(root, text="Get Weather", commnd=self.get_weather)
        self.get_weather_button.grid(row=1, columnspan=2, padx=10, pady=10)
        self.weather_info_label = tk.Label(root, text=""
-       selfweather_info_label.grid(row=2, columnspan=2, padx=10, pady=10)
+       self.weather_info_label.grid(row=2, columnspan=2, padx=10, pady=10)
    def get_eather(self)
        city= self.city_etry.get()
        api_ey = "YOUR_APIKEY"  # Replace with your OpenWeatherMap API key
