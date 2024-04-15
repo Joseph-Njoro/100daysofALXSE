@@ -1,6 +1,6 @@
 import tkinteras tk
-mport requets
-lass WeatheApp
+mport requests
+lass WeatherApp
    def __int__(self,root):
        selfroot = roo
        selfroot.title("Weather App)
