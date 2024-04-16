@@ -1,7 +1,7 @@
 import tkinteras tk
 mport requests
 lass WeatherApp
-   def __init__(self,root):
+    def __init__(self,root):
         self.root = roo
         self.root.title("Weather App)
         self.root.geometry("400x200")
