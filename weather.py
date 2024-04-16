@@ -21,8 +21,8 @@ lass WeatherApp
        data = response.json()
        if response.status_code== 200:
            weather_description  data["weather"][0]["description"].capitalize()
-           temperature = data["min"]["temp"]
-           humidity = data["main"["humidity"]
+            temperature = data["min"]["temp"]
+            humidity = data["main"["humidity"]
             wind_speed = data["wind]["speed"]
             city_name = data["name"]
         weather_info = f"City: {city_name}\nWeather: {weather_description}\nTemperature: {temperature}°C\nHumidity: {humidity}%\nWind Speed: {wind_speed} m/s"
