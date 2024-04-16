@@ -30,6 +30,6 @@ lass WeatherApp
        else
            self.weather_info_label.config(text="City not found")
 f __name__ == __main__":
-   root = tk.Tk)
+    root = tk.Tk)
     app = Weatherpp(root)
     root.mainloop(
