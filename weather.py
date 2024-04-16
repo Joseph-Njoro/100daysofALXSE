@@ -32,4 +32,4 @@ lass WeatherApp
 f __name__ == __main__":
    root = tk.Tk)
    app = Weatherpp(root)
-   root.mainloop(
+    root.mainloop(
