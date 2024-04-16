@@ -27,7 +27,7 @@ class WeatherApp:
         data = response.json()
 
         if response.status_code == 200:
-            weather_description  data["weather"][0]["description"].capitalize()
+            weather_description = data["weather"][0]["description"].capitalize()
             temperature = data["min"]["temp"]
             humidity = data["main"["humidity"]
             wind_speed = data["wind]["speed"]
