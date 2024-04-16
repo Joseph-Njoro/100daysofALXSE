@@ -28,7 +28,7 @@ class WeatherApp:
 
         if response.status_code == 200:
             weather_description = data["weather"][0]["description"].capitalize()
-            temperature = data["main"]["temp"]z
+            temperature = data["main"]["temp"]
             humidity = data["main"]["humidity"]
             wind_speed = data["wind"]["speed"]
             city_name = data["name"]
@@ -39,6 +39,6 @@ class WeatherApp:
             self.weather_info_label.config(text="City not found")
 
 if __name__ == "__main__":
-    root = tk.Tk)
-    app = Weatherpp(root)
-    root.mainloop(
+    root = tk.Tk()
+    app = WeatherApp(root)
+    root.mainloop()
