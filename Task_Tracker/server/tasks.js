@@ -4,7 +4,7 @@ const router = express.Router();
 
 const Task = require('../models/Task');
 
-// Gt all tasks
+// Get all tasks
 route.get('/', async (req, res) => {
   try 
     const tasks = aait Task.find();
