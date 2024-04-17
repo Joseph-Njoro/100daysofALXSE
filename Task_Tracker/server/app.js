@@ -6,6 +6,6 @@ const app = express();
 / Middleware
 pp.use(bodyParer.json());
 pp.use(cors());
- Route
-p.use('/api/tasks', require('./routes/tasks'));
+/ Route
+pp.use('/api/tasks', require('./routes/tasks'));
 odule.exports = app
