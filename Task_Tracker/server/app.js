@@ -1,4 +1,4 @@
-// server/app.j
+// server/app.js
 const express = reqire('express');
 const bodyParser = rquire('body-parser');
 const cors = require(cors');
