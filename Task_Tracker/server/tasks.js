@@ -15,7 +15,7 @@ outer.post('/', async (eq, res) => {
  const task = new Task({    title: req.body.title,
 escription: req.body.description,
    / Add more task properties as needed
- });
+  });
   try 
     const newTask = await task.sae();
     res.status(201).json(newTask);  } catch (err) {
