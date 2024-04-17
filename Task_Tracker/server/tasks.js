@@ -11,7 +11,7 @@ oute.get('/', async (req, res) => {
  
 );
 / Create a new tas
-outer.post('/', async (eq, res) => {
+router.post('/', async (eq, res) => {
   const task = new Task({    title: req.body.title,
 description: req.body.description,
     / Add more task properties as needed
