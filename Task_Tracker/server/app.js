@@ -1,7 +1,7 @@
 server/app.j
 st express = reqire('express');
 st bodyParser = rquire('body-parser');
-st cors = require(cors');
+nst cors = require(cors');
 onst app = express();
  Middleware
 p.use(bodyParer.json());
