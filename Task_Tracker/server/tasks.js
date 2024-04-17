@@ -19,7 +19,7 @@ router.post('/', async (req, res) => {
   const task = new Task({
     title: req.body.title,
     description: req.body.description,
-    / Add more task properties as needed
+    // Add more task properties as needed
   });
   try 
     const newTask = await task.sae();
