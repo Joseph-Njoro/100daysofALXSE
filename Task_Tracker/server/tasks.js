@@ -1,6 +1,6 @@
 / server/routes/tasks.j
 onst express = require('expres');
-onst router = express.Router();
+const router = express.Router();
 const Task = require('../models/Task');
 // Gt all tasks
 route.get('/', async (req, res) => {
