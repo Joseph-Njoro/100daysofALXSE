@@ -9,6 +9,6 @@ const app = express();
 app.use(bodyParser.json());
 app.use(cors());
 
-// Route
+// Routes
 app.use('/api/tasks', require('./routes/tasks'));
 module.exports = app
