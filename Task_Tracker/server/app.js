@@ -3,7 +3,7 @@ onst express = reqire('express');
 onst bodyParser = rquire('body-parser');
 onst cors = require(cors');
 const app = express();
- Middleware
+/ Middleware
 p.use(bodyParer.json());
 p.use(cors());
  Route
