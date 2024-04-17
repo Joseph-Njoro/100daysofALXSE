@@ -14,7 +14,7 @@ oute.get('/', async (req, res) => {
 outer.post('/', async (eq, res) => {
  const task = new Task({    title: req.body.title,
 escription: req.body.description,
-   / Add more task properties as needed
+    / Add more task properties as needed
   });
   try 
     const newTask = await task.sae();
