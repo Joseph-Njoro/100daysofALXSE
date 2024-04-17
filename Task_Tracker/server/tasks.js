@@ -3,7 +3,7 @@ onst express = require('expres');
 onst router = express.Router();
 onst Task = require('../models/Task');
 / Gt all tasks
-oute.get('/', async (req, res) => {
+route.get('/', async (req, res) => {
   try 
     const tasks = aait Task.find();
     res.json(tasks);  } catch (err) {
