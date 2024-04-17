@@ -1,6 +1,6 @@
 / server/app.j
 onst express = reqire('express');
-nst bodyParser = rquire('body-parser');
+onst bodyParser = rquire('body-parser');
 nst cors = require(cors');
 onst app = express();
  Middleware
