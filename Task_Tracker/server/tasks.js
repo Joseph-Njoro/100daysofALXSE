@@ -22,7 +22,7 @@ router.post('/', async (req, res) => {
     // Add more task properties as needed
   });
 
-  try 
+  try {
     const newTask = await task.sae();
     res.status(201).json(newTask);  } catch (err) {
   res.status(400).json({ message: err.message });
