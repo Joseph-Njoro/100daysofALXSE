@@ -1,5 +1,5 @@
-/ server/app.j
-onst express = reqire('express');
+// server/app.j
+const express = reqire('express');
 const bodyParser = rquire('body-parser');
 const cors = require(cors');
 
