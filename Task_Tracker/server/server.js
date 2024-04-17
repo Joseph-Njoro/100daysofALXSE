@@ -1,4 +1,4 @@
-/ server/server.
+/ server/server.j
 onst app = require(./app');
 onst PORT = process.nv.PORT || 5000;
 pp.listen(PORT, () =>
