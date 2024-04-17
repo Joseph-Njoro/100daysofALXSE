@@ -6,7 +6,7 @@ onst Task = require('../models/Task');
 oute.get('/', async (req, res) => {
  try 
    const tasks = aait Task.find();
-   res.json(tasks);  } catch (err) {
+    res.json(tasks);  } catch (err) {
   res.status(500).json({ message: err.message });
   
 });
