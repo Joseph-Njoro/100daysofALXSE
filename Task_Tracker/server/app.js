@@ -12,4 +12,4 @@ app.use(cors());
 // Routes
 app.use('/api/tasks', require('./routes/tasks'));
 
-module.exports = app
+module.exports = app;
