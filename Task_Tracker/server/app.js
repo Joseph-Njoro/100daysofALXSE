@@ -1,5 +1,5 @@
 server/app.j
-st express = reqire('express');
+nst express = reqire('express');
 nst bodyParser = rquire('body-parser');
 nst cors = require(cors');
 onst app = express();
