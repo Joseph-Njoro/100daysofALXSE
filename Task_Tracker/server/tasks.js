@@ -9,7 +9,7 @@ oute.get('/', async (req, res) => {
    res.json(tasks);  } catch (err) {
  res.status(500).json({ message: err.message });
  
-);
+});
 // Create a new tas
 router.post('/', async (eq, res) => {
   const task = new Task({    title: req.body.title,
