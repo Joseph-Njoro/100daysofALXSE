@@ -15,7 +15,7 @@ router.get('/', async (req, res) => {
 });
 
 // Create a new task
-router.post('/', async (eq, res) => {
+router.post('/', async (req, res) => {
   const task = new Task({    title: req.body.title,
 description: req.body.description,
     / Add more task properties as needed
