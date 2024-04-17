@@ -8,7 +8,7 @@ oute.get('/', async (req, res) => {
    const tasks = aait Task.find();
    res.json(tasks);  } catch (err) {
  res.status(500).json({ message: err.message });
- 
+  
 });
 // Create a new tas
 router.post('/', async (eq, res) => {
