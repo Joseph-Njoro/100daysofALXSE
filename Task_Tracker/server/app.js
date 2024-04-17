@@ -6,6 +6,6 @@ const app = express();
 / Middleware
 pp.use(bodyParer.json());
 pp.use(cors());
-/ Route
+// Route
 app.use('/api/tasks', require('./routes/tasks'));
 module.exports = app
