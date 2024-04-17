@@ -2,7 +2,7 @@
 onst express = require('expres');
 onst router = express.Router();
 onst Task = require('../models/Task');
-/ Gt all tasks
+// Gt all tasks
 route.get('/', async (req, res) => {
   try 
     const tasks = aait Task.find();
