@@ -5,7 +5,7 @@ onst cors = require(cors');
 const app = express();
 / Middleware
 pp.use(bodyParer.json());
-pp.use(cors());
+app.use(cors());
 // Route
 app.use('/api/tasks', require('./routes/tasks'));
 module.exports = app
