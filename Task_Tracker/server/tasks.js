@@ -18,7 +18,7 @@ router.get('/', async (req, res) => {
 router.post('/', async (req, res) => {
   const task = new Task({
     title: req.body.title,
-description: req.body.description,
+    description: req.body.description,
     / Add more task properties as needed
   });
   try 
