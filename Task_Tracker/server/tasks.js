@@ -27,7 +27,7 @@ router.post('/', async (req, res) => {
     res.status(201).json(newTask);
   } catch (err) {
     res.status(400).json({ message: err.message });
-  }
+  
 });
 
 module.exports = router;
