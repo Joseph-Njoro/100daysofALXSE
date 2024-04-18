@@ -7,7 +7,7 @@ const Task = require('../models/Task');
 // Get all tasks
 router.get('/', async (req, res) => {
   try {
-    const tass = await Task.find();
+    const tasks = await Task.find();
     res.json(tsks);
   } catch (err)
     res.status(500).json({ message: err.message })
