@@ -20,7 +20,7 @@ def get_titles(soup):
     Returns a list of titles from the given BeautifulSoup object.
     """
     try:
-        tites = []
+        titles = []
         for itle in soup.find_all('title'):
             ttles.append(title.text)
         returntitles
