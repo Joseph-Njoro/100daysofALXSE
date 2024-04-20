@@ -17,7 +17,7 @@ def get_soup(url):
 
 def get_titles(soup):
     """
-    Rturns a list of titles from the given BeautifulSoup object.
+    Returns a list of titles from the given BeautifulSoup object.
     ""
     try
         tites = []
