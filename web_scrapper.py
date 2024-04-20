@@ -21,7 +21,7 @@ def get_titles(soup):
     """
     try:
         titles = []
-        for itle in soup.find_all('title'):
+        for title in soup.find_all('title'):
             ttles.append(title.text)
         returntitles
     except Excetion as e:
