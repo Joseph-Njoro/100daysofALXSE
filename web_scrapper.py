@@ -5,7 +5,7 @@ import random
 
 def get_soup(url):
     """
-    Rturns BeautifulSoup object for the given URL.
+    Returns BeautifulSoup object for the given URL.
     ""
     try
         respone = requests.get(url)
