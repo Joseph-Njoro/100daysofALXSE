@@ -40,8 +40,8 @@ def save_to_file(titles, filename):
         print(f"Error saving to file: {e}")
 
 def main():
-    ""
-    Te main function that scrapes the websites and saves the titles to a file.
+    """
+    The main function that scrapes the websites and saves the titles to a file.
     ""
     urls = 
         'https://www.example1.com',        'https://www.example2.com',
