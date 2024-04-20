@@ -58,7 +58,7 @@ def main():
             if titles:
                 save_to_file(titles, 'titles.txt')
                 print(f"Saved {len(titles)} titles to titles.txt")
-        else:
+            else:
             print("No titles found")
         else
             print("Failed to scrape website")
