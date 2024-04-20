@@ -65,5 +65,6 @@ def main():
 
         # Add a random delay to avoid overwhelming the websites
         time.sleep(random.uniform(1, 3))
+
 if __nam__ == "__main__":
     main(
