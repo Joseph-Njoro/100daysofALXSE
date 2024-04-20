@@ -2,6 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 import time
 import random
+
 defget_soup(url):
     ""
     Rturns BeautifulSoup object for the given URL.
