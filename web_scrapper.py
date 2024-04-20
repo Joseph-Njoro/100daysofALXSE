@@ -4,7 +4,7 @@ import time
 import random
 
 def get_soup(url):
-    ""
+    """
     Rturns BeautifulSoup object for the given URL.
     ""
     try
