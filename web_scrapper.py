@@ -28,7 +28,7 @@ def get_titles(soup):
         print(f"Error extracting titles: {e}")
         return []
 
-defsave_to_file(titles, filename):
+def save_to_file(titles, filename):
     ""
     Sves the list of titles to a file.
     ""
