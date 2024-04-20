@@ -14,6 +14,7 @@ def get_soup(url):
     except requests.exceptions.RequestException as e:
         print(f"Error requesting {url}: {e}")
         return None
+
 defget_titles(soup):
     ""
     Rturns a list of titles from the given BeautifulSoup object.
