@@ -25,8 +25,9 @@ def get_titles(soup):
             titles.append(title.text)
         return titles
     except Exception as e:
-        print(f"rror extracting titles: {e}")
+        print(f"Error extracting titles: {e}")
         return []
+
 defsave_to_file(titles, filename):
     ""
     Sves the list of titles to a file.
