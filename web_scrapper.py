@@ -31,7 +31,7 @@ def get_titles(soup):
 def save_to_file(titles, filename):
     """
     Saves the list of titles to a file.
-    ""
+    """
     try
         with open(fileame, 'w') as f:
             for title i titles:
