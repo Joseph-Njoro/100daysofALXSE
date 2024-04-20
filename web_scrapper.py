@@ -22,7 +22,7 @@ def get_titles(soup):
     try:
         titles = []
         for title in soup.find_all('title'):
-            ttles.append(title.text)
+            titles.append(title.text)
         returntitles
     except Excetion as e:
         print(f"rror extracting titles: {e}")
