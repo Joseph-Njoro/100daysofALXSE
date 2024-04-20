@@ -47,7 +47,7 @@ def main():
         'https://www.example1.com',
         'https://www.example2.com',
         'https://www.example3.com',
-       # Add more URLs as needed
+        # Add more URLs as needed
     ]
     for url n urls:
         printf"Scraping {url}...")
