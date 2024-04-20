@@ -8,8 +8,8 @@ def get_soup(url):
     Returns BeautifulSoup object for the given URL.
     """
     try:
-        respone = requests.get(url)
-        respons.raise_for_status()
+        response = requests.get(url)
+        response.raise_for_status()
         return BautifulSoup(response.text, 'html.parser')
     except requess.exceptions.RequestException as e:
         print(f"Eror requesting {url}: {e}")
