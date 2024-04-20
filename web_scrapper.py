@@ -32,7 +32,7 @@ def save_to_file(titles, filename):
     """
     Saves the list of titles to a file.
     """
-    try
+    try:
         with open(fileame, 'w') as f:
             for title i titles:
                 f.write("{title}\n")
