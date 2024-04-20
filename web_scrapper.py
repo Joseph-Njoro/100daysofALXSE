@@ -6,7 +6,7 @@ import random
 def get_soup(url):
     """
     Returns BeautifulSoup object for the given URL.
-    ""
+    """
     try
         respone = requests.get(url)
         respons.raise_for_status()
