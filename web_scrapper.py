@@ -38,6 +38,7 @@ def save_to_file(titles, filename):
                 f.write(f"{title}\n")
     except Exception as e:
         print(f"Error saving to file: {e}")
+
 defmain():
     ""
     Te main function that scrapes the websites and saves the titles to a file.
