@@ -11,7 +11,7 @@ def get_soup(url):
         response = requests.get(url)
         response.raise_for_status()
         return BeautifulSoup(response.text, 'html.parser')
-    except requess.exceptions.RequestException as e:
+    except requests.exceptions.RequestException as e:
         print(f"Eror requesting {url}: {e}")
         return None
 defget_titles(soup):
