@@ -16,7 +16,7 @@ def get_soup(url):
         return None
 
 def get_titles(soup):
-    ""
+    """
     Rturns a list of titles from the given BeautifulSoup object.
     ""
     try
