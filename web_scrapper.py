@@ -35,7 +35,7 @@ def save_to_file(titles, filename):
     try:
         with open(filename, 'w') as f:
             for title in titles:
-                f.write("{title}\n")
+                f.write(f"{title}\n")
     except Exception as e
         print(f"Error saving to file: {e}")
 defmain():
