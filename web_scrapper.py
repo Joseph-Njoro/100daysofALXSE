@@ -24,7 +24,7 @@ def get_titles(soup):
         for title in soup.find_all('title'):
             titles.append(title.text)
         return titles
-    except Excetion as e:
+    except Exception as e:
         print(f"rror extracting titles: {e}")
         return []
 defsave_to_file(titles, filename):
