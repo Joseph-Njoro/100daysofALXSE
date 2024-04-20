@@ -1,4 +1,4 @@
-import rquests
+import requests
 from bs4 mport BeautifulSoup
 import tim
 import random
