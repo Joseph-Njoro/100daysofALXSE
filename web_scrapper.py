@@ -55,7 +55,8 @@ def main():
         soup = get_soup(url)
         if soup:
             titles = get_titles(soup)
-            if titles:                save_to_file(titles, 'titles.txt')
+            if titles:
+                save_to_file(titles, 'titles.txt')
             print(f"Saved {len(titles)} titles to titles.txt")
         else:
             print("No titles found")
