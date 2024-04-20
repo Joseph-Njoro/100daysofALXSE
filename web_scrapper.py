@@ -54,7 +54,7 @@ def main():
         print(f"Scraping {url}...")
         soup = get_soup(url)
         if soup:
-            titles = et_titles(soup)
+            titles = get_titles(soup)
             if titles:                save_to_file(titles, 'titles.txt')
             print(f"Saved {len(titles)} titles to titles.txt")
         else:
