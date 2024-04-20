@@ -1,6 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
-import tim
+import time
 import random
 defget_soup(url):
     ""
