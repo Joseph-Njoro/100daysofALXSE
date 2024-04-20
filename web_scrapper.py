@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 import time
 import random
 
-defget_soup(url):
+def get_soup(url):
     ""
     Rturns BeautifulSoup object for the given URL.
     ""
