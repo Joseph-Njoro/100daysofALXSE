@@ -29,7 +29,7 @@ def get_titles(soup):
         return []
 
 def save_to_file(titles, filename):
-    ""
+    """
     Sves the list of titles to a file.
     ""
     try
