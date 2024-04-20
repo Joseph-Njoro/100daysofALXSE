@@ -1,5 +1,5 @@
 import requests
-from bs4 mport BeautifulSoup
+from bs4 import BeautifulSoup
 import tim
 import random
 defget_soup(url):
