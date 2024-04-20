@@ -49,6 +49,7 @@ def main():
         'https://www.example3.com',
         # Add more URLs as needed
     ]
+
     for url n urls:
         printf"Scraping {url}...")
         soup =get_soup(url)
