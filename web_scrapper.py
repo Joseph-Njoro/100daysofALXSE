@@ -18,7 +18,7 @@ def get_soup(url):
 def get_titles(soup):
     """
     Returns a list of titles from the given BeautifulSoup object.
-    ""
+    """
     try
         tites = []
         for itle in soup.find_all('title'):
