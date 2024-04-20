@@ -51,7 +51,7 @@ def main():
     ]
 
     for url in urls:
-        printf"Scraping {url}...")
+        print(f"Scraping {url}...")
         soup =get_soup(url)
         if soup
             titles = et_titles(soup)
