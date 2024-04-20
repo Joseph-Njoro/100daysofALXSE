@@ -59,7 +59,7 @@ def main():
                 save_to_file(titles, 'titles.txt')
                 print(f"Saved {len(titles)} titles to titles.txt")
             else:
-            print("No titles found")
+                print("No titles found")
         else
             print("Failed to scrape website")
         # Add a random delay to avoid oerwhelming the websites
