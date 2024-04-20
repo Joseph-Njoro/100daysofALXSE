@@ -50,7 +50,7 @@ def main():
         # Add more URLs as needed
     ]
 
-    for url n urls:
+    for url in urls:
         printf"Scraping {url}...")
         soup =get_soup(url)
         if soup
