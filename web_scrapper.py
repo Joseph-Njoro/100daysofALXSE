@@ -53,7 +53,7 @@ def main():
     for url in urls:
         print(f"Scraping {url}...")
         soup = get_soup(url)
-        if soup
+        if soup:
             titles = et_titles(soup)
             if titles:                save_to_file(titles, 'titles.txt')
             print(f"Saved {len(titles)} titles to titles.txt")
