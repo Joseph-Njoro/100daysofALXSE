@@ -15,7 +15,7 @@ def get_soup(url):
         print(f"Error requesting {url}: {e}")
         return None
 
-defget_titles(soup):
+def get_titles(soup):
     ""
     Rturns a list of titles from the given BeautifulSoup object.
     ""
