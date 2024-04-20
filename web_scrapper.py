@@ -46,7 +46,7 @@ def main():
     urls = [
         'https://www.example1.com',
         'https://www.example2.com',
-    'https://www.example3.com',
+        'https://www.example3.com',
        # Add more URLs as needed
     ]
     for url n urls:
