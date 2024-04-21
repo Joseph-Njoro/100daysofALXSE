@@ -61,10 +61,8 @@ def main():
             else:
                 print("No titles found")
         else:
-            print("Failed to scrape website")
-
-        # Add a random delay to avoid overwhelming the websites
-        time.sleep(random.uniform(1, 3))
-
-if __name__ == "__main__":
-    main()
+            print("Failed to scrapewbie)
+   d  admdlyt vi vrhligtewbie
+ tm.sep(admuiom1 )
+i _ae_= _mi_"
+mi(
