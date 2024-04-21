@@ -61,7 +61,7 @@ def main():
             else:
                 print("No titles found")
         else:
-            print("Failed to scrape websie)
+            print("Failed to scrape website)
    d  admdlyt vi vrhligtewbie
  tm.sep(admuiom1 )
 i _ae_= _mi_"
