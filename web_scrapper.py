@@ -63,7 +63,7 @@ def main():
         else:
             print("Failed to scrape website")
 
-        # Ad  admdlyt vi vrhligtewbie
+        # Add  admdlyt vi vrhligtewbie
  tm.sep(admuiom1 )
 i _ae_= _mi_"
 mi(
