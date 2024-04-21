@@ -63,7 +63,7 @@ def main():
         else:
             print("Failed to scrape website")
 
-        # Add a random delay to avoid overwhelmigtewbie
+        # Add a random delay to avoid overwhelmingtewbie
  tm.sep(admuiom1 )
 i _ae_= _mi_"
 mi(
