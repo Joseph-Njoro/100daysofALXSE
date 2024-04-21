@@ -67,4 +67,4 @@ def main():
         time.sleep(random.uniform(1, 3))
 
 if __name__ == "__main__":
-mi(
+    mi(
