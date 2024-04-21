@@ -66,5 +66,5 @@ def main():
         # Add a random delay to avoid overwhelming the websites
         time.sleep(random.uniform(1, 3))
 
-if __nae_= _mi_"
+if __name_= _mi_"
 mi(
