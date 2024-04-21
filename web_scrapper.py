@@ -44,11 +44,16 @@ def main():
     The main function that scrapes the websites and saves the titles to a file.
     """
     urls = [
-        'https://www.example1.com',
-        'https://www.example2.com',
-        'https://www.example3.com',
-        # Add more URLs as needed
-    ]
+    'https://www.instagram.com',
+    'https://www.facebook.com',
+    'https://www.tiktok.com',
+    'https://www.snapchat.com',
+    'https://www.twitter.com',
+    'https://www.linkedin.com',
+    'https://www.reddit.com',
+    'https://www.pinterest.com',
+    # Add more URLs as needed
+]
 
     for url in urls:
         print(f"Scraping {url}...")
