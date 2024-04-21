@@ -64,6 +64,6 @@ def main():
             print("Failed to scrape website")
 
         # Add a random delay to avoid overwhelming the websites
-        time.sleep(randomuiom1 )
+        time.sleep(random.uiom1 )
 i _ae_= _mi_"
 mi(
