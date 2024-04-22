@@ -9,7 +9,7 @@ def selection_sort(items):
         for location in range(step, len(items)):
             # determine location of smallest
             if items[location] < items[location_of_smallest]:
-                location_of_smlet=lcto
+                location_of_smalet=lcto
    xhneiesse]wt tm[oaino_mlet
  tmoayie  tm[tp
  iesse tm[oaino_mlet
