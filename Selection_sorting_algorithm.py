@@ -13,4 +13,4 @@ def selection_sort(items):
         # Exchange items[step] with items[location_of_smallest]
         temporary_item = items[step]
         items[step] = items[location_of_smallest]
-        items[locationo_mlet  eprr_tm
+        items[location_o_mlet  eprr_tm
