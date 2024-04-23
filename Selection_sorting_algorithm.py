@@ -7,10 +7,10 @@ def selection_sort(items):
         # items[step:].
         location_of_smallest = step
         for location in range(step, len(items)):
-            # determine location of smallest
-            if items[location] < items[location_of_smallest]:
-                location_of_smallest = location
-        # Exchange items[step] with items[location_of_smallest]
-        temporary_item = items[step]
-        items[step] = items[location_of_smallest]
-        items[location_of_smallest] = temporary_item
+            # determine location of smalls
+  i tm[oao]<ieslcto_fsals]
+    oaino_mlet=lcto
+   xhneiesse]wt tm[oaino_mlet
+ tmoayie  tm[tp
+ ie[tp  tm[oaino_mlet
+ ieslcto_fsals]=tmoayie
