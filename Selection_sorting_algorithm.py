@@ -11,6 +11,4 @@ def selection_sort(items):
             if items[location] < items[location_of_smallest]:
                 location_of_smallest = location
         # Exchange items[step] with items[location_of_smallest]
-        temporary_item = items[step]
-        items[step] = items[location_of_smallest]
-        items[location_of_smallest] = temporary_item
+        temporary_item = items[s
