@@ -26,7 +26,7 @@ def print_motivational_message():
 
         "Believe in yourself!",
 
-        "You're almost there!"
+        "You're almost there!",
 
         "Don't give up now!",
 
