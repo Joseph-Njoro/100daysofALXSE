@@ -66,6 +66,7 @@ print(motivational_messages[0])
 # Run the scheduler in an infinite loop
 
 while True:
+
     schedule.run_pending()
     time.sleep(1
 #Pitafnlmsae
