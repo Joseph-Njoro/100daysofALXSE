@@ -19,7 +19,9 @@ def print_motivational_message():
     days_until_graduation = (graduation_date - now.date()).days
 
     motivational_messages = [
+
         "You got this!",
+
         "Keep pushing forward!",
         "Believe in yourself!",
         "You're almost there!"
