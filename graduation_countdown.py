@@ -43,6 +43,7 @@ def print_motivational_message():
     ]
 
     print(f"There are {days_until_graduation} days until graduation.")
+
     print(motivational_messages[days_until_graduation % len(motivational_messages)])
 
 # Schedule the function to run every day at 10 AM
