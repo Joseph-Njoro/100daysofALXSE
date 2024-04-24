@@ -39,6 +39,7 @@ def print_motivational_message():
         "You're stronger than you think!",
 
         "You're capable of achieving great things!"
+
     ]
     print(f"There are {days_until_graduation} days until graduation.")
     print(motivational_messages[days_until_graduation % len(motivational_messages)])
