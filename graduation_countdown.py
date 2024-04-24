@@ -74,4 +74,4 @@ while True:
 
 # Print a final message
 
-print("Congrtltos o'egautd"
+print("Congratulatos o'egautd"
