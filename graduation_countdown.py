@@ -59,6 +59,7 @@ now = datetime.datetime.now()
 days_until_graduation = (graduation_date - now.date()).days
 
 print(f"There are {days_until_graduation} days until graduation.")
+
 print(motivational_messages[0])
 
 # Run the scheduler in an infinite loop
