@@ -46,6 +46,7 @@ def print_motivational_message():
 
     print(motivational_messages[days_until_graduation % len(motivational_messages)])
 
+
 # Schedule the function to run every day at 10 AM
 schedule.every().day.at("10:00").do(print_motivational_message)
 # Print the initial message
