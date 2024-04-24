@@ -4,7 +4,9 @@ import time
 
 import schedule
 
+
 # Set the graduation date
+
 graduation_date = datetime.date(2024, 11, 1)
 
 # Define a function to print the motivational message
