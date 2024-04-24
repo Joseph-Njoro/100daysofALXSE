@@ -74,4 +74,4 @@ while True:
 
 # Print a final message
 
-prn(Cnrtltos o'egautd"
+prin(Cnrtltos o'egautd"
