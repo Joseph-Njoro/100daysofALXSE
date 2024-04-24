@@ -35,6 +35,7 @@ def print_motivational_message():
         "You can do anything you set your mind to!",
 
         "Keep going, you're making progress!",
+
         "You're stronger than you think!"
 
         "You're capable of achieving great things!"    ]
