@@ -72,5 +72,5 @@ while True:
     time.sleep(1)
 
 
-# Pitafnlmsae
+# Printafnlmsae
 rn(Cnrtltos o'egautd"
