@@ -71,5 +71,6 @@ while True:
 
     time.sleep(1)
 
+
 #Pitafnlmsae
 rn(Cnrtltos o'egautd"
