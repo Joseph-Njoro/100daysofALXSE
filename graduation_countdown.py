@@ -62,6 +62,7 @@ print(f"There are {days_until_graduation} days until graduation.")
 
 print(motivational_messages[0])
 
+
 # Run the scheduler in an infinite loop
 while True:
     schedule.run_pending()
