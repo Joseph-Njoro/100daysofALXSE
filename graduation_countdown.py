@@ -23,6 +23,7 @@ def print_motivational_message():
         "You got this!",
 
         "Keep pushing forward!",
+
         "Believe in yourself!",
         "You're almost there!",
         "Don't give up now!",
