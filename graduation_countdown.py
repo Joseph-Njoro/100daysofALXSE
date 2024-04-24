@@ -6,27 +6,17 @@ import schedule
 
 
 # Set the graduation date
-
 graduation_date = datetime.date(2024, 11, 1)
 
-
 # Define a function to print the motivational message
-
 def print_motivational_message():
-
     now = datetime.datetime.now()
-
     days_until_graduation = (graduation_date - now.date()).days
-
     motivational_messages = [
-
         "You got this!",
-
         "Keep pushing forward!",
-
         "Believe in yourself!",
-
-        "You're almost there!",
+        "You're almost there!"
 
         "Don't give up now!",
 
