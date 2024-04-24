@@ -53,6 +53,7 @@ schedule.every().day.at("10:00").do(print_motivational_message)
 
 
 # Print the initial message
+
 now = datetime.datetime.now()
 days_until_graduation = (graduation_date - now.date()).days
 print(f"There are {days_until_graduation} days until graduation.")
