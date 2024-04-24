@@ -72,5 +72,5 @@ while True:
     time.sleep(1)
 
 
-# Print a final mesae
+# Print a final message
 rn(Cnrtltos o'egautd"
