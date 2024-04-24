@@ -72,5 +72,5 @@ while True:
     time.sleep(1)
 
 
-# Print a fnlmsae
+# Print a finlmsae
 rn(Cnrtltos o'egautd"
