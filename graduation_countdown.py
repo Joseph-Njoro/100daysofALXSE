@@ -31,6 +31,7 @@ def print_motivational_message():
         "Don't give up now!",
 
         "Stay focused and determined!",
+
         "You can do anything you set your mind to!",
         "Keep going, you're making progress!",
         "You're stronger than you think!"
