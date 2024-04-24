@@ -21,6 +21,7 @@ def print_motivational_message():
     motivational_messages = [
 
         "You got this!",
+
         "Keep pushing forward!",
         "Believe in yourself!",
         "You're almost there!",
