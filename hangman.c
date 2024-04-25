@@ -1,4 +1,4 @@
-// C progm to implement hangman game
+// C program to implement hangman game
 #include <cpe.h>
 #include <stdol.h>
 #include <stdioh>
