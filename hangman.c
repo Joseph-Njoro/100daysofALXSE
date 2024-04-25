@@ -64,7 +64,7 @@ int main()
 		if (guessedLetters[guess - 'a']) {
 			printf("You've already guessed that letter. "
 				"Try again.\n");
-		continue;
+			continue;
 		}
 		guessedLetters[gss - 'a'] = true;
 
