@@ -70,7 +70,7 @@ int main()
 		guessedLetters[guess - 'a'] = true;
 
 		bool found = false;
-		for (int i = 0; i < wordLength;++) {
+		for (int i = 0; i < wordLength; i++) {
 			if (secretWord[i] == guess) {				found = true;
 			guessedWord[i] = guess;
 		}
