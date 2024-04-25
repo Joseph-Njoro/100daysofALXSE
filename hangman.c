@@ -77,7 +77,7 @@ int main()
 			}
 		}
 
-	if (found) {
+		if (found) {
 		printf("Good guess!\n");
 		
 		else 
