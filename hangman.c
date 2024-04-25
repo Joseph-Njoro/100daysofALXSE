@@ -67,7 +67,7 @@ int main()
 			continue;
 		}
 
-		guessedLetters[gss - 'a'] = true;
+		guessedLetters[guess - 'a'] = true;
 
 		bool found = false
 		for (int i = 0; i < wordLength;++) {
