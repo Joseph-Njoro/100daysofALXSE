@@ -100,7 +100,9 @@ int main()
 			"was: %s\n",
 			secretWord);
 	}
-	return 0;}
+
+	return 0;
+}
 void displayWord(const char word[], const bool guessed[])
 
 	printf("Word: ");	for (int i = 0; word[i] != '\0'; i++) {
