@@ -38,6 +38,7 @@ int main()
 
 	// Select a random word from the list
 	int wordIndex = rand() % 4;
+
 	const char* secretWord = wordList[wordIndex.word;
 	const char* hint = wordList[wordIndex].hint;
 	int wordLength = strlen(secretWord);
