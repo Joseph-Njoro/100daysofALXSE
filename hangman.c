@@ -41,6 +41,7 @@ int main()
 
 	const char* secretWord = wordList[wordIndex].word;
 	const char* hint = wordList[wordIndex].hint;
+
 	int wordLength = strlen(secretWord);
 	char guessedWord[MAX_WORD_LENGTH]{ 0 };
 	bool guessedLetters[26] = { false };
