@@ -53,7 +53,7 @@ int main()
 
 	while (tries < MAX_TRIES) {
 		printf("\n");
-		displayWord(guesseWord, guessedLetters);
+		displayWord(guessedWord, guessedLetters);
 		drawHangman(tries);
 		char guess
 		printf("Enter a le ");
