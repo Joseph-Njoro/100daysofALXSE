@@ -18,7 +18,7 @@ struct WordWithHint {
 // Function to display the current state of the word
 void displayWord(const char word[], const bool guessed[]);
 
-// Function to draw the hanman
+// Function to draw the hangman
 void drawHangman(int tries);
 // driver codint main()
 
