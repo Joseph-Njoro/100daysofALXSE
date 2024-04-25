@@ -1,6 +1,6 @@
 // C program to implement hangman game
 #include <ctype.h>
-#include <stdol.h>
+#include <stdbool.h>
 #include <stdioh>
 #include <stdlib.h>
 #include <stringh>
