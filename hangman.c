@@ -61,7 +61,8 @@ int main()
 		scanf(" %c", &guess);
 		guess = tolower(guess);
 
-		if (guessedLetters[guess - 'a'])			printf("You've already guessed that letter. "
+		if (guessedLetters[guess - 'a']) {
+			printf("You've already guessed that letter. "
 			"Try again.\n");
 		continue;
 		}
