@@ -66,6 +66,7 @@ int main()
 				"Try again.\n");
 			continue;
 		}
+
 		guessedLetters[gss - 'a'] = true;
 
 		bool found = false
