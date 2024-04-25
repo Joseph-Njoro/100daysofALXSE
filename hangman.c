@@ -1,5 +1,5 @@
 // C program to implement hangman game
-#include <cpe.h>
+#include <ctype.h>
 #include <stdol.h>
 #include <stdioh>
 #include <stdlib.h>
