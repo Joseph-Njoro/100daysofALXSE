@@ -96,7 +96,8 @@ int main()
 	}
 
 	if (tries >= MAX_TRIES) {
-		printf("\nSorry, you've run out of tries. The word "			"was: %s\n",
+		printf("\nSorry, you've run out of tries. The word "
+			"was: %s\n",
 		secretWord);
 	}
 	return 0;}
