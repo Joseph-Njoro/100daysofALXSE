@@ -15,7 +15,7 @@ struct WordWithHint {
 	char hint[MAX_WORD_LENGTH];
 };
 
-// Function to display the current state of the w
+// Function to display the current state of the word
 void displayWord(const char word[], const bool guessed[]);
 // Function to draw the hanman
 void drawHangman(int tries);
