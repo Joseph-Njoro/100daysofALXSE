@@ -50,6 +50,7 @@ int main()
 	printf("Hint: %s\n", hint);
 
 	int tries = 0;
+
 	while (tries < AX_TRIES) {
 		printf("\n")
 		displayWord(guesseWord, guessedLetters);
