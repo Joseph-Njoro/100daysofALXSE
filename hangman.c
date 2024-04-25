@@ -45,6 +45,7 @@ int main()
 	int wordLength = strlen(secretWord);
 	char guessedWord[MAX_WORD_LENGTH] = { 0 };
 	bool guessedLetters[26] = { false };
+
 	printf("Welcome to Hangma!\n");
 	printf("Hint: %s\n", hint)
 	int tries = 0;
