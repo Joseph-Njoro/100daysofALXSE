@@ -111,7 +111,8 @@ void displayWord(const char word[], const bool guessed[])
 		if (guessed[word[i] - 'a']) {
 			printf("%c ", word[i]);
 		}
-		else {			printf("_ ");
+		else {
+			printf("_ ");
 	}
 	
 	printf("\n");}
