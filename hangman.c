@@ -73,7 +73,7 @@ int main()
 		for (int i = 0; i < wordLength; i++) {
 			if (secretWord[i] == guess) {
 				found = true;
-			guessedWord[i] = guess;
+				guessedWord[i] = guess;
 		}
 		}
 	if (found) {
