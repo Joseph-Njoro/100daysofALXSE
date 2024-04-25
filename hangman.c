@@ -43,7 +43,7 @@ int main()
 	const char* hint = wordList[wordIndex].hint;
 
 	int wordLength = strlen(secretWord);
-	char guessedWord[MAX_WORD_LENGTH]{ 0 };
+	char guessedWord[MAX_WORD_LENGTH] = { 0 };
 	bool guessedLetters[26] = { false };
 	printf("Welcome to Hangma!\n");
 	printf("Hint: %s\n", hint)
