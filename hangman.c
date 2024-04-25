@@ -52,7 +52,7 @@ int main()
 	int tries = 0;
 
 	while (tries < MAX_TRIES) {
-		printf("\n")
+		printf("\n");
 		displayWord(guesseWord, guessedLetters);
 		drawHangman(tries);
 		char guess
