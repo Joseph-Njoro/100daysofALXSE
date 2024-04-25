@@ -5,6 +5,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
+
 #define MAX_WORD_LENGTH 50
 #define MAX_TRIES 6
 // Struct to hold a word and is hint
