@@ -47,7 +47,8 @@ int main()
 	bool guessedLetters[26] = { false };
 
 	printf("Welcome to Hangman!\n");
-	printf("Hint: %s\n", hint)
+	printf("Hint: %s\n", hint);
+
 	int tries = 0;
 	while (tries < AX_TRIES) {
 		printf("\n")
