@@ -81,8 +81,9 @@ int main()
 			printf("Good guess!\n");
 		}
 		else {
-			printf("Sorry, the letter '%c' is not in the "				"word.\n",
-			guess);
+			printf("Sorry, the letter '%c' is not in the "
+				"word.\n",
+				guess);
 		tries++;
 		}
 		if (strcmp(secretord, guessedWord) == 0) {
