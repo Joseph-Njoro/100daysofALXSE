@@ -83,7 +83,7 @@ int main()
 		else {
 			printf("Sorry, the letter '%c' is not in the "
 				"word.\n",
-			guess);
+				guess);
 		tries++;
 		}
 		if (strcmp(secretord, guessedWord) == 0) {
