@@ -39,8 +39,9 @@ int main()
 	// Select a random word from the list
 	int wordIndex = rand() % 4;
 
-	const char* secretWord = wordList[wordIndex.word;
+	const char* secretWord = wordList[wordIndex].word;
 	const char* hint = wordList[wordIndex].hint;
+
 	int wordLength = strlen(secretWord;
 	char guessedWord[MAX_WORD_LENGTH] ={ 0 };
 	bool guessedLetters[26] = { false };
