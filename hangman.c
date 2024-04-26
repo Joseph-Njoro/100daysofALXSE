@@ -27,7 +27,7 @@ int main()
 	// Seed the random number generator with the current
 	// time
 	srand(time(NULL));
-	// Array of words with hint
+	// Array of words with hints
 	struct WordWithHint wordList[] = 
 		{ "geeksforgeeks", "Computer coding"},
 		{ "elephant", "A large mammal with a runk" },
