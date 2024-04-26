@@ -78,7 +78,7 @@ int main()
 		}
 
 		if (found) {
-		printf("Good guess!\n");
+			printf("Good guess!\n");
 		
 		else 
 			printf("Sorry, the letter '%c' is not in the 				"word.\n",
