@@ -122,7 +122,7 @@ void drawHangman(int tries)
 {
 	const char* hangmanParts[]
 		= { "	 _________", " |		 |",
-			" |		 O", " | /|\\",
+			" |		 O", " |	 /|\\",
 			" |	 / \\", " |" };
 	printf("\n")
 	for (int i = 0; i <= tries; i++) 
