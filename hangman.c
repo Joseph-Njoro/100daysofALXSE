@@ -121,7 +121,7 @@ void displayWord(const char word[], const bool guessed[])
 void drawHangman(int tries)
 {
 	const char* hangmanParts[]
-		= { "	 _________" " |		 |",
+		= { "	 _________", " |		 |",
 			" |		 O", " | /|\\",
 			" |	 / \\", " |" };
 	printf("\n")
