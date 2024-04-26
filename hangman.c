@@ -81,7 +81,8 @@ int main()
 			printf("Good guess!\n");
 		}
 		else {
-			printf("Sorry, the letter '%c' is not in the 				"word.\n",
+			printf("Sorry, the letter '%c' is not in the "
+				"word.\n",
 			guess);
 		tries++;
 		}
