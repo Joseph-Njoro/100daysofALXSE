@@ -35,8 +35,10 @@ int main()
 		{ "beach", "Sandy shore by the sea" },
 		// Add more words and hints here
 	};
-	// Select a random word frm the list
+
+	// Select a random word from the list
 	int wordIndex = rand() % 4;
+
 	const char* secretWord = wordList[wordIndex.word;
 	const char* hint = wordList[wordIndex].hint;
 	int wordLength = strlen(secretWord;
