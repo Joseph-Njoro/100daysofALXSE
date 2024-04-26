@@ -90,7 +90,8 @@ int main()
 		if (strcmp(secretWord, guessedWord) == 0) {
 			printf("\nCongratulations! You've guessed the "
 				"word: %s\n",
-				secretWord);			break;
+				secretWord);
+			break;
 	}
 	}
 	if (tries >= MAX_TRIES) 
