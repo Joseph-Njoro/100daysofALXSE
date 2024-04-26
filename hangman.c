@@ -115,7 +115,8 @@ void displayWord(const char word[], const bool guessed[])
 			printf("_ ");
 		}
 	}
-	printf("\n");}
+	printf("\n");
+}
 void drawHangman(int tries)
 
 	const char* hangmanPars[]
