@@ -76,6 +76,7 @@ int main()
 				guessedWord[i] = guess;
 			}
 		}
+
 	if (found) {
 		printf("Good guess!\n");
 		
