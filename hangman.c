@@ -87,7 +87,7 @@ int main()
 			tries++;
 		}
 
-		if (strcmp(secretord, guessedWord) == 0) {
+		if (strcmp(secretWord, guessedWord) == 0) {
 			printf("\nCongatulations! You've guessed the "
 				"word: %s\n,
 				secretWord);			break;
