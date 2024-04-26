@@ -129,3 +129,4 @@ void drawHangman(int tries)
 	for (int i = 0; i <= tries; i++) {
 		printf("%s\n", hangmanParts[i]);
 	}
+}
