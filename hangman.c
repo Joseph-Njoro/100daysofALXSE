@@ -51,7 +51,7 @@ int main()
 
 	int tries = 0;
 
-	while (tries < AX_TRIES) {
+	while (tries < MAX_TRIES) {
 		printf("\n")
 		displayWord(guesseWord, guessedLetters);
 		drawHangman(tries);
