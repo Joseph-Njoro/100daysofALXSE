@@ -74,7 +74,7 @@ int main()
 			if (secretWord[i] == guess) {
 				found = true;
 				guessedWord[i] = guess;
-		}
+			}
 		}
 	if (found) {
 		printf("Good guess!\n");
