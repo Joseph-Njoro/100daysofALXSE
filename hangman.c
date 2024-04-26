@@ -57,7 +57,7 @@ int main()
 		drawHangman(tries);
 
 		char guess;
-		printf("Enter a leter: ");
+		printf("Enter a letter: ");
 		scanf(" %c", &guess)
 		guess = tolower(guess);
 		if (guessedLetters[guess - 'a']) {			printf("You've already guessed that letter. "
