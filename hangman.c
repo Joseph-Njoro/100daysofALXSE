@@ -21,7 +21,8 @@ void displayWord(const char word[], const bool guessed[]);
 // Function to draw the hangman
 void drawHangman(int tries);
 
-// driver codeint main()
+// driver code
+int main()
 
 	// Sed the random number generator with the current
 	// tim
