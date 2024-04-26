@@ -10,7 +10,7 @@
 #define MAX_TRIES 6
 
 // Struct to hold a word and its hint
-struct WordWithHint 
+struct WordWithHint {
 	char word[MAX_WORD_LENGTH];	char hint[MAX_WORD_LENGTH];
 };
 // Function to display the current state of the wor
