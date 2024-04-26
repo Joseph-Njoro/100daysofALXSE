@@ -23,8 +23,8 @@ void drawHangman(int tries);
 
 // driver code
 int main()
-
-	// Sed the random number generator with the current
+{
+	// Seed the random number generator with the current
 	// tim
 	srand(time(NULL))
 	// Array of words with hint
