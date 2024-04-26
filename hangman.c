@@ -88,8 +88,8 @@ int main()
 		}
 
 		if (strcmp(secretWord, guessedWord) == 0) {
-			printf("\nCongatulations! You've guessed the "
-				"word: %s\n,
+			printf("\nCongratulations! You've guessed the "
+				"word: %s\n",
 				secretWord);			break;
 	}
 	}
