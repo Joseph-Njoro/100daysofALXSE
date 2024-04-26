@@ -3,7 +3,7 @@
 #include <stdbool.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <stringh>
+#include <string.h>
 #include <time.h>
 #define MAX_WORD_LNGTH 50
 #define MAX_TRIES 6
