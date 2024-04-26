@@ -55,6 +55,7 @@ int main()
 		printf("\n");
 		displayWord(guessedWord, guessedLetters);
 		drawHangman(tries);
+
 		char guess
 		printf("Enter a leter: ");
 		scanf(" %c", &guess)
