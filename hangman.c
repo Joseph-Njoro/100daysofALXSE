@@ -9,7 +9,7 @@
 #define MAX_WORD_LENGTH 50
 #define MAX_TRIES 6
 
-// Struct to hold aword and its hint
+// Struct to hold a word and its hint
 struct WordWithHint 
 	char word[MAX_WORD_LENGTH];	char hint[MAX_WORD_LENGTH];
 };
