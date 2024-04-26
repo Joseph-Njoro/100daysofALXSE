@@ -56,7 +56,7 @@ int main()
 		displayWord(guessedWord, guessedLetters);
 		drawHangman(tries);
 
-		char guess
+		char guess;
 		printf("Enter a leter: ");
 		scanf(" %c", &guess)
 		guess = tolower(guess);
