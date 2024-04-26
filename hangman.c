@@ -25,7 +25,7 @@ void drawHangman(int tries);
 int main()
 {
 	// Seed the random number generator with the current
-	// tim
+	// time
 	srand(time(NULL))
 	// Array of words with hint
 	struct WordWithHint wordList[] = 
