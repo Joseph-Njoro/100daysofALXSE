@@ -29,8 +29,8 @@ int main()
 	srand(time(NULL));
 	// Array of words with hints
 	struct WordWithHint wordList[] = {
-		{ "geeksforgeeks", "Computer coding"},
-		{ "elephant", "A large mammal with a runk" },
+		{ "geeksforgeeks", "Computer coding" },
+		{ "elephant", "A large mammal with a trunk" },
 		{ "pizza", "A popular Italian dish" },		{ "beach", "Sandy shore by the sea" },
 	// Add more words and hints here
 	};
