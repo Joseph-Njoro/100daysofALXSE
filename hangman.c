@@ -119,7 +119,7 @@ void displayWord(const char word[], const bool guessed[])
 }
 
 void drawHangman(int tries)
-
+{
 	const char* hangmanPars[]
 		= { "	 _________" " |		 |",
 			" |		 O", " | /|\\",
