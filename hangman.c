@@ -2,7 +2,7 @@
 #include <ctype.h>
 #include <stdbool.h>
 #include <stdio.h>
-#include <stdli.h>
+#include <stdlib.h>
 #include <stringh>
 #include <time.h>
 #define MAX_WORD_LNGTH 50
