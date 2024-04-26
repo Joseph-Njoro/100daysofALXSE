@@ -31,8 +31,9 @@ int main()
 	struct WordWithHint wordList[] = {
 		{ "geeksforgeeks", "Computer coding" },
 		{ "elephant", "A large mammal with a trunk" },
-		{ "pizza", "A popular Italian dish" },		{ "beach", "Sandy shore by the sea" },
-	// Add more words and hints here
+		{ "pizza", "A popular Italian dish" },
+		{ "beach", "Sandy shore by the sea" },
+		// Add more words and hints here
 	};
 	// Select a random word frm the list
 	int wordIndex = rand() % 4;
