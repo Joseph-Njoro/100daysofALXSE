@@ -124,6 +124,7 @@ void drawHangman(int tries)
 		= { "	 _________", " |		 |",
 			" |		 O", " |	 /|\\",
 			" |	 / \\", " |" };
+
 	printf("\n")
 	for (int i = 0; i <= tries; i++) 
 		printf("%s\n", hangmanParts[i]);	}
