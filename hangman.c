@@ -98,8 +98,9 @@ int main()
 	if (tries >= MAX_TRIES) {
 		printf("\nSorry, you've run out of tries. The word "
 			"was: %s\n",
-		secretWord);
+			secretWord);
 	}
+
 	return 0;}
 void displayWord(const char word[], const bool guessed[])
 
