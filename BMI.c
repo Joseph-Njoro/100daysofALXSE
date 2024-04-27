@@ -1,4 +1,4 @@
-tdio.h>
+stdio.h>
 int main() 
     float height, weight, bmi;
     // Prompt the user o enter their height in meters
