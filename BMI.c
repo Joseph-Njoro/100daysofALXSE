@@ -9,7 +9,7 @@ tdio.h>int main()
     bmi = weight / (height * height  // Display the calculated BMI    printf("Your BMI is: %.2f\n", bmi);
     // Interpret the BMI valu
 if (bmi < 18.5) {
-     printf("You are underwght.\n");
+     printf("You are underweight.\n");
     } ese if (bmi >= 18.5 && bmi < 25) {
         rintf("Your weight is normal.\n");
     } els if (bmi >= 25 && bmi < 30) {
