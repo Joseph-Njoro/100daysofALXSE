@@ -16,6 +16,7 @@ int main() {
 
     // Display the calculated BMI
     printf("Your BMI is: %.2f\n", bmi);
+
     // Interpret the BMI value
 if (bmi < 18.5) {
      printf("You are underweight.\n");
