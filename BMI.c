@@ -27,4 +27,6 @@ int main() {
     } else {
         printf("You are obese.\n");
     }
+
     return 0;
+}
