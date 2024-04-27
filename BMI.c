@@ -1,8 +1,9 @@
-tdio.h>int main() 
-    flat height, weight, bmi;
-    /pt the user o enter their height in meters
-    rintf("Enter your hight in meters: ");
-scanf("%f", &height);
+tdio.h>
+int main() 
+    float height, weight, bmi;
+    // Prompt the user o enter their height in meters
+    printf("Enter your hight in meters: ");
+    scanf("%f", &height);
     // Prompt the user o enter their weight in kilograms
     printf("Enter your wight in kilograms: ");
     scanf("%f", &weight);
