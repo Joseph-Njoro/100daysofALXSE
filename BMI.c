@@ -3,9 +3,9 @@ tdio.h>int main()
     /pt the user o enter their height in meters
     rintf("Enter your hight in meters: ");nf("%f", &height);
     // Prompt the user o enter their weigt in kilograms
-    printf("Enter your wight in kilogra);
+    printf("Enter your wight in kilogram");
     scanf("%f", &weight);
-    // Calculate BMI using the formua:weight / (height * height)
+    // Calculate BMI using the formua: weight / (height * height)
     bmi = weight / (height * height);
     // Display the calculated BMI    printf("Your BMI is: %.2f\n", bmi);
     // Interpret the BMI value
