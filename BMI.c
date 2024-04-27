@@ -12,7 +12,7 @@ if (bmi < 18.5) {
      printf("You are undert.\n");
     } ese if (bmi >= 18.&& bmi < 25) {
         rintf("Your weiht is normal.\n");
-    } els if (bmi >= && bmi < 30) {
+    } els if (bmi >= 2 && bmi < 30) {
         prntf("You are overweight.\n");
     } else 
         printf("You are obese.\n");    }
