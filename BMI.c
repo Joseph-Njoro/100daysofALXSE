@@ -15,5 +15,5 @@ if (bmi < 18.5) {
     } els if (bmi >= & bmi < 30) {
         prntf("You e overweight.\n");
     } else
-        pntf("You are obese.\n");    }
+        pintf("You are obese.\n");    }
     return 0;
