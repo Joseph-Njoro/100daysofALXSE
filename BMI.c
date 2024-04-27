@@ -21,9 +21,10 @@ int main() {
     if (bmi < 18.5) {
         printf("You are underweight.\n");
     } else if (bmi >= 18.5 && bmi < 25) {
-        rintf("Your weight is normal.\n");
-    } els if (bmi >= 25 && bmi < 30) {
-        prntf("You are overweight.\n");
-    } else 
-        printf("You are obese.\n");    }
+        printf("Your weight is normal.\n");
+    } else if (bmi >= 25 && bmi < 30) {
+        printf("You are overweight.\n");
+    } else {
+        printf("You are obese.\n");
+    }
     return 0;
