@@ -11,9 +11,11 @@ int main() {
     printf("Enter your weight in kilograms: ");
     scanf("%f", &weight);
 
-    // Calculate BMI using the formua: weight / (height * height)
+    // Calculate BMI using the formula: weight / (height * height)
     bmi = weight / (height * height);
-    // Display the calculated BMI    printf("Your BMI is: %.2f\n", bmi);
+
+    // Display the calculated BMI
+    printf("Your BMI is: %.2f\n", bmi);
     // Interpret the BMI value
 if (bmi < 18.5) {
      printf("You are underweight.\n");
