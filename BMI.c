@@ -8,7 +8,7 @@ int main() {
     scanf("%f", &height);
 
     // Prompt the user to enter their weight in kilograms
-    printf("Enter your wight in kilograms: ");
+    printf("Enter your weight in kilograms: ");
     scanf("%f", &weight);
     // Calculate BMI using the formua: weight / (height * height)
     bmi = weight / (height * height);
