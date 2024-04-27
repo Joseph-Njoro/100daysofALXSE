@@ -20,4 +20,3 @@ if (bmi < 18.5) {
     } else 
         printf("You are obese.\n");    }
     return 0;
-z
