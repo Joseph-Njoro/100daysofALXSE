@@ -1,7 +1,8 @@
 tdio.h>int main() 
     flat height, weight, bmi;
     /pt the user o enter their height in meters
-    rintf("Enter your hight in meters: ");nf("%f", &height);
+    rintf("Enter your hight in meters: ");
+scanf("%f", &height);
     // Prompt the user o enter their weight in kilograms
     printf("Enter your wight in kilograms: ");
     scanf("%f", &weight);
