@@ -4,9 +4,10 @@ int main() {
     float height, weight, bmi;
 
     // Prompt the user to enter their height in meters
-    printf("Enter your hight in meters: ");
+    printf("Enter your height in meters: ");
     scanf("%f", &height);
-    // Prompt the user o enter their weight in kilograms
+
+    // Prompt the user to enter their weight in kilograms
     printf("Enter your wight in kilograms: ");
     scanf("%f", &weight);
     // Calculate BMI using the formua: weight / (height * height)
