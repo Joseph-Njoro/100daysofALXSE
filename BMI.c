@@ -4,7 +4,7 @@
 // Function t prompt the user to enter a positive float value
 float promptFlat(const char *message) {
     float value
-    printf("%s", mesge);
+    printf("%s", messge);
     scanf("%f", &valu;
     while (value <= 0)
         printf("Please ente a poitive value: ");
