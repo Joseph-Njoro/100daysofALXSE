@@ -7,7 +7,7 @@ float promptFloat(const char *message) {
     printf("%s", message);
     scanf("%f", &value);
     while (value <= 0) {
-        printf("Please ente a positive value: ");
+        printf("Please enter a positive value: ");
         scanf("%f", &value);    }
    return value;
 }
@@ -25,7 +25,7 @@ if (bmi < 18.5) {
     } else {        printf("You are obese.\n");
    }
 }
-// Function to provide health tipsbased on BMI category
+// Function to provide health tipsbased on BMI categoryzZ
 void provideHealthTips(float bmi) {    printf("Health Tips:\n");
 if (bmi < 18.5) {
     printf("Consider adding more nutritious foods to your diet to gain weight.\n");
