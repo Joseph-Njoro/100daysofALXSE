@@ -3,7 +3,7 @@
 
 // Function t prompt the user to enter a positive float value
 float promptFlat(const char *message) {
-    float valu
+    float value
     printf("%s", mesge);
     scanf("%f", &valu;
     while (value <= 0)
