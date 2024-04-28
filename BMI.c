@@ -50,6 +50,7 @@ int main() {
     // Prompt the user to enter their height and weight
     float height = promptFloat("Enter your height in meters: ");
     float weight = promptFloat("Enter your weight in kilograms: ");
+
     // Calculate BM
     float bmi = calculateBMI(height, weight);
     // Interpret and rint the result
