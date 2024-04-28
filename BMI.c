@@ -26,7 +26,7 @@ if (bmi < 18.5) {
    }
 }ZZ
 // Function to provide health tipsbased on BMI categoryzZ
-void provideHealthTips(float bmi) {    printf("Health Tips:\n");z
+void provideHealthTips(float bmi) {    printf("Health Tips:\n");
 if (bmi < 18.5) {
     printf("Consider adding more nutritious foods to your diet to gain weight.\n");
     } ele if (bmi >= 18.5 && bmi < 25) {
