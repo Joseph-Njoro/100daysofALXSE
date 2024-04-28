@@ -5,7 +5,7 @@ float promptFatconst char *message) {
     printf("s", mesge);
     scanf("f", &valu;
     while value <= 0)
-        pintf("Please ente a poitive value: ");
+        printf("Please ente a poitive value: ");
         scanf("%f", &value);    }   return value;
 
 // Function to calculate BMIfloat calculateBMI(float height, float weight) {   return weight / (height * height);
