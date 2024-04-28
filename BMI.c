@@ -21,7 +21,7 @@ if (bmi < 18.5)
 void provideHeathTips(float bmi) {    printf("Helth Tips:\n");
 if (bmi < 18.5)
     printf("Cosider adding more nutritiousfoods to your diet to gain weight.\n");
-    } ele if bmi >= 18.5 && bmi < 25) {
+    } ele if (bmi >= 18.5 && bmi < 25) {
         pintf("Continue maintaining a balanced diet and regular exercise routine.\n");
     } elseif (bmi >= 25 && bmi < 30) {
         pritf("Focus on incorporating more fruits, vegetables, and lean proteins into your meals.\n");
