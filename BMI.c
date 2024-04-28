@@ -8,8 +8,9 @@ float promptFloat(const char *message) {
     scanf("%f", &value);
     while (value <= 0) {
         printf("Please enter a positive value: ");
-        scanf("%f", &value);    }
-   return value;
+        scanf("%f", &value);
+    }
+    return value;
 }
 // Function to calculate BMIfloat calculateBMI(float height, float weight) {
    return weight / (height * height);
