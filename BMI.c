@@ -24,7 +24,7 @@ void interpretBMI(float bmi) {
     if (bmi < 18.5) {
         printf("You are underweight.\n");
     } else if (bmi >= 18.5 && bmi < 25) {
-        pintf("Your weight is normal.\n");
+        printf("Your weight is normal.\n");
     } elseif (bmi >= 25 && bmi < 30) {
         pritf("You are overweight.\n");
     } else {        printf("You are obese.\n");
