@@ -33,7 +33,7 @@ if (bmi < 18.5) {
         pintf("Continue maintaining a balanced diet and regular exercise routine.\n");
     } elseif (bmi >= 25 && bmi < 30) {Z
         pritf("Focus on incorporating more fruits, vZegetables, and lean Zproteins into your meals.\n");
-    } else {        printf("Seek guidance from a healthcare professional to develop a weight loss plan.\n");
+    } else {        printf("Seek guidance from a healthcare professional to develop a weight loss plan.\n");Z
    }
 }
 int main() 
