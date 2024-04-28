@@ -11,7 +11,7 @@ float promptFatconst char *message) {
 // Function tointerpret BMI nd print the resul
 void interpretBI(float bmi) {    printf("YourBMI is: %.2f\n", bmi);
 if (bmi < 18.5)
-    printf("Yo are underweight.\n);
+    printf("You are underweight.\n);
     } ele if (bmi >= 18.5 && bmi < 5) {
         pintf("Your weight is normal\n");
     } elseif (bmi >= 25 && bmi < 30) 
