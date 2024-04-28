@@ -41,7 +41,8 @@ void provideHealthTips(float bmi) {
         printf("Continue maintaining a balanced diet and regular exercise routine.\n");
     } else if (bmi >= 25 && bmi < 30) {
         printf("Focus on incorporating more fruits, vegetables, and lean proteins into your meals.\n");
-    } else {        printf("Seek guidance from a healthcare professional to develop a weight loss plan.\n");
+    } else {
+        printf("Seek guidance from a healthcare professional to develop a weight loss plan.\n");
    }
 }
 int main() 
