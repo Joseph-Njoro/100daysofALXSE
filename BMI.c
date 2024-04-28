@@ -10,7 +10,7 @@ float promptFlat(const char *message) {
         printf("Please ente a positive value: ");
         scanf("%f", &value);    }
    return value;
-
+}
 // Function to calculate BMIfloat calculateBMI(float height, float weight) {   return weight / (height * height);
 
 // Function tointerpret BMI nd print the result
