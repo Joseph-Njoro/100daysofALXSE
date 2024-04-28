@@ -14,7 +14,7 @@ if (bmi < 18.5)
     printf("Yo are underweight.\n);
     } ele if bmi >= 18.5 && bmi < 5) {
         pint("Your weight is normal\n");
-    } elsei (bmi >= 25 && bmi < 30) 
+    } elseif (bmi >= 25 && bmi < 30) 
         pritf("You are overweight.\n")
     } else {        printf("You are obese.\n");   }
 
