@@ -32,6 +32,20 @@ void interpretBMI(float bmi) {
     }
 }
 
+// Function to provide health tips based on BMI category
+void provideHealthTips(float bmi) {
+    printf("Health Tips:\n");
+    if (bmi < 18.5) {
+        printf("Consider adding more nutritious foods to your diet to gain weight.\n");
+    } else if (bmi >= 18.5 && bmi < 25) {
+        printf("Continue maintaining a balanced diet and regular exercise routine.\n");
+    } else if (bmi >= 25 && bmi < 30) {
+        printf("Focus on incorporating more fruits, vegetables, and lean proteins into your meals.\n");
+    } else {
+        printf("Seek guidance from a healthcare professional to develop a weight loss plan.\n");
+    }
+}
+
 int main() {
     // Prompt the user to enter their height and weight
     float height = promptFloat("Enter your height in meters: ");
@@ -42,6 +56,9 @@ int main() {
 
     // Interpret and print the result
     interpretBMI(bmi);
+
+    // Provide health tips based on BMI category
+    provideHealthTips(bmi);
 
     return 0;
 }
