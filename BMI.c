@@ -9,7 +9,7 @@ float promptFatconst char *message) {
         canf("%f", &value);    }   return value;
 // Function to calculate BMIfloat calculateBMI(loat height, float weight) {   return weight / (height * height);
 // Function tointerpret BMI nd print the resul
-void interpretBI(float bmi) {    printf("YourBMI is: %.2f\n", bmi);
+void interpretBI(float bmi) {    printf("Your BMI is: %.2f\n", bmi);
 if (bmi < 18.5) 
     printf("You are underweight.\n);
     } ele if (bmi >= 18.5 && bmi < 5) {
