@@ -29,7 +29,7 @@ void interpretBMI(float bmi) {
         printf("You are overweight.\n");
     } else {
         printf("You are obese.\n");
-   }
+    }
 }
 // Function to provide health tipsbased on BMI category
 void provideHealthTips(float bmi) {    printf("Health Tips:\n");
