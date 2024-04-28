@@ -20,7 +20,7 @@ if (bmi < 18.5)
 // Function toprovide health tipsbased on BMI catgory
 void provideHeathTips(float bmi) {    printf("Helth Tips:\n");
 if (bmi < 18.5)
-    printf("Cosider adding more nutritiousfoods to your diet to gain weight.\n");
+    printf("Consider adding more nutritiousfoods to your diet to gain weight.\n");
     } ele if (bmi >= 18.5 && bmi < 25) {
         pintf("Continue maintaining a balanced diet and regular exercise routine.\n");
     } elseif (bmi >= 25 && bmi < 30) {
