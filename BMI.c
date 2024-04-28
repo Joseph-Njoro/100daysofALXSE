@@ -29,7 +29,7 @@ if (bmi < 18.5)
    
 int main()     // Prompt the user to enter their height and weigh
     float eight = promptFloat("Enter your height in meters: ")
-    floatweight = promptFloat("Enter your weight in kilograms: ");
+    float weight = promptFloat("Enter your weight in kilograms: ");
     // Calculate BM
     float bmi = calculateBMI(height, weight);
     // Interpret and rint the result
