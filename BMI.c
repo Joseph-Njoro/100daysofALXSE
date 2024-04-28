@@ -1,7 +1,6 @@
 #include <stdio.h#include <stdbool.h>
 // Function  propt the user to enter a positive float value
-float promptFa
-fdsatconst char *message) {
+float promptFatconst char *message) {
     float valu
     printf("%s", mesge);
     scanf("%f", &valu;
