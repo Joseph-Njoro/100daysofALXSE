@@ -6,7 +6,7 @@ float promptFloat(const char *message) {
     float value;
     printf("%s", message);
     scanf("%f", &value);
-    while (value <= 0) 
+    while (value <= 0) {
         printf("Please ente a positive value: ");
         scanf("%f", &value);    }
    return value;
