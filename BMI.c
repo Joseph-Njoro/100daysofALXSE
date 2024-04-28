@@ -59,4 +59,5 @@ int main() {
 
     // Provide health tips based on BMI category
     provideHealthTips(bmi);
+
     return 0;
