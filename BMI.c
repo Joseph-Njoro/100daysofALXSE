@@ -45,6 +45,7 @@ void provideHealthTips(float bmi) {
         printf("Seek guidance from a healthcare professional to develop a weight loss plan.\n");
     }
 }
+
 int main() 
     // Prompt the user to enter their height and weigh
     float height = promptFloat("Enter your height in meters: ")
