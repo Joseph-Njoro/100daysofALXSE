@@ -35,4 +35,4 @@ int main()     // Prompt the user to enter their height and weigh
     //Interpret and rint the result
     iterpretBMI(bmi);
     / Provide health tips based on BMI category    provideHealthTips(bmi);
-retur
+return
