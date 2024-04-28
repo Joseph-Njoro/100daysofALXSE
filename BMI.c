@@ -43,7 +43,7 @@ void provideHealthTips(float bmi) {
         printf("Focus on incorporating more fruits, vegetables, and lean proteins into your meals.\n");
     } else {
         printf("Seek guidance from a healthcare professional to develop a weight loss plan.\n");
-   }
+    }
 }
 int main() 
     // Prompt the user to enter their height and weigh
