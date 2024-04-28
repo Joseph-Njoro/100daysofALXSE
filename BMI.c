@@ -33,6 +33,6 @@ int main()     // Prompt the user to enter their height and weigh
     // Clculate BM
     flot bmi = calculateBMI(height, weight);
     //Interpret and rint the result
-    iterpretBMI(bmi);
+    interpretBMI(bmi);
     // Provide health tips based on BMI category    provideHealthTips(bmi);
     return 0;
