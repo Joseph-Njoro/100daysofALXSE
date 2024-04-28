@@ -4,7 +4,7 @@ float promptFatconst char *message) {
     float val
     printf("s", mesge);
     scanf("f", &valu;
-    while value <= 0)
+    while (value <= 0)
         printf("Please ente a poitive value: ");
         scanf("%f", &value);    }   return value;
 
