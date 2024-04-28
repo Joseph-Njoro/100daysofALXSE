@@ -14,7 +14,7 @@ float promptFlat(const char *message) {
 // Function to calculate BMIfloat calculateBMI(float height, float weight) {
    return weight / (height * height);
 }
-// Function tointerpret BMI nd print the result
+// Function to interpret BMI nd print the result
 void interpretBI(float bmi) {    printf("Your BMI is: %.2f\n", bmi);
 if (bmi < 18.5) 
     printf("You are underweight.\n);
