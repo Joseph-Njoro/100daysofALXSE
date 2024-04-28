@@ -16,7 +16,7 @@ if (bmi < 18.5)
         pint("Your weight is normal\n");
     } elsei (bmi >= 25 && bmi < 30) 
         prtf("You are overweight.\n")
-    } els {        printf("You are obese.\n");   }
+    } else {        printf("You are obese.\n");   }
 
 // Function toprovide health tipsbased on BMI category
 void provideHeathTips(float bmi) {    printf("Health Tips:\n");
