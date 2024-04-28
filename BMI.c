@@ -11,7 +11,8 @@ float promptFlat(const char *message) {
         scanf("%f", &value);    }
    return value;
 }
-// Function to calculate BMIfloat calculateBMI(float height, float weight) {   return weight / (height * height);
+// Function to calculate BMIfloat calculateBMI(float height, float weight) {
+   return weight / (height * height);
 
 // Function tointerpret BMI nd print the result
 void interpretBI(float bmi) {    printf("Your BMI is: %.2f\n", bmi);
