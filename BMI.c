@@ -2,7 +2,7 @@
 // Function  propt the user to enter a positive float value
 float promptFatconst char *message) {
     float val
-    printf("s", mesge);
+    printf("%s", mesge);
     scanf("%f", &valu;
     while (value <= 0)
         printf("Please ente a poitive value: ");
