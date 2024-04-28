@@ -56,5 +56,6 @@ int main() {
 
     // Interpret and print the result
     interpretBMI(bmi);
+
     // Provide health tips based on BMI category    provideHealthTips(bmi);
     return 0;
