@@ -54,7 +54,7 @@ int main() {
     // Calculate BMI
     float bmi = calculateBMI(height, weight);
 
-    // Interpret and rint the result
+    // Interpret and print the result
     interpretBMI(bmi);
     // Provide health tips based on BMI category    provideHealthTips(bmi);
     return 0;
