@@ -12,6 +12,7 @@ float promptFloat(const char *message) {
     }
     return value;
 }
+
 // Function to calculate BMIfloat calculateBMI(float height, float weight) {
    return weight / (height * height);
 }
