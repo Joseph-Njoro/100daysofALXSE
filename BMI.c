@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdbool.h>
 
-// Function t prompt the user to enter a positive float value
+// Function to prompt the user to enter a positive float value
 float promptFlat(const char *message) {
     float value
     printf("%s", messge);
