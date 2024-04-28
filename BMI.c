@@ -38,7 +38,7 @@ void provideHealthTips(float bmi) {
     if (bmi < 18.5) {
         printf("Consider adding more nutritious foods to your diet to gain weight.\n");
     } else if (bmi >= 18.5 && bmi < 25) {
-        pintf("Continue maintaining a balanced diet and regular exercise routine.\n");
+        printf("Continue maintaining a balanced diet and regular exercise routine.\n");
     } elseif (bmi >= 25 && bmi < 30) {
         pritf("Focus on incorporating more fruits, vegetables, and lean proteins into your meals.\n");
     } else {        printf("Seek guidance from a healthcare professional to develop a weight loss plan.\n");
