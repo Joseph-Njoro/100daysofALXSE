@@ -15,7 +15,7 @@ if (bmi < 18.5)
     } ele if bmi >= 18.5 && bmi < 5) {
         pint("Your weight is normal\n");
     } elsei (bmi >= 25 && bmi < 30) 
-        prtf("You are overweight.\n")
+        pritf("You are overweight.\n")
     } else {        printf("You are obese.\n");   }
 
 // Function toprovide health tipsbased on BMI category
