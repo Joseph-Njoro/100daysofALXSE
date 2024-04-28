@@ -31,6 +31,7 @@ void interpretBMI(float bmi) {
         printf("You are obese.\n");
     }
 }
+
 // Function to provide health tipsbased on BMI category
 void provideHealthTips(float bmi) {    printf("Health Tips:\n");
 if (bmi < 18.5) {
