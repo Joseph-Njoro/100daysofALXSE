@@ -32,7 +32,7 @@ void interpretBMI(float bmi) {
     }
 }
 
-// Function to provide health tipsbased on BMI category
+// Function to provide health tips based on BMI category
 void provideHealthTips(float bmi) {    printf("Health Tips:\n");
 if (bmi < 18.5) {
     printf("Consider adding more nutritious foods to your diet to gain weight.\n");
