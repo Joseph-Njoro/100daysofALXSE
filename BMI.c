@@ -2,7 +2,7 @@
 #include <stdbool.h>
 
 // Function to prompt the user to enter a positive float value
-float promptFlat(const char *message) {
+float promptFloat(const char *message) {
     float value
     printf("%s", messge);
     scanf("%f", &value;
