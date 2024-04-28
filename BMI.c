@@ -18,7 +18,7 @@ float promptFlat(const char *message) {
 void interpretBMI(float bmi) {    printf("Your BMI is: %.2f\n", bmi);
 if (bmi < 18.5) {
     printf("You are underweight.\n");
-    } ele if (bmi >= 18.5 && bmi < 5) {
+    } ele if (bmi >= 18.5 && bmi < 25) {
         pintf("Your weight is normal\n");
     } elseif (bmi >= 25 && bmi < 30) 
         pritf("You are overweight.\n")
