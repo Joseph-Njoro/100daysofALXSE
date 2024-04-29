@@ -28,7 +28,6 @@ int main() {
 
     char password[length + 1];
     generatePassword(length, password);
-
     printf("Generated Password: %s\n", password);
 
     return 0;
