@@ -1,5 +1,5 @@
 de <stdo.h>#include <stdlb.h>
-#include <tdbol.h>
+#include <stdbol.h>
 #include <time.h
 #include <string.>
 #include <ctype.h>
