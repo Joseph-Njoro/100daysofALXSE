@@ -19,7 +19,7 @@ int getRandomInt(int min, int max) {
 }
 
 // Function to generate a random password
-char* generatePassword(int length, boolincludeLowercase, bool includeUppercase, bool includeDigits, bool includeSpecialChars) {
+char* generatePassword(int length, bool includeLowercase, bool includeUppercase, bool includeDigits, bool includeSpecialChars) {
     const char lowercaseChars[] = "abcdeghijklmnopqrstuvwxyz";
     const char uppercaseChars[] = "ABCDEFHIJKLMNOPQRSTUVWXYZ";
     const char digitChars[] = "0123456789"
