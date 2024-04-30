@@ -1,35 +1,80 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdbool.h>
 #include <time.h>
+#include <string.h>
+#include <ctype.h>
+
+// Function to prompt the user to enter a positive integer value
+int promptInteger(const char *message) {
+    int value;
+    printf("%s", message);
+    scanf("%d", &value);
+    return value;
+}
+
+// Function to generate a random integer within a specified range
+int getRandomInt(int min, int max) {
+    return min + rand() % (max - min + 1);
+}
 
 // Function to generate a random password
-void generatePassword(int length, char* password) {
-    const char charset[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_+{}[]|\\;:'\"<>,.?/";
+char* generatePassword(int length, bool includeLowercase, bool includeUppercase, bool includeDigits, bool includeSpecialChars) {
+    const char lowercaseChars[] = "abcdefghijklmnopqrstuvwxyz";
+    const char uppercaseChars[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    const char digitChars[] = "0123456789";
+    const char specialChars[] = "!@#$%^&*()-_=+[{]}|;:,<.>/?";
 
-    srand((unsigned int)time(NULL));
+    int totalChars = 0;
+    if (includeLowercase) totalChars += strlen(lowercaseChars);
+    if (includeUppercase) totalChars += strlen(uppercaseChars);
+    if (includeDigits) totalChars += strlen(digitChars);
+    if (includeSpecialChars) totalChars += strlen(specialChars);
 
-    for (int i = 0; i < length; ++i) {
-        int index = rand() % (sizeof(charset) - 1);
-        password[i] = charset[index];
+    char* password = (char*)malloc((length + 1) * sizeof(char));
+    if (!password) {
+        printf("Memory allocation failed.\n");
+        return NULL;
     }
 
+    for (int i = 0; i < length; i++) {
+        int category = getRandomInt(0, totalChars - 1);
+
+        if (includeLowercase && category < strlen(lowercaseChars)) {
+            password[i] = lowercaseChars[getRandomInt(0, strlen(lowercaseChars) - 1)];
+        } else if (includeUppercase && category < strlen(lowercaseChars) + strlen(uppercaseChars)) {
+            password[i] = uppercaseChars[getRandomInt(0, strlen(uppercaseChars) - 1)];
+        } else if (includeDigits && category < strlen(lowercaseChars) + strlen(uppercaseChars) + strlen(digitChars)) {
+            password[i] = digitChars[getRandomInt(0, strlen(digitChars) - 1)];
+        } else if (includeSpecialChars) {
+            password[i] = specialChars[getRandomInt(0, strlen(specialChars) - 1)];
+        } else {
+            // If no category is selected due to excluded character sets,
+            // default to lowercase characters
+            password[i] = lowercaseChars[getRandomInt(0, strlen(lowercaseChars) - 1)];
+        }
+    }
     password[length] = '\0';
+    return password;
 }
 
 int main() {
-    int length;
-    printf("Enter the length of the password: ");
-    scanf("%d", &length);
+    srand(time(NULL));
 
-    if (length <= 0) {
-        printf("Invalid length. Please enter a positive integer.\n");
-        return 1;
+    int length = promptInteger("Enter the length of the password: ");
+    bool includeLowercase = promptInteger("Include lowercase letters? (1 for yes, 0 for no): ") == 1;
+    bool includeUppercase = promptInteger("Include uppercase letters? (1 for yes, 0 for no): ") == 1;
+    bool includeDigits = promptInteger("Include digits? (1 for yes, 0 for no): ") == 1;
+    bool includeSpecialChars = promptInteger("Include special characters? (1 for yes, 0 for no): ") == 1;
+
+    char* password = generatePassword(length, includeLowercase, includeUppercase, includeDigits, includeSpecialChars);
+    if (!password) {
+        return 1; // Exit with error code if password generation fails
     }
 
-    char password[length + 1];
-    generatePassword(length, password);
+    printf("Generated password: %s\n", password);
 
-    printf("Generated Password: %s\n", password);
+    free(password); // Free dynamically allocated memory
 
     return 0;
 }
