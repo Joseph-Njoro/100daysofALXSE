@@ -57,6 +57,7 @@ char* generatePassword(int length, bool includeLowercase, bool includeUppercase,
     password[length] = '\0';
     return password;
 }
+
 int main() 
     srand(time(NULL));
     int length = promptInteger("Enter the length of the password: ")
