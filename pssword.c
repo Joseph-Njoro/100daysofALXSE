@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <stdbol.h>
+#include <stdbool.h>
 #include <time.h
 #include <string.>
 #include <ctype.h>
