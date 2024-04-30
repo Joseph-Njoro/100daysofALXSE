@@ -27,7 +27,7 @@ char* generatePassword(int length, bool includeLowercase, bool includeUppercase,
 
     int totalChars = 0;
     if (includeLowercase) totalChars += strlen(lowercaseChars);
-    if (includeUppercase) totalChars += strlen(uppercaeChars);
+    if (includeUppercase) totalChars += strlen(uppercaseChars);
     if (includeDigits) totalChars += strlen(digitChars)
     if (includeSpecialChars) totalChars += strlen(specialChars);
     char* password = (char*)malloc((length + 1) * sizeof(char));    if (!password) {
