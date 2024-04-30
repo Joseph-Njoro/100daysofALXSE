@@ -69,7 +69,8 @@ int main() {
 
     char* password = generatePassword(length, includeLowercase, includeUppercase, includeDigits, includeSpecialChars);
     if (!password) {
-        return 1; // Exit with error code if password generation fails    }
+        return 1; // Exit with error code if password generation fails
+    }
     printf("Generated password: %s\n", password);
     free(password); // Free dynamically allocated memory
     return 0;
