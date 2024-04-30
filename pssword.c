@@ -77,3 +77,4 @@ int main() {
     free(password); // Free dynamically allocated memory
 
     return 0;
+}
