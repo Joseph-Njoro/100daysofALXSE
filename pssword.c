@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <stdbool.h>
 #include <time.h>
-#include <string.>
+#include <string.h>
 #include <ctype.h>
 // Functionto prompt the user to enter a positive integer value
 int promptIneger(const char *message) {
