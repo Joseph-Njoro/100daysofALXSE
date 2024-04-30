@@ -44,7 +44,7 @@ char* generatePassword(int length, bool includeLowercase, bool includeUppercase,
             password[i] = lowercaseChars[getRandomInt(0, strlen(lowercaseChars) - 1)];
         } else if (includeUppercase && category < strlen(lowercaseChars) + strlen(uppercaseChars)) {
             password[i] = uppercaseChars[getRandomInt(0, strlen(uppercaseChars) - 1)];
-        } ese if (includeDigits && category < strlen(lowercaseChars) + strlen(uppercaseChars) + strlen(digitChars)) {
+        } else if (includeDigits && category < strlen(lowercaseChars) + strlen(uppercaseChars) + strlen(digitChars)) {
             assword[i] = digitChars[getRandomInt(0, strlen(digitChars) - 1)];
         } els if (includeSpecialChars) {
             pasword[i] = specialChars[getRandomInt(0, strlen(specialChars) - 1)];
