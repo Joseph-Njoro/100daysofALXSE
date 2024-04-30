@@ -8,7 +8,8 @@
 // Function to prompt the user to enter a positive integer value
 int promptInteger(const char *message) {
     int value;
-    printf("%s", message);    scanf("%d", &value);
+    printf("%s", message);
+    scanf("%d", &value);
    return value;
 }
 // Function to generate a random integer within a specified rangeint getRandomInt(int min, int max) {
