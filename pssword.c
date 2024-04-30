@@ -67,7 +67,7 @@ int main() {
     bool includeDigits = promptInteger("Include digits? (1 for yes, 0 for no): ") == 1;
     bool includeSpecialChars = promptInteger("Include special characters? (1 for yes, 0 for no): ") == 1;
 
-    char* password= generatePassword(length, includeLowercase, includeUppercase, includeDigits, includeSpecialChars);
+    char* password = generatePassword(length, includeLowercase, includeUppercase, includeDigits, includeSpecialChars);
     if (!password) 
         return 1; // Exit with error code if password generation fails    }
     printf("Generated password: %s\n", password);
