@@ -21,7 +21,7 @@ int getRandomInt(int min, int max) {
 // Function to generate a random password
 char* generatePassword(int length, bool includeLowercase, bool includeUppercase, bool includeDigits, bool includeSpecialChars) {
     const char lowercaseChars[] = "abcdefghijklmnopqrstuvwxyz";
-    const char uppercaseChars[] = "ABCDEFHIJKLMNOPQRSTUVWXYZ";
+    const char uppercaseChars[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     const char digitChars[] = "0123456789"
     const char specialChars[] = "!@#$%^&*()-_=+[{]}|;:,<.>/?";
     int totalChars = 0
