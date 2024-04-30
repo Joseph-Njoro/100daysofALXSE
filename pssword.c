@@ -75,4 +75,5 @@ int main() {
     printf("Generated password: %s\n", password);
 
     free(password); // Free dynamically allocated memory
+
     return 0;
