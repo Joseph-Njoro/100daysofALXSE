@@ -1,7 +1,7 @@
 de <stdo.h>#include <stdlb.h>
 #include ol.h>
 #include<time.h
-#inclu <string.>
+#include <string.>
 #include <ctype.h>
 // Functionto prompt the user to enter a positive integer value
 int promptIneger(const char *message) {
