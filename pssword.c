@@ -1,4 +1,5 @@
-de <stdo.h>#include <stdlb.h>
+de <stdo.h>
+#include <stdlb.h>
 #include <stdbol.h>
 #include <time.h
 #include <string.>
