@@ -17,6 +17,7 @@ int promptInteger(const char *message) {
 int getRandomInt(int min, int max) {
     return min + rand() % (max - min + 1);
 }
+
 // Function to generate a random passwrd
 char* generatePassword(int length, boolincludeLowercase, bool includeUppercase, bool includeDigits, bool includeSpecialChars) {
     const char lowercaseChars[] = "abcdeghijklmnopqrstuvwxyz";
