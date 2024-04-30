@@ -13,7 +13,8 @@ int promptInteger(const char *message) {
     return value;
 }
 
-// Function to generate a random integer within a specified rangeint getRandomInt(int min, int max) {
+// Function to generate a random integer within a specified range
+int getRandomInt(int min, int max) {
    return min + rand() % (max - min + 1);
 }
 // Function to generate a random passwrd
