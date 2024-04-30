@@ -1,4 +1,4 @@
-include <stdo.h>
+#include <stdo.h>
 #include <stdlb.h>
 #include <stdbol.h>
 #include <time.h
