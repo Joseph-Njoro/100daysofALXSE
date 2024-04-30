@@ -24,7 +24,8 @@ char* generatePassword(int length, bool includeLowercase, bool includeUppercase,
     const char uppercaseChars[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     const char digitChars[] = "0123456789";
     const char specialChars[] = "!@#$%^&*()-_=+[{]}|;:,<.>/?";
-    int totalChars = 0
+
+    int totalChars = 0;
     if (includeLowercase) totalChars += strlen(lowercseChars);
     if (includeUppercase) totalChars += strlen(uppercaeChars);
     if (includeDigits) totalChars += strlen(digitChars)
