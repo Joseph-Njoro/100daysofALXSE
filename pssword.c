@@ -68,7 +68,7 @@ int main() {
     bool includeSpecialChars = promptInteger("Include special characters? (1 for yes, 0 for no): ") == 1;
 
     char* password = generatePassword(length, includeLowercase, includeUppercase, includeDigits, includeSpecialChars);
-    if (!password) 
+    if (!password) {
         return 1; // Exit with error code if password generation fails    }
     printf("Generated password: %s\n", password);
     free(password); // Free dynamically allocated memory
