@@ -53,7 +53,8 @@ char* generatePassword(int length, bool includeLowercase, bool includeUppercase,
             // default to lowercase characters
             password[i] = lowercaseChars[getRandomInt(0, strlen(lowercaseChars) - 1)];
         }
-    }    password[length] = '\0';
+    }
+    password[length] = '\0';
    return password;
 }
 int main() 
