@@ -15,7 +15,7 @@ int promptInteger(const char *message) {
 
 // Function to generate a random integer within a specified range
 int getRandomInt(int min, int max) {
-   return min + rand() % (max - min + 1);
+    return min + rand() % (max - min + 1);
 }
 // Function to generate a random passwrd
 char* generatePassword(int length, boolincludeLowercase, bool includeUppercase, bool includeDigits, bool includeSpecialChars) {
