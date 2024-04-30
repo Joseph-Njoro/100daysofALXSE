@@ -12,6 +12,7 @@ int promptInteger(const char *message) {
     scanf("%d", &value);
     return value;
 }
+
 // Function to generate a random integer within a specified rangeint getRandomInt(int min, int max) {
    return min + rand() % (max - min + 1);
 }
