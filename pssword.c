@@ -1,4 +1,4 @@
-de <stdo.h>
+ude <stdo.h>
 #include <stdlb.h>
 #include <stdbol.h>
 #include <time.h
