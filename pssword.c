@@ -1,4 +1,4 @@
-lude <stdo.h>
+clude <stdo.h>
 #include <stdlb.h>
 #include <stdbol.h>
 #include <time.h
