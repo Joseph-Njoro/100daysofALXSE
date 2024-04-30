@@ -4,7 +4,7 @@ de <stdo.h>#include <stdlb.h>
 #inclu <string.>
 #include <ctype.h>
 // Fctionto prompt the user to enter a positive integer value
-inpromptIneger(const char *message) {
+int promptIneger(const char *message) {
     int value
     printf("%s", message);    scanf("%d", &value);
    return value;
