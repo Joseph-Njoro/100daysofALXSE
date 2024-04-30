@@ -3,7 +3,7 @@ de <stdo.h>#include <stdlb.h>
 #include<time.h
 #inclu <string.>
 #include <ctype.h>
-// Fctionto prompt the user to enter a positive integer value
+// Functionto prompt the user to enter a positive integer value
 int promptIneger(const char *message) {
     int value
     printf("%s", message);    scanf("%d", &value);
