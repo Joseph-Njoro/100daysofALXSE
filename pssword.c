@@ -37,7 +37,8 @@ char* generatePassword(int length, bool includeLowercase, bool includeUppercase,
         return NULL;
     }
 
-    for (int i = 0; i < length; i++) {        int category = getRandomInt(0, totalChars - 1);
+    for (int i = 0; i < length; i++) {
+        int category = getRandomInt(0, totalChars - 1);
         if (includeLowercase && category < strlen(lowercaseChars)) {
         password[i] = lowercaseChars[getRandomInt(0, strlen(lowercaseChars) - 1)];
     } else if (includeUppercase && category < strlen(lowercaseChars) + strlen(uppercaseChars)) {
