@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
-#include <time.h
+#include <time.h>
 #include <string.>
 #include <ctype.h>
 // Functionto prompt the user to enter a positive integer value
