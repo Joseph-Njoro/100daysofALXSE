@@ -58,8 +58,9 @@ char* generatePassword(int length, bool includeLowercase, bool includeUppercase,
     return password;
 }
 
-int main() 
+int main() {
     srand(time(NULL));
+
     int length = promptInteger("Enter the length of the password: ")
     bool includeLowercase = promptInteger("Include lowercase letters? (1 for yes, 0 or no): ") == 1;
     bool includeUppercase = promptInteger("Include uppercase letters? (1 for yes, 0 fr no): ") == 1;
