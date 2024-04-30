@@ -6,7 +6,7 @@
 #include <ctype.h>
 
 // Function to prompt the user to enter a positive integer value
-int promptIneger(const char *message) {
+int promptInteger(const char *message) {
     int value
     printf("%s", message);    scanf("%d", &value);
    return value;
