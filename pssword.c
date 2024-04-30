@@ -48,10 +48,11 @@ char* generatePassword(int length, bool includeLowercase, bool includeUppercase,
             password[i] = digitChars[getRandomInt(0, strlen(digitChars) - 1)];
         } else if (includeSpecialChars) {
             password[i] = specialChars[getRandomInt(0, strlen(specialChars) - 1)];
-        } else 
-            // If no category is selected due to excluded character sets,            // default to lowercase characters
-        password[i] = lowercaseChars[getRandomInt(0, strlen(lowercaseChars) - 1)];
-       }
+        } else {
+            // If no category is selected due to excluded character sets,
+            // default to lowercase characters
+            password[i] = lowercaseChars[getRandomInt(0, strlen(lowercaseChars) - 1)];
+        }
     }    password[length] = '\0';
    return password;
 }
