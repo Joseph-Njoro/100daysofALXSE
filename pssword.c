@@ -31,7 +31,8 @@ char* generatePassword(int length, bool includeLowercase, bool includeUppercase,
     if (includeDigits) totalChars += strlen(digitChars);
     if (includeSpecialChars) totalChars += strlen(specialChars);
 
-    char* password = (char*)malloc((length + 1) * sizeof(char));    if (!password) {
+    char* password = (char*)malloc((length + 1) * sizeof(char));
+    if (!password) {
     printf("Memory allocation failed.\n");
        return NULL;
     }
