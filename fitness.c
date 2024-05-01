@@ -40,7 +40,7 @@ def main():
         'fitness_level': 'Intermediate'
     }
 
-    # Create a user profile objec
+    # Create a user profile object
     user_profile = UserProfile(**user_profile_data)
     # Create a wellness coach objec
     coach = WellnessCoach(user_profile)
