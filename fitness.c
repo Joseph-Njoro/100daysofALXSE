@@ -28,7 +28,7 @@ class UserProfile:
         self.height = height
         self.fitness_level = fitness_level
 
-# Main fnction to demonstrate usage
+# Main function to demonstrate usage
 def main(
     # Example user pofile data
     user_profile_data{
