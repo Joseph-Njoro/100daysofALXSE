@@ -18,7 +18,7 @@ class WellnessCoach:
         # Provide personalized coaching based on user's goals and analyzed health data
         pass
 
-# Define a class for user profileZ
+# Define a class for user profile
 class UserProfile:
     def __init__(self, name, age, gender, weight, height, fitness_level):
         self.name = name
