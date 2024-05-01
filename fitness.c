@@ -8,7 +8,7 @@ class WellnessCoach:
         self.user_profile = user_profile
 
     # Method to analyze user's fitness level and health data
-    def anlyze_health_data(self):
+    def analyze_health_data(self):
         # Iplement machine learning algorithms to analyze health data
         pass
     # Mehod to provide personalized coaching based on user's goals
