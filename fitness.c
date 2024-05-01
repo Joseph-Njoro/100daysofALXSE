@@ -15,7 +15,7 @@ class WellnessCoach:
     # Method to provide personalized coaching based on user's goals
     def provide_coaching(self, user_goals):
         # Use natural language processing to understand user's goals
-        # Povide personalized coaching based on user's goals and analyzed health data
+        # Provide personalized coaching based on user's goals and analyzed health data
         pass
 # Defn  ls or user profile
 class UserProfile:    def __init__(self, name, age, gender, weight, height, fitness_level):
