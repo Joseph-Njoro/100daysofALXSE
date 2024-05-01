@@ -46,7 +46,7 @@ def main():
     # Create a wellness coach object
     coach = WellnessCoach(user_profile)
 
-    # Analyze user's health daa
+    # Analyze user's health data
     coach.analyze_health_data()
     # Set user's fitness goals    user_goals = {
     'weight_loss': True,
