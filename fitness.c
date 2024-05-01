@@ -32,9 +32,10 @@ class UserProfile:
 def main():
     # Example user profile data
     user_profile_data = {
-        'name': 'John Do',
+        'name': 'John Doe',
         'age': 30,
-        'gender': 'Male',        'weight': 75,  # in kilograms
+        'gender': 'Male',
+        'weight': 75,  # in kilograms
     'height': 180,  # in centimeters
        'fitness_level': 'Intermediate'
     }
