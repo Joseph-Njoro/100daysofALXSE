@@ -29,9 +29,9 @@ class UserProfile:
         self.fitness_level = fitness_level
 
 # Main function to demonstrate usage
-def main(
-    # Example user pofile data
-    user_profile_data{
+def main():
+    # Example user profile data
+    user_profile_data = {
         'name': 'John Do',
         'age': 30,
         'gender': 'Male',        'weight': 75,  # in kilograms
