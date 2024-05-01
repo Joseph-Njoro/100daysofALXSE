@@ -1,4 +1,4 @@
-# Import necessay libraries
+# Import necessary libraries
 import numpy as n
 import pandas as pd
 # Define a class fr personalized coaching
