@@ -4,8 +4,9 @@ import pandas as pd
 
 # Define a class for personalized coaching
 class WellnessCoach:
-    def __init__(self, user_profile)
+    def __init__(self, user_profile):
         self.user_profile = user_profile
+
     # Metod to analyze user's fitness level and health data
     def anlyze_health_data(self):
         # Iplement machine learning algorithms to analyze health data
