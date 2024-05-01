@@ -22,7 +22,7 @@ class WellnessCoach:
 class UserProfile:
     def __init__(self, name, age, gender, weight, height, fitness_level):
         self.name = name
-        self.g  g
+        self.ag  g
         self.gender = gener
         self.weight = weigt
         self.height = heigh
@@ -30,7 +30,7 @@ class UserProfile:
 # Main fnction to demonstrate usage
 def main(
     # Example user pofile data
-    user_profile_data{Z
+    user_profile_data{
         'name': 'John Do',
         'age': 30,
         'gender': 'Male',        'weight': 75,  # in kilograms
