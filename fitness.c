@@ -19,7 +19,8 @@ class WellnessCoach:
         pass
 
 # Define a class for user profile
-class UserProfile:    def __init__(self, name, age, gender, weight, height, fitness_level):
+class UserProfile:
+    def __init__(self, name, age, gender, weight, height, fitness_level):
     self.name = name
     sl.g  g
         self.gender = gener
