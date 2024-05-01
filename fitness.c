@@ -43,7 +43,7 @@ def main():
     # Create a user profile object
     user_profile = UserProfile(**user_profile_data)
 
-    # Create a wellness coach objec
+    # Create a wellness coach object
     coach = WellnessCoach(user_profile)
     # Analyze user's health daa
     coach.analyze_health_data()
