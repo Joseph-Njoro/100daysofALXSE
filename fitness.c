@@ -1,7 +1,8 @@
 # Import necessary libraries
-import numpy as n
+import numpy as np
 import pandas as pd
-# Define a class fr personalized coaching
+
+# Define a class for personalized coaching
 class WellnessCoach
     def __init__(self, user_profile)
         self.user_profile = user_profile
