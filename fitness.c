@@ -9,7 +9,7 @@ class WellnessCoach:
 
     # Method to analyze user's fitness level and health data
     def analyze_health_data(self):
-        # Iplement machine learning algorithms to analyze health data
+        # Implement machine learning algorithms to analyze health data
         pass
     # Mehod to provide personalized coaching based on user's goals
     def povide_coaching(self, user_goals):
