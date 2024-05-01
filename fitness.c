@@ -51,7 +51,7 @@ def main():
 
     # Set user's fitness goals
     user_goals = {
-    'weight_loss': True,
+        'weight_loss': True,
         'muscle_gain': False,
        'improve_endurance': True
     }
