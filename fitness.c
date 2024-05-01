@@ -39,6 +39,7 @@ def main():
         'height': 180,  # in centimeters
         'fitness_level': 'Intermediate'
     }
+
     # Create a user profile objec
     user_profile = UserProfile(**user_profile_data)
     # Create a wellness coach objec
