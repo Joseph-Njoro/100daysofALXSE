@@ -24,7 +24,7 @@ class UserProfile:
         self.name = name
         self.age = age
         self.gender = gender
-        self.weight = weigt
+        self.weight = weight
         self.height = heigh
         self.fitness_level = fitness_level
 # Main fnction to demonstrate usage
