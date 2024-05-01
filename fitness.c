@@ -22,7 +22,7 @@ class WellnessCoach:
 class UserProfile:
     def __init__(self, name, age, gender, weight, height, fitness_level):
         self.name = name
-        sel.g  g
+        self.g  g
         self.gender = gener
         self.weight = weigt
         self.height = heigh
