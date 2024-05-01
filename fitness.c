@@ -18,7 +18,7 @@ class WellnessCoach:
         # Provide personalized coaching based on user's goals and analyzed health data
         pass
 
-# Defin  ls or user profile
+# Define a ls or user profile
 class UserProfile:    def __init__(self, name, age, gender, weight, height, fitness_level):
     self.name = name
     sl.g  g
