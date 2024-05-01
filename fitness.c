@@ -55,6 +55,7 @@ def main():
         'muscle_gain': False,
         'improve_endurance': True
     }
+
     # Provide personalized coaching bsed on user's goals
     coach.provide_coaching(user_goals)
 if __name_ == "__main__":
