@@ -53,7 +53,7 @@ def main():
     user_goals = {
         'weight_loss': True,
         'muscle_gain': False,
-       'improve_endurance': True
+        'improve_endurance': True
     }
     # Provide personalized coaching bsed on user's goals
     coach.provide_coaching(user_goals)
