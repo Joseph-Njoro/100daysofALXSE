@@ -58,5 +58,6 @@ def main():
 
     # Provide personalized coaching based on user's goals
     coach.provide_coaching(user_goals)
+
 if __name_ == "__main__":
     main()
