@@ -37,7 +37,7 @@ def main():
         'gender': 'Male',
         'weight': 75,  # in kilograms
         'height': 180,  # in centimeters
-       'fitness_level': 'Intermediate'
+        'fitness_level': 'Intermediate'
     }
     # Create a user profile objec
     user_profile = UserProfile(**user_profile_data)
