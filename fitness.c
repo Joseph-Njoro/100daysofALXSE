@@ -56,7 +56,7 @@ def main():
         'improve_endurance': True
     }
 
-    # Provide personalized coaching bsed on user's goals
+    # Provide personalized coaching based on user's goals
     coach.provide_coaching(user_goals)
 if __name_ == "__main__":
     main()
