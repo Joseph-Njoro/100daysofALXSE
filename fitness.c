@@ -3,7 +3,7 @@ import numpy as np
 import pandas as pd
 
 # Define a class for personalized coaching
-class WellnessCoach
+class WellnessCoach:
     def __init__(self, user_profile)
         self.user_profile = user_profile
     # Metod to analyze user's fitness level and health data
