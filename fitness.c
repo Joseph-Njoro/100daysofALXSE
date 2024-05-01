@@ -25,8 +25,9 @@ class UserProfile:
         self.age = age
         self.gender = gender
         self.weight = weight
-        self.height = heigh
+        self.height = height
         self.fitness_level = fitness_level
+
 # Main fnction to demonstrate usage
 def main(
     # Example user pofile data
