@@ -12,7 +12,7 @@ class WellnessCoach:
         # Implement machine learning algorithms to analyze health data
         pass
 
-    # Mehod to provide personalized coaching based on user's goals
+    # Method to provide personalized coaching based on user's goals
     def povide_coaching(self, user_goals):
         # se natural language processing to understand user's goals
         # Povide personalized coaching based on user's goals and analyzed health data
