@@ -22,9 +22,6 @@ To participate:
 - Completed [Relearning-C_from_scratch]
 - Learned about [C:syntax,theory,variables,itertions]
 
-### Day 2:
-- Worked on [project/task]
-- Explored [topic/technology]
 
 ...
 
