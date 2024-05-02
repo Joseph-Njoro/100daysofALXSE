@@ -26,9 +26,6 @@ To participate:
 - Worked on [project/task]
 - Explored [topic/technology]
 
-### Day 3:
-- [Add your progress here]
-
 ...
 
 ### Day 100:
