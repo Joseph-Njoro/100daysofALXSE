@@ -18,7 +18,7 @@ To participate:
 - Document each day's progress in this README.md file
 
 ## Progress
-### Day 1:  UNIX is basically a simple operating system, but you have to be a genius to understand the simplicity 
+:  UNIX is basically a simple operating system, but you have to be a genius to understand the simplicity 
 - Completed [Relearning-C_from_scratch]
 - Learned about [C:syntax,theory,variables,itertions]
 
