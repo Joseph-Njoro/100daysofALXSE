@@ -25,9 +25,6 @@ To participate:
 
 ...
 
-### Day 100:
-- [Add your progress here]
-
 ## Motivation
 I'm ready to tackle challenges, commit to success, and code with passion! This challenge isn't just about improving coding skills; it's about honing resilience, determination, and a love for software engineering. Every line of code brings me closer to greatness.
 
