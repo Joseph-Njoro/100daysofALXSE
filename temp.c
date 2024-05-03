@@ -50,7 +50,8 @@ int main() {
             break;
         case 'F':
             printf("Temperature in Fahrenheit: %.2f\n", temperature);
-            printf("Temperature in Celsius: %.2f\n", fahrenheitToCelsius(temperature));            printf("Temperature in Kelvin: %.2f\n", fahrenheitToKelvin(temperature));
+            printf("Temperature in Celsius: %.2f\n", fahrenheitToCelsius(temperature));
+            printf("Temperature in Kelvin: %.2f\n", fahrenheitToKelvin(temperature));
         break;
     case 'K':
         printf("Temperature in Kelvin: %.2f\n", temperature);
