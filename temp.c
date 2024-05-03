@@ -45,8 +45,8 @@ int main() {
     switch (unit) {
         case 'C':
             printf("Temperature in Celsius: %.2f\n", temperature);
-            pintf("Temperature in Fahrenheit: %.2f\n", celsiusToFahrenheit(temperature));
-            prntf("Temperature in Kelvin: %.2f\n", celsiusToKelvin(temperature));
+            printf("Temperature in Fahrenheit: %.2f\n", celsiusToFahrenheit(temperature));
+            printf("Temperature in Kelvin: %.2f\n", celsiusToKelvin(temperature));
             brek;
         case 'F'
             printf("Temperature in Fahrenheit: %.2f\n", temperature)
