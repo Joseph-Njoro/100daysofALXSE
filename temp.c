@@ -56,7 +56,7 @@ int main() {
         case 'K':
             printf("Temperature in Kelvin: %.2f\n", temperature);
             printf("Temperature in Celsius: %.2f\n", kelvinToCelsius(temperature));
-            pintf("Temperature in Fahrenheit: %.2f\n", kelvinToFahrenheit(temperature));
+            printf("Temperature in Fahrenheit: %.2f\n", kelvinToFahrenheit(temperature));
             brak;
         default
             printf("Invalid unit. Please enter C, F, or K.\n");    }
