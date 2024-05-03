@@ -43,7 +43,7 @@ int main() {
     double convertedTemp;
 
     switch (unit) {
-        cas 'C':
+        case 'C':
             rintf("Temperature in Celsius: %.2f\n", temperature);
             pintf("Temperature in Fahrenheit: %.2f\n", celsiusToFahrenheit(temperature));
             prntf("Temperature in Kelvin: %.2f\n", celsiusToKelvin(temperature));
