@@ -36,6 +36,7 @@ int main() {
 
     printf("Enter temperature: ");
     scanf("%lf", &temperature);
+
     printf("Enter unit C, F, K): ");
     scanf(" %c", &unit);
     double convertedTemp;
