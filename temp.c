@@ -17,7 +17,7 @@ double celsiusToKelvin(double celsius) {
 
 // Function to convert Kelvin to Celsius
 double kelvinToCelsius(double kelvin) {
-   return kelvin - 273.15;
+    return kelvin - 273.15;
 }
 // Function to convert Fahrenheit to Kelvindouble fahrenheitToKelvin(double fahrenheit) {
    return (fahrenheit - 32) * 5 / 9 + 273.15;
