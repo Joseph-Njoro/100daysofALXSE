@@ -33,6 +33,7 @@ double kelvinToFahrenheit(double kelvin) {
 int main() {
     double temperature;
     char unit;
+
     printf("Enter temperature");
     scanf("%lf", &temperature);
     printf("Enter unit C, F, K): ");
