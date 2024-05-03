@@ -27,7 +27,7 @@ double fahrenheitToKelvin(double fahrenheit) {
 
 // Function to convert Kelvin to Fahrenheit
 double kelvinToFahrenheit(double kelvin) {
-   return (kelvin - 273.15) * 9 / 5 + 32;
+    return (kelvin - 273.15) * 9 / 5 + 32;
 }
 int main() 
     double teperature;
