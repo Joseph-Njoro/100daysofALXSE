@@ -58,6 +58,6 @@ int main() {
             printf("Temperature in Celsius: %.2f\n", kelvinToCelsius(temperature));
             printf("Temperature in Fahrenheit: %.2f\n", kelvinToFahrenheit(temperature));
             break;
-        default
+        default:
             printf("Invalid unit. Please enter C, F, or K.\n");    }
     return 0;
