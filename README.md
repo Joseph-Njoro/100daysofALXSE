@@ -17,22 +17,13 @@ To participate:
 - Share daily updates on social media using the hashtags #100daysofALXSE, #DoHardThings, #ALX_SE, @alx_africa, and #facesofalxse
 - Document each day's progress in this README.md file
 
-## Progress
-### Day 1:  UNIX is basically a simple operating system, but you have to be a genius to understand the simplicity 
+## MOTIVATION QUOTES 
+:  UNIX is basically a simple operating system, but you have to be a genius to understand the simplicity 
 - Completed [Relearning-C_from_scratch]
 - Learned about [C:syntax,theory,variables,itertions]
 
-### Day 2:
-- Worked on [project/task]
-- Explored [topic/technology]
-
-### Day 3:
-- [Add your progress here]
 
 ...
-
-### Day 100:
-- [Add your progress here]
 
 ## Motivation
 I'm ready to tackle challenges, commit to success, and code with passion! This challenge isn't just about improving coding skills; it's about honing resilience, determination, and a love for software engineering. Every line of code brings me closer to greatness.
