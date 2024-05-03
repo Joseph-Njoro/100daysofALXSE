@@ -41,6 +41,7 @@ int main() {
     scanf(" %c", &unit);
 
     double convertedTemp;
+
     switch(unit) {
         cas 'C':
             rintf("Temperature in Celsius: %.2f\n", temperature);
