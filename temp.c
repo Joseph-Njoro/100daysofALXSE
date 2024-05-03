@@ -2,7 +2,7 @@
 
 // Function to convert Celsius to Fahrenheit
 double celsiusToFahrenheit(double celsius) {
-   return (celsius * 9 / 5) + 32;
+    return (celsius * 9 / 5) + 32;
 }
 // Function to convert Fahrenheit to Celsiusdouble fahrenheitToCelsius(double fahrenheit) {
    return (fahrenheit - 32) * 5 / 9;
