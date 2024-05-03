@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-// Function to convert Celsius to Fahrenheitdouble celsiusToFahrenheit(double celsius) {
+// Function to convert Celsius to Fahrenheit
+double celsiusToFahrenheit(double celsius) {
    return (celsius * 9 / 5) + 32;
 }
 // Function to convert Fahrenheit to Celsiusdouble fahrenheitToCelsius(double fahrenheit) {
