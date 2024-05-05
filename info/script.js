@@ -4,7 +4,7 @@ window.onload = function() {
 }
 
 function fetchIPDetails() {
-    fetch('https://ipinfo.io/json?token=YOUR_IPINFO_IO_TOKEN')
+    fetch('https://ipinfo.io/json?token=b389ffaad2bc64')
         .then(response => response.json())
         .then(data => {
             const ipInfoDiv = document.getElementById('ip-info');
