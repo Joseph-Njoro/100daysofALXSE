@@ -1,10 +1,17 @@
 // script.js
 window.onload = function() {
-    fetchIPDetails();
+    document.getElementById('submit-btn').addEventListener('click', function() {
+        const ipAddress = document.getElementById('ip-address').value;
+        if (ipAddress.trim() !== '') {
+            fetchIPDetails(ipAddress);
+        } else {
+            alert('Please enter a valid IP address.');
+        }
+    });
 }
 
-function fetchIPDetails() {
-    fetch('https://ipinfo.io/json?token=b389ffaad2bc64')
+function fetchIPDetails(ipAddress) {
+    fetch(`https://ipinfo.io/${ipAddress}/json?token=b389ffaad2bc64`)
         .then(response => response.json())
         .then(data => {
             const ipInfoDiv = document.getElementById('ip-info');
