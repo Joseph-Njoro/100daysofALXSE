@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# Run the gacp command
-echo "Running gacp command..."
-gacp
-
-# Provide the input "Fix" when prompted
-echo "Fix"
+# Run the gacp command with the commit message "Fix"
+echo "Running gacp command with commit message 'Fix'..."
+gacp -m "Fix"
