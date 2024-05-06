@@ -8,12 +8,22 @@ body {
 }
 
 .container {
-    max-width: 600px;
+    display: flex;
+    max-width: 1000px;
     margin: 50px auto;
     padding: 20px;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.input-container {
+    flex: 0 0 40%; /* 40% width for the input container */
+    padding-right: 20px; /* Add some space between input and map */
+}
+
+.info-container {
+    flex: 1; /* Take up remaining space */
 }
 
 label {
@@ -24,7 +34,7 @@ label {
 }
 
 input[type="text"] {
-    width: calc(100% - 80px);
+    width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -49,6 +59,7 @@ button:hover {
 }
 
 .map {
-    height: 300px;
+    height: 400px; /* Set a fixed height for the map */
+    width: 100%; /* Occupy entire width */
     margin-top: 20px;
 }
