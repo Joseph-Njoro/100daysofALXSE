@@ -43,10 +43,13 @@ input[type="text"] {
 }
 
 button {
-    background-color: #007bff;
+    background-color: #3e83cc;
     color: #e49595;
     padding: 10px 20px;
     border: none;
+    font-weight: bold;
+    font-size: medium;
+    font-style: oblique;
     border-radius: 5px;
     cursor: pointer;
 }
