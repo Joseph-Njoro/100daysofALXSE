@@ -9,7 +9,7 @@ body {
 
 .container {
     display: flex;
-    max-width: 400px;
+    max-width: 500px;
     margin: 50px auto;
     padding: 20px;
     background-color: #6ef02d;
@@ -19,7 +19,7 @@ body {
 
 .input-container {
     flex: 0 0 40%; /* 40% width for the input container */
-    padding-right: 100px; /* Add some space between input and map */
+    padding-right: 90px; /* Add some space between input and map */
 }
 
 .info-container {
