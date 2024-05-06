@@ -19,7 +19,7 @@ body {
 
 .input-container {
     flex: 0 0 40%; /* 40% width for the input container */
-    padding-right: 20px; /* Add some space between input and map */
+    padding-right: 10px; /* Add some space between input and map */
 }
 
 .info-container {
