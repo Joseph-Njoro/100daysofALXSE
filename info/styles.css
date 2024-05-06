@@ -33,6 +33,9 @@ label {
     font-weight: bold;
     color: #333;
     display: block;
+    font-weight: bold;
+    font-size: medium;
+    font-style: oblique;
     margin-bottom: 10px;
 }
 
