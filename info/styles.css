@@ -59,7 +59,7 @@ button:hover {
 }
 
 .map {
-    height: 200px; /* Set a fixed height for the map */
+    height: 500px; /* Set a fixed height for the map */
     width: 400%; /* Occupy entire width */
     margin-top: 20px;
 }
