@@ -40,7 +40,7 @@ label {
 }
 
 input[type="text"] {
-    width: 00%;
+    width: 100%;
     padding: 10px;
     background-color: #8fd8ff;
     border: 1px solid #ccc;
