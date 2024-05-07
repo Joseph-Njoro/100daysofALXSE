@@ -9,7 +9,7 @@ body {
 
 .container {
     display: flex;
-    max-width: 500px;
+    max-width: 1000px;
     margin: 50px auto;
     padding: 20px;
     background-color: #0c5b6bcf;
