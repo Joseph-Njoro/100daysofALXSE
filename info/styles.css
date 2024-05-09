@@ -61,7 +61,8 @@ button {
     font-size: medium;
     font-style: oblique;
     border-radius: 5px;
-    cursor: pointer;}
+    cursor: pointer;
+}
 button:hover {
    background-color: #0056b3;
 }
