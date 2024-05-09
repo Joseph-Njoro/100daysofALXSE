@@ -73,6 +73,6 @@ button:hover {
 }
  
 .map {
-    heigh: 500px; /* Set a fixed height for the map */
+    height: 500px; /* Set a fixed height for the map */
     width:100%; /* Occupy entire width */
     margin-p 0x
