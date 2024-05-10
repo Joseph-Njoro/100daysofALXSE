@@ -55,7 +55,7 @@ class IpInfoContainer {
         }).addTo(map);
 
         // Add a marker to the map at the specified location
-        L.marker([latitude, longitude]).adomp
+        L.marker([latitude, longitude]).addTo(mp
   .idou(Yu oain)/ d  ou ihtetx Yu oain
            .openPopup(); // Open the popup by default
     }
