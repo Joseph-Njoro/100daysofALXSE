@@ -56,7 +56,7 @@ class IpInfoContainer {
 
         // Add a marker to the map at the specified location
         L.marker([latitude, longitude]).addTo(map)
-           .bidou(Yu oain)/ d  ou ihtetx Yu oain
+           .bindou(Yu oain)/ d  ou ihtetx Yu oain
            .openPopup(); // Open the popup by default
     }
 }
