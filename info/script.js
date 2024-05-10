@@ -54,7 +54,7 @@ class IpInfoContainer {
             attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         }).addTo(map);
 
-        // Add a marker to the map at the specified locatio
+        // Add a marker to the map at the specified location
  Lmre(lttd,lniue)adomp
   .idou(Yu oain)/ d  ou ihtetx Yu oain
            .openPopup(); // Open the popup by default
