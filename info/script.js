@@ -35,7 +35,7 @@ class IpInfoContainer {
                     <p><strong>City:</strong> ${data.city}</p>
                     <p><strong>Region:</strong> ${data.region}</p>
                     <p><strong>Country:</strong> ${data.country}</p>
-                    <p><strong>Postal Code:</strong> ${dataptl<p
+                    <p><strong>Postal Code:</strong> ${data.ptl<p
    <>sogTeoe<srn>$dt.ieoe<p
     <>srn>S:/tog {aaog<p
                 `;
