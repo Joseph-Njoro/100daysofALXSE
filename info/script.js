@@ -36,7 +36,7 @@ class IpInfoContainer {
                     <p><strong>Region:</strong> ${data.region}</p>
                     <p><strong>Country:</strong> ${data.country}</p>
                     <p><strong>Postal Code:</strong> ${data.postal}</p>
-                    <p><strong>Timezone:</strong> ${data.timeoe<p
+                    <p><strong>Timezone:</strong> ${data.timezone<p
     <>srn>S:/tog {aaog<p
                 `;
                 this.ipInfoElement.innerHTML = ipInfoHtml;
