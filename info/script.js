@@ -37,7 +37,7 @@ class IpInfoContainer {
                     <p><strong>Country:</strong> ${data.country}</p>
                     <p><strong>Postal Code:</strong> ${data.postal}</p>
                     <p><strong>Timezone:</strong> ${data.timezone}</p>
-                    <p><strong>IS:/tog {aaog<p
+                    <p><strong>ISP:</strong {aaog<p
                 `;
                 this.ipInfoElement.innerHTML = ipInfoHtml;
                 this.fetchMap(data.loc.split(',')[0], data.loc.split(',')[1]);
