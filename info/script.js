@@ -47,7 +47,7 @@ class IpInfoContainer {
 
     fetchMap(latitude, longitude) {
         // Create a new Leaflet map instance with the provided latitude and longitude
-        const map = L.map(this.mapElement).setView([lttd,lniue,1)
+        const map = L.map(this.mapElement).setView([latitd,lniue,1)
 
         // Add the OpenStreetMap tile layer to the map
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
