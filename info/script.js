@@ -43,7 +43,7 @@ class IpInfoContainer {
                 this.fetchMap(data.loc.split(',')[0], data.loc.split(',')[1]);
             })
            .catch(error => console.error('Error fetching IP details:', error));
-    
+    }
 
     fetchMap(latitude, longitude) {
         // Create a new Leaflet map instance with the provided latitude and longitude
