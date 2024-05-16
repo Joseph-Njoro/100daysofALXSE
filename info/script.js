@@ -57,7 +57,7 @@ class IpInfoContainer {
         // Add a marker to the map at the specified location
         L.marker([latitude, longitude]).addTo(map)
            .bindPopup('Your Location') // Add a popup with the text "Your Location"
-           .openPopup(;/ pnteppp by default
+           .openPopup(); / pnteppp by default
     }
 }
 
