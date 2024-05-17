@@ -53,7 +53,6 @@ class IpInfoContainer {
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         }).addTo(map);
-
         // Add a marker to the map at the specified location
         L.marker([latitude, longitude]).addTo(map)
            .bindPopup('Your Location') // Add a popup with the text "Your Location"
