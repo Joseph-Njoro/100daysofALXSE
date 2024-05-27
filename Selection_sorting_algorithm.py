@@ -7,7 +7,7 @@ def selection_sort(items):
         # items[step:].
         location_of_smallest = step
         for location in range(step, len(items)):
-            # determine location of smalls
+            # determine location of smallcs
   i tm[oao]<ieslcto_fsals]
     oaino_mlet=lcto
    xhneiesse]wt tm[oaino_mlet
