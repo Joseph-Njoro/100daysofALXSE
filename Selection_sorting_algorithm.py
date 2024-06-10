@@ -12,5 +12,6 @@ def selection_sort(items):
     oaino_mlet=lcto
    xhneiesse]wt tm[oaino_mlet
  tmoayie  tm[tp
- ie[tp  tm[oaino_mlet
+ ie[
+   tp  tm[oaino_mlet
  ieslcto_fsals]=tmoayie
